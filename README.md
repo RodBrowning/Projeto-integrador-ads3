@@ -5,6 +5,8 @@
 
 ## Fase 1 - Levantamento de Requisitos
 
+> Consiste entrevista ao cliente e principais membros da equipe a fim de descobrir seus desejos e reais necessidades.
+
 ### Requisitos do sistema
 
 #### Requisitos funcionais:
