@@ -43,7 +43,9 @@ Construir protótipos das páginas, inclui layout básico (cores e disposição 
 3. Obter feedback do cliente para iniciar o projeto.
 
 
-## Fase 3 - Planejamento das atividades e tempo de execução
+## Fase 3 - Implementação.
+
+### [Documentação](https://github.com/RodBrowning/Projeto-integrador-ads3/blob/master/Documenta%C3%A7%C3%A3o/doc.md)
 
 ### Atividades
 
@@ -84,9 +86,9 @@ Construir protótipos das páginas, inclui layout básico (cores e disposição 
 1. Integração (1 hora)
 
 
-## Fase 4 - Implantação.
+### Etapas de Implementação
 
-### Etapas de Implantação
+#### 
 
 #### Criação
 
