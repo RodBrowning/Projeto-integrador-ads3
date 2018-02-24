@@ -18,7 +18,7 @@
 5.	Campo para definir o valor por quantidade de tempo acima de n horas.
 6.	Efetuar controle de caixa, registrar entradas/saídas.
 
-#### Requisitos não funcionais
+#### Requisitos não funcionais:
 
 1.	Plataforma online.
 2.	Saber quantas vagas há disponível.
@@ -55,7 +55,6 @@ Construir protótipos das páginas, inclui layout básico (cores e disposição 
 
 #### Criar Banco de Dados (4 horas e 30 min)
 
-##### Planejar banco de dados 
 1. Modelo entidade relacionamento. (2 horas)
 2. Diagrama entidade relacionamento. (1 hora)
 3. Diagrama de classes. (30 minutos)
@@ -93,7 +92,7 @@ Construir protótipos das páginas, inclui layout básico (cores e disposição 
 
 > As tarefas abaixo deverão ser distribuídas entre os membros da equipe e podem ser desenvolvidas separadamente.
 
-1. Planejamento do Banco de Dados.
+1. Criar Banco de Dados.
 2. Criar Modelo de Classes.
 3. Desenvolver Páginas.
 
