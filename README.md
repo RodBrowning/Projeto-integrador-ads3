@@ -45,46 +45,38 @@ Construir protótipos das páginas, inclui layout básico (cores e disposição 
 
 ## Fase 3 - Implementação.
 
-### [Documentação](https://github.com/RodBrowning/Projeto-integrador-ads3/blob/master/Documenta%C3%A7%C3%A3o/doc.md)
+* [Documentação](https://github.com/RodBrowning/Projeto-integrador-ads3/blob/master/Documenta%C3%A7%C3%A3o/doc.md)
 
 ### Atividades
 
+#### Banco de Dados.
+
 1. Criar banco de dados.
-2. Criar modelo de classes.
-3. Desenvolver páginas.
-4. Integrar os módulos.
+* Criar modelo de classes.
+* Desenvolver páginas.
+
+---
+* [Ver registro de atividades do banco de dados](https://github.com/RodBrowning/Projeto-integrador-ads3/blob/master/Documenta%C3%A7%C3%A3o/banco_dados/atividades_banco_dados.md)
+
+#### Desenvolvimento Front-End.
+
+1. Criar critérios de qualidade.
+* 
+
+---
+* [Ver registro de atividades de Front-end](https://github.com/RodBrowning/Projeto-integrador-ads3/blob/master/Documenta%C3%A7%C3%A3o/front_end/atividades_front_end.md)
+
+#### Desenvolvimento back-end.
+
+1. Criar classes e funções.
+* Efetuar testes.
+
+---
+
+* [Ver registro de atividades de Back-end](https://github.com/RodBrowning/Projeto-integrador-ads3/blob/master/Documenta%C3%A7%C3%A3o/back_end/atividades_back_end.md)
 
 
-#### Criar Banco de Dados (4 horas e 30 min)
-
-1. Modelo entidade relacionamento. (2 horas)
-2. Diagrama entidade relacionamento. (1 hora)
-3. Diagrama de classes. (30 minutos)
-4. Construção do banco. (1 hora)
-
-#### Criar Modelo de Classes (5 horas)
-1. Planejar as classes do programa via PHP. (2 horas)
-2. Criar classes. (3 horas)
-
-#### Desenvolver Páginas (18 horas e 10 minutos)
-1. Planejar classes ids e estrutura dos elementos. (1 hora e 30 minutos)
-2. Planejar estilo. (2 horas e 30 minutos)
-3. Definir fontes. (40 minutos)
-4. Planejar imagens. (2 horas)
-5. Planejar animações. (1 hora)
-6. Desenvolver classes ids e estrutura dos elementos. (1 hora)
-7. Desenvolver estilo. (4 horas)
-8. Implantar imagens. (1 hora e 30 minutos)
-9. Desenvolver animações. (4 horas)
-
-#### Integração dos Módulos (3 horas)
-1. Planejar arquivo javascript de funções para integração via AJAX. (2 horas)
-2. Criar js com funções de integração. (1 hora)
-
-#### Executar Integração dos Módulos (3 horas)
-1. Planejar integração total (2 horas)
-1. Integração (1 hora)
-
+* [Ver registro de atividades de Back-end](https://github.com/RodBrowning/Projeto-integrador-ads3/blob/master/Documenta%C3%A7%C3%A3o/atividades_back_end)
 
 ### Etapas de Implementação
 
@@ -95,15 +87,15 @@ Construir protótipos das páginas, inclui layout básico (cores e disposição 
 > As tarefas abaixo deverão ser distribuídas entre os membros da equipe e podem ser desenvolvidas separadamente.
 
 1. Criar Banco de Dados.
-2. Criar Modelo de Classes.
-3. Desenvolver Páginas.
+* Criar Modelo de Classes.
+* Desenvolver Páginas.
 
 #### Integração
 
 > Esta fase só se inicia após todas as etapas de Criação serem finalizadas.
 
 1. Integração dos Módulos.
-2. Executar Integração dos Módulos.
+* Executar Integração dos Módulos.
 
 
 ## Fase 5 - Testes.
