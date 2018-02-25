@@ -1,5 +1,8 @@
 ### FRONT-END
 
+#### Seguir o modelo de layout apresentado ao cliente na fase de validação de requisitos.
+
+
 #### Desenvolver Páginas (18 horas e 10 minutos)
 1. Planejar classes ids e estrutura dos elementos. (1 hora e 30 minutos)
 2. Planejar estilo. (2 horas e 30 minutos)

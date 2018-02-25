@@ -32,7 +32,9 @@
 
 ### Prototipação
 
-Construir protótipos das páginas, inclui layout básico (cores e disposição dos elementos), e todos os requisitos (sem programação) que o sistema terá e exibi-las ao cliente para validação do projeto.
+Construir protótipos das páginas, incluindo layout básico (cores e disposição dos elementos), e todos os requisitos que o sistema terá e exibi-las ao cliente para validação do projeto. Utilizar o editor Photoshop e descrição das animações que o produto final deverá ter.
+Este modelo de apresentação por imagens foi escolhido pelo cliente visando começar o desenvolvimento o quanto antes já que desenvolver imagens é mais rápido do que layouts em HTML e CSS.
+
 
 ### Atividades
 
@@ -41,6 +43,8 @@ Construir protótipos das páginas, inclui layout básico (cores e disposição 
 1. Construir rascunhos.
 2. Criar esboço no Photoshop.
 3. Obter feedback do cliente para iniciar o projeto.
+---
+* [protótipos]()
 
 
 ## Fase 3 - Implementação.
