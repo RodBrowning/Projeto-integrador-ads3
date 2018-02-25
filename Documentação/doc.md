@@ -23,8 +23,17 @@ Programador com domínio pleno em PhpMyAdmin, MySQL, SQL, PHP, AJAX, JavaScript,
 
 O gestor também deverá responder as instruções dos planos previstos no gerenciamento de riscos caso algo saia da rotina.
 
-[Gerenciamento de risco](Gerenciamento)
+[Gerenciamento de risco](https://github.com/RodBrowning/Projeto-integrador-ads3/blob/master/Documenta%C3%A7%C3%A3o/gerenciamento_risco.md)
 
+Suas principais responsabilidades serão: 
+
+* Seguir o cronograma de desenvolvimento.
+* Distribuir atividades impressas entre os funcionários no inicio do expediente.
+* Verificar o andamento das atividades no meio do expediente com objetivo de monitorar o status do desenvolvimento.
+* Registrar relatórios diários sobre o estado das atividades.
+* Registrar as atividades em tabelas semanais com status de kanban, os status devem ter três estados, no prazo, atrasado e urgente.
+* Utilizar uma tabela para cada equipe.
+* Armazenar estas tabelas de status de atividades na pasta Documentação em formato Excel.
 
 #### Front-end
 
@@ -51,6 +60,13 @@ Programador com domínio pleno em PhpMyAdmin, MySQL, SQL e PHP.
 
 (Calendário cronograma)
 
-???(Definir a questão dos testes)???
+### Testes
 
+Testes deverão ser efetuados ao final do desenvolvimento de cada modulo.
+Em caso de falhas, o desenvolvimento do próximo módulo não deverá ser iniciado antes que o anterior esteja funcionado corretamente.
+Deverão ser seguidas as orientações de teste propostas em cada modulo.
 
+### Recomendações Gerais 
+
+Os códigos devem ser bem comentados e sua disposição deve ser de fácil assimilação e interpretação.
+São escritos para serem reutilizáveis. As estruturas contidas nas documentações devem ser seguidas a risca.
