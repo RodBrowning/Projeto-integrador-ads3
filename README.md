@@ -51,6 +51,9 @@ Construir protótipos das páginas, inclui layout básico (cores e disposição 
 
 #### Banco de Dados.
 
+* [Ver critérios de desenvolvimento](https://github.com/RodBrowning/Projeto-integrador-ads3/blob/master/Documenta%C3%A7%C3%A3o/banco_dados/criterios_desenvolvimento.md)
+
+---
 1. Criar banco de dados.
 * Criar modelo de classes.
 * Desenvolver páginas.
@@ -60,22 +63,22 @@ Construir protótipos das páginas, inclui layout básico (cores e disposição 
 
 #### Desenvolvimento Front-End.
 
-1. Criar critérios de qualidade.
-* 
+* [Ver critérios de desenvolvimento](https://github.com/RodBrowning/Projeto-integrador-ads3/blob/master/Documenta%C3%A7%C3%A3o/front_end/criterios_desenvolvimento.md)
+
+---
+1. (Principais atividades.)...
 
 ---
 * [Ver registro de atividades de Front-end](https://github.com/RodBrowning/Projeto-integrador-ads3/blob/master/Documenta%C3%A7%C3%A3o/front_end/atividades_front_end.md)
 
 #### Desenvolvimento back-end.
 
-1. Criar classes e funções.
-* Efetuar testes.
+* [Ver critérios de desenvolvimento](https://github.com/RodBrowning/Projeto-integrador-ads3/blob/master/Documenta%C3%A7%C3%A3o/back_end/criterios_desenvolvimento.md)
 
 ---
+1. (Principais atividades.)...
 
-* [Ver registro de atividades de Back-end](https://github.com/RodBrowning/Projeto-integrador-ads3/blob/master/Documenta%C3%A7%C3%A3o/back_end/atividades_back_end.md)
-
-
+---
 * [Ver registro de atividades de Back-end](https://github.com/RodBrowning/Projeto-integrador-ads3/blob/master/Documenta%C3%A7%C3%A3o/atividades_back_end)
 
 ### Etapas de Implementação
@@ -86,16 +89,21 @@ Construir protótipos das páginas, inclui layout básico (cores e disposição 
 
 > As tarefas abaixo deverão ser distribuídas entre os membros da equipe e podem ser desenvolvidas separadamente.
 
-1. Criar Banco de Dados.
-* Criar Modelo de Classes.
-* Desenvolver Páginas.
+1. Banco de Dados.
+* Back-end.
+* Front-end.
 
 #### Integração
 
-> Esta fase só se inicia após todas as etapas de Criação serem finalizadas.
+> Esta fase só se inicia após todas as etapas de Criação forem finalizadas.
 
-1. Integração dos Módulos.
+* [Ver critérios de desenvolvimento](https://github.com/RodBrowning/Projeto-integrador-ads3/blob/master/Documenta%C3%A7%C3%A3o/back_end/criterios_desenvolvimento.md)
+
+---
+1. Planejar a intergração dos Módulos.
 * Executar Integração dos Módulos.
 
+---
+* [Ver registro de atividades de Integração](https://github.com/RodBrowning/Projeto-integrador-ads3/blob/master/Documenta%C3%A7%C3%A3o/atividades_back_end)
 
 ## Fase 5 - Testes.
