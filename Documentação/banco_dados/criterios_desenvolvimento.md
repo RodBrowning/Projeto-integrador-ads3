@@ -3,6 +3,6 @@
 #### Criar Banco de Dados (4 horas e 30 min)
 
 1. Modelo entidade relacionamento. (2 horas)
-* Diagrama entidade relacionamento. (1 hora)
-* Diagrama de classes. (30 minutos)
-* Construção do banco. (1 hora)
+2. Diagrama entidade relacionamento. (1 hora)
+3. Diagrama de classes. (30 minutos)
+4. Construção do banco. (1 hora)
