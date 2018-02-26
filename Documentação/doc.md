@@ -24,10 +24,6 @@ Programador com domínio pleno e um junior em PhpMyAdmin, MySQL, SQL, PHP, AJAX,
 
 O Pleno também será responsável por gerenciar todo o projeto e para isso será necessário que ele tenha profundo conhecimento das necessidades e expectativas do cliente, para orientar as diferentes partes da equipe de desenvolvimento a fim de minimizar os possíveis conflitos.
 
-O Junior ficara responsavel pelas atividades do programador que faltar sobre a supervisão do programador pleno na gerencia do projeto.
-
-Na falta de um segundo programador, o programador pleno na gerencia do projeto assumira suas atividades.
-
 O gestor também deverá responder as instruções dos planos previstos no gerenciamento de riscos caso algo saia da rotina.
 
 [Gerenciamento de risco](https://github.com/RodBrowning/Projeto-integrador-ads3/blob/master/Documenta%C3%A7%C3%A3o/gerenciamento_risco.md)
