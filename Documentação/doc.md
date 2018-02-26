@@ -21,7 +21,12 @@ Cada um assumirá total responsabilidade sobre sua parte no desenvolvimento segu
 #### Integração e Gerencia do projeto
 
 Programador com domínio pleno e um junior em PhpMyAdmin, MySQL, SQL, PHP, AJAX, JavaScript, HTML e CSS. 
-O pleno também será responsável por gerenciar todo o projeto e para isso será necessário que ele tenha profundo conhecimento das necessidades e expectativas do cliente, para orientar as diferentes partes da equipe de desenvolvimento a fim de minimizar os possíveis conflitos.
+
+O Pleno também será responsável por gerenciar todo o projeto e para isso será necessário que ele tenha profundo conhecimento das necessidades e expectativas do cliente, para orientar as diferentes partes da equipe de desenvolvimento a fim de minimizar os possíveis conflitos.
+
+O Junior ficara responsavel pelas atividades do programador que faltar sobre a supervisão do programador pleno na gerencia do projeto.
+
+Na falta de um segundo programador, o programador pleno na gerencia do projeto assumira suas atividades.
 
 O gestor também deverá responder as instruções dos planos previstos no gerenciamento de riscos caso algo saia da rotina.
 
