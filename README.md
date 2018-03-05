@@ -43,7 +43,7 @@ Este modelo de apresentação por imagens foi escolhido pelo cliente visando com
 1. Construir rascunhos.
 2. Criar esboço no Photoshop.
 3. Obter feedback do cliente para iniciar o projeto.
----
+
 * [protótipos]()
 
 
