@@ -60,7 +60,7 @@ Programador Junior com dominio em PhpMyAdmin, MySQL, SQL, PHP, AJAX, JavaScript,
 
 ### Atividades
 
-1. [Gerenciamento do projeto]()
+1. [Gerenciamento do projeto](https://github.com/RodBrowning/Projeto-integrador-ads3/blob/master/Documenta%C3%A7%C3%A3o/gerenciamento_do_projeto.md)
 1. [Criar banco de dados. (4 horas e 30 min)](https://github.com/RodBrowning/Projeto-integrador-ads3/tree/master/Documenta%C3%A7%C3%A3o/banco_dados)
 2. [Desenvolver Páginas (front-end). (18 horas e 10 minutos)](https://github.com/RodBrowning/Projeto-integrador-ads3/tree/master/Documenta%C3%A7%C3%A3o/front_end)
 3. [Desenvolvimento das Classes (back-end). (5 horas)](https://github.com/RodBrowning/Projeto-integrador-ads3/tree/master/Documenta%C3%A7%C3%A3o/back_end)
