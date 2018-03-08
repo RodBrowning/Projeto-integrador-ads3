@@ -1,3 +1,5 @@
+# Gerenciamento do projeto
+
 O programador pleno será responsável por gerenciar todo o projeto e para isso será necessário que ele tenha profundo conhecimento das necessidades e expectativas do cliente, para orientar as diferentes partes da equipe de desenvolvimento a fim de minimizar os possíveis conflitos.
 
 O gestor deverá responder as instruções dos planos previstos no gerenciamento de riscos caso algo saia da rotina.
