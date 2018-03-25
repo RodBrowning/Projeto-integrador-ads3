@@ -33,7 +33,8 @@
 ### Prototipação
 
 Construir protótipos das páginas, incluindo layout básico (cores e disposição dos elementos), e todos os requisitos que o sistema terá e exibi-las ao cliente para validação do projeto. Utilizar o editor Photoshop e descrição das animações que o produto final deverá ter.
-Este modelo de apresentação por imagens foi escolhido pelo cliente visando começar o desenvolvimento o quanto antes já que desenvolver imagens é mais rápido do que layouts em HTML e CSS.
+Este modelo de apresentação por imagens foi escolhido pelo cliente visando começar o desenvolvimento o quanto antes pois desenvolver imagens é mais rápido do que layouts em HTML e CSS.
+
 
 
 ### Atividades
@@ -43,6 +44,7 @@ Este modelo de apresentação por imagens foi escolhido pelo cliente visando com
 1. Construir rascunhos.
 2. Criar esboço no Photoshop.
 3. Obter feedback do cliente para iniciar o projeto.
+4. O cliente deve ser consultado semanalmente para certificar que suas necessidades estão ssendo atendidas.
 
 * [protótipos]()
 
