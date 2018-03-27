@@ -8,7 +8,8 @@ O gestor deverá responder as instruções dos planos previstos no gerenciamento
 
 Suas principais responsabilidades serão: 
 
-* Utilizar o modelo scrum de desenvolvimento agíl.
+* Utilizar o modelo SCRUM de desenvolvimento agíl.
 * Relizar pequena reunião com funcionários no inicio do expediente para atualização do status de desdenvolvimento do sprint.
 * Seguir o cronograma de desenvolvimento do backlog.
 * Registrar relatórios diários sobre o estado das atividades.
+

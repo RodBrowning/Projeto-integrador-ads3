@@ -46,43 +46,12 @@ Este modelo de apresentação por imagens foi escolhido pelo cliente visando com
 3. Obter feedback do cliente para iniciar o projeto.
 4. O cliente deve ser consultado semanalmente para certificar que suas necessidades estão ssendo atendidas.
 
-* [protótipos]()
+* [protótipos](https://github.com/RodBrowning/Projeto-integrador-ads3/tree/master/prototipos_paginas)
 
 
 ## Fase 3 - Implementação.
 
 * [Documentação](https://github.com/RodBrowning/Projeto-integrador-ads3/blob/master/Documenta%C3%A7%C3%A3o/doc.md)
 
-### Principais Atividades (Criação)
-
-> As tarefas abaixo deverão ser distribuídas entre os membros da equipe e podem ser desenvolvidas 
-separadamente.
-
-#### Banco de Dados.
-
-* [Ver critérios de desenvolvimento](https://github.com/RodBrowning/Projeto-integrador-ads3/blob/master/Documenta%C3%A7%C3%A3o/banco_dados/criterios_desenvolvimento.md)
-
-* [Ver registro de atividades do banco de dados](https://github.com/RodBrowning/Projeto-integrador-ads3/blob/master/Documenta%C3%A7%C3%A3o/banco_dados/atividades_banco_dados.md)
-
-#### Desenvolvimento Front-End.
-
-* [Ver critérios de desenvolvimento](https://github.com/RodBrowning/Projeto-integrador-ads3/blob/master/Documenta%C3%A7%C3%A3o/front_end/criterios_desenvolvimento.md)
-
-* [Ver registro de atividades de Front-end](https://github.com/RodBrowning/Projeto-integrador-ads3/blob/master/Documenta%C3%A7%C3%A3o/front_end/atividades_front_end.md)
-
-#### Desenvolvimento back-end.
-
-* [Ver critérios de desenvolvimento](https://github.com/RodBrowning/Projeto-integrador-ads3/blob/master/Documenta%C3%A7%C3%A3o/back_end/criterios_desenvolvimento.md)
-
-* [Ver registro de atividades de Back-end](https://github.com/RodBrowning/Projeto-integrador-ads3/blob/master/Documenta%C3%A7%C3%A3o/atividades_back_end)
-
-
-### Etapas de Integração
-
-> Esta fase só se inicia após todas as etapas de Criação forem finalizadas.
-
-* [Ver critérios de desenvolvimento](https://github.com/RodBrowning/Projeto-integrador-ads3/blob/master/Documenta%C3%A7%C3%A3o/integracao/criterios_desenvolvimento.md)
-
-* [Ver registro de atividades de Integração](https://github.com/RodBrowning/Projeto-integrador-ads3/blob/master/Documenta%C3%A7%C3%A3o/integracao/atividades_integracao.md)
 
 ## Fase 4 - Testes.

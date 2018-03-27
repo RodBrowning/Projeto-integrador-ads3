@@ -26,7 +26,6 @@ O Pleno também será responsável por gerenciar todo o projeto e para isso ser�
 
 O gestor também deverá responder as instruções dos planos previstos no gerenciamento de riscos caso algo saia da rotina.
 
-[Gerenciamento de risco](https://github.com/RodBrowning/Projeto-integrador-ads3/blob/master/Documenta%C3%A7%C3%A3o/gerenciamento_risco.md)
 
 Suas principais responsabilidades serão: 
 
@@ -55,18 +54,17 @@ Programador com domínio pleno em PhpMyAdmin, MySQL, SQL e PHP.
 Programador Junior com dominio em PhpMyAdmin, MySQL, SQL, PHP, AJAX, JavaScript, HTML e CSS. 
 
 
-## Tempo Estimado em (33 horas e 40 minutos)
+## Tempo Estimado em (45 Dias)
 
 
 ### Atividades
 
 1. [Gerenciamento do projeto](https://github.com/RodBrowning/Projeto-integrador-ads3/blob/master/Documenta%C3%A7%C3%A3o/gerenciamento_do_projeto.md)
-1. [Criar banco de dados. (4 horas e 30 min)](https://github.com/RodBrowning/Projeto-integrador-ads3/tree/master/Documenta%C3%A7%C3%A3o/banco_dados)
-2. [Desenvolver Páginas (front-end). (18 horas e 10 minutos)](https://github.com/RodBrowning/Projeto-integrador-ads3/tree/master/Documenta%C3%A7%C3%A3o/front_end)
-3. [Desenvolvimento das Classes (back-end). (5 horas)](https://github.com/RodBrowning/Projeto-integrador-ads3/tree/master/Documenta%C3%A7%C3%A3o/back_end)
-4. [Criando integração. (6 horas)](https://github.com/RodBrowning/Projeto-integrador-ads3/tree/master/Documenta%C3%A7%C3%A3o/integracao)
+2. [Criar banco de dados.](https://github.com/RodBrowning/Projeto-integrador-ads3/tree/master/Documenta%C3%A7%C3%A3o/banco_dados)
+3. [Desenvolver Páginas (front-end).](https://github.com/RodBrowning/Projeto-integrador-ads3/tree/master/Documenta%C3%A7%C3%A3o/front_end)
+4. [Desenvolvimento das Classes (back-end).](https://github.com/RodBrowning/Projeto-integrador-ads3/tree/master/Documenta%C3%A7%C3%A3o/back_end)
+5. [Criando integração.](https://github.com/RodBrowning/Projeto-integrador-ads3/tree/master/Documenta%C3%A7%C3%A3o/integracao)
 
-(Calendário cronograma)
 
 ### Testes
 
