@@ -23,9 +23,8 @@
 1.	Plataforma online.
 2.	Saber quantas vagas há disponível.
 3.	Saber quais estão ocupadas.
-4.	Possibilidade de alterar a placa no limite de 5min após o check-in.
-5.	Pagamento obrigatório dos primeiros 10 min.
-6.	O funcionário poderá acessar somente aos veículos no pátio e comandos de entrada e saída dos mesmos.
+4.	Possibilidade de alterar a placa e nome em até 5 min após o check-in.
+5.	O funcionário poderá acessar somente aos veículos no pátio e comandos de entrada e saída dos mesmos.
 
 
 ## Fase 2 - Validação dos Requisitos

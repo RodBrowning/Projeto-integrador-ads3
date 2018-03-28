@@ -8,6 +8,7 @@
 2. Html
 3. Css
 4. JavaScript
+5. JQuery
 6. Bootstrap
 7. AJAX
 8. MySQL
@@ -55,18 +56,17 @@ Programador com domínio pleno em PhpMyAdmin, MySQL, SQL e PHP.
 Programador Junior com dominio em PhpMyAdmin, MySQL, SQL, PHP, AJAX, JavaScript, HTML e CSS. 
 
 
-## Tempo Estimado em (33 horas e 40 minutos)
+## Tempo Estimado em (46 dias)
 
 
 ### Atividades
 
 1. [Gerenciamento do projeto](https://github.com/RodBrowning/Projeto-integrador-ads3/blob/master/Documenta%C3%A7%C3%A3o/gerenciamento_do_projeto.md)
-1. [Criar banco de dados. (4 horas e 30 min)](https://github.com/RodBrowning/Projeto-integrador-ads3/tree/master/Documenta%C3%A7%C3%A3o/banco_dados)
-2. [Desenvolver Páginas (front-end). (18 horas e 10 minutos)](https://github.com/RodBrowning/Projeto-integrador-ads3/tree/master/Documenta%C3%A7%C3%A3o/front_end)
-3. [Desenvolvimento das Classes (back-end). (5 horas)](https://github.com/RodBrowning/Projeto-integrador-ads3/tree/master/Documenta%C3%A7%C3%A3o/back_end)
-4. [Criando integração. (6 horas)](https://github.com/RodBrowning/Projeto-integrador-ads3/tree/master/Documenta%C3%A7%C3%A3o/integracao)
+1. [Criar banco de dados. (4 dias)](https://github.com/RodBrowning/Projeto-integrador-ads3/tree/master/Documenta%C3%A7%C3%A3o/banco_dados)
+2. [Desenvolver Páginas (front-end). (2 semanas)](https://github.com/RodBrowning/Projeto-integrador-ads3/tree/master/Documenta%C3%A7%C3%A3o/front_end)
+3. [Desenvolvimento das Classes (back-end). (2 semana)](https://github.com/RodBrowning/Projeto-integrador-ads3/tree/master/Documenta%C3%A7%C3%A3o/back_end)
+4. [Criando integração. (2 Semanas)](https://github.com/RodBrowning/Projeto-integrador-ads3/tree/master/Documenta%C3%A7%C3%A3o/integracao)
 
-(Calendário cronograma)
 
 ### Testes
 
