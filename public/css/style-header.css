@@ -1,0 +1,91 @@
+.logo{
+	margin: 0px;
+	padding: 0px;
+}
+@font-face {
+    font-family: Oswald;
+    src: url(fonts/Oswald-Medium.ttf);
+}
+@font-face{
+    font-family: Raleway;
+    src: url(fonts/Raleway-Medium.ttf);
+}
+
+.right-header{
+	text-align: right;
+	color: white;
+	font-family: Raleway;
+	letter-spacing: 3px;	
+}
+
+.menu-superior li{
+	display: inline;
+	list-style: none;
+	
+}
+
+ul.menu-superior{
+	margin: auto;
+	padding: 0px;
+}
+
+.barra-superior{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#242738+27,3a3851+89,3a3851+89,242738+95 */
+background: #242738; /* Old browsers */
+background: -moz-linear-gradient(top, #242738 27%, #3a3851 89%, #3a3851 89%, #242738 95%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #242738 27%,#3a3851 89%,#3a3851 89%,#242738 95%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #242738 27%,#3a3851 89%,#3a3851 89%,#242738 95%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#242738', endColorstr='#242738',GradientType=0 ); /* IE6-9 */
+}
+
+.nav-bar{
+	background-color: #c5c5c5;
+    line-height: 1.8;
+    box-shadow: 4px 7px 3px 0px #bdbdbd;
+    font-family: Oswald;
+    letter-spacing: 5px;
+}
+
+.active{
+	border-bottom: 3px solid #f7ad1d;
+}
+
+a{
+	color: black;
+}
+
+ul li a:link{
+	padding: 2px 100px;
+	text-decoration: none;
+}
+
+
+
+ul li a:hover{
+	background-color: #b6b5b5;
+    padding-bottom: 5px;
+	color: black;
+}
+
+.inner-right-header{
+    margin: 23px 0;
+}
+
+.right-header-menu-image{
+	width: 20px;
+}
+
+.right-header-menu-button{
+	padding: 1px 8px;
+    background-color: #5f5f5f;
+    border: 1px solid white;
+}
+
+.right-header-menu-button:hover{
+	border: 1px solid #f7ad1d;
+}
+
+/*Deixa as imagens laranjas invisiveis ao carregar a pagina*/
+#config{
+	display: none;
+}
