@@ -1,25 +1,37 @@
-function barradoMenu(id) {
-	// Retira a classe active do link corrente.
+
+function unSetMenuColor(){
+	// Retira a classe active do link corrente no nav bar.
 	var removeClass = document.getElementsByClassName('menu-link');
 	for(let i=0; i<removeClass.length; i++){
-		console.log(removeClass[i].classList.remove('active'));
+		removeClass[i].classList.remove('active');
 	}	
+	// Retira laranja do botão de configuração.
+	var element = document.getElementsByClassName('button-top-menu');
+	for(let i=0; i<element.length; i++){
+		element[i].classList.remove("orange-border");
+	    var elementChild = element[i].firstChild.classList;    
+	    elementChild.remove('pathSvg-orange');
+	    elementChild.add('pathSvg');
+	}
+    
+}
+
+function barraLaranjadoMenu(id) {
+	unSetMenuColor();
 	// Adiciona a classe active no link clicado.
     var element = document.getElementById(id);
     element.classList.toggle("active");
     
 }
 
-
-// Troca as imagens dos icones para laranja quando o mouse esta por cima
-function hideImage(id){
-	let imagem = document.getElementById(id);
-	imagem.firstChild.style.display = 'none';
-	imagem.lastChild.style.display = 'unset';
+function laranjaMenuSuperiorDireito(num){
+	unSetMenuColor();
+	// Deixa o botão de configuração laranja
+	var element = document.getElementsByClassName('button-top-menu');
+    element[num].classList.add("orange-border");
+    var elementChild = element[num].firstChild.classList;
+    elementChild.remove('pathSvg');
+    elementChild.add('pathSvg-orange');
 }
 
-function showImage(id){
-	let imagem = document.getElementById(id);
-	imagem.lastChild.style.display = 'none';
-	imagem.firstChild.style.display = 'unset';
-}
+
