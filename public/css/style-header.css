@@ -18,7 +18,9 @@
 	text-align: right;
 	color: white;
 	font-family: Raleway;
-	letter-spacing: 3px;	
+	letter-spacing: 3px;
+	margin: 0px;
+	padding: 0px;	
 }
 
 .menu-superior li{

@@ -3,8 +3,8 @@
 		<!-- Menu Superior-->
 		<div class="row barra-superior">
 			<div class="container">
-				<div class="logo col-md-3 float-left"><img id="logo" src="imagem/menu-superior/logo.png"></div>
-				<div class="right-header col-md-4 float-right">
+				<div class="logo col-md-6 col-sm-6 float-left"><img id="logo" src="imagem/menu-superior/logo.png"></div>
+				<div class="right-header col-md-6 col-sm-6 float-right">
 					<div class="inner-right-header">Rodrigo Moura
 
 					<!-- Botões -->

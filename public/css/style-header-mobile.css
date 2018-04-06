@@ -1,0 +1,38 @@
+@media only screen and (max-width: 600px) {
+    .logo {
+	    margin: 0px;
+	    padding: 0px;
+	    text-align: center;
+	}
+
+    .inner-right-header {
+    	margin: 13px 0;
+    	text-align: center;
+	}
+
+	ul li a:link {
+	    padding: 0px 20px;
+	    text-decoration: none;
+	    font-size: 13px;
+	}
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+	.container{
+		max-width: 600px;
+	}
+    .logo {
+	    margin: 0px;
+	    padding: 0px;
+	}
+
+    .inner-right-header {
+    	margin: 13px 0;
+	}
+
+	ul li a:link {
+	    padding: 0px 50px;
+	    text-decoration: none;
+	    font-size: 13px;
+	}
+}
