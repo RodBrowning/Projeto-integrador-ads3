@@ -1,4 +1,30 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 379px) {
+	.logo {
+	    margin: 0px;
+	    padding: 0px;
+	    text-align: center;
+	}
+
+    .inner-right-header {
+    	margin: 13px 0;
+    	text-align: center;
+	}
+	
+	.menu-superior li {
+	    margin: 5px 0px;
+	    list-style: none;
+	    display: grid;
+	    text-align: center;
+	}
+	ul li a:link {
+	    padding: 2px 50px;
+	    text-decoration: none;
+	    font-size: 13px;
+	}
+}
+
+
+@media only screen and (min-width: 380px) and (max-width: 600px) {
     .logo {
 	    margin: 0px;
 	    padding: 0px;
@@ -36,3 +62,4 @@
 	    font-size: 13px;
 	}
 }
+
