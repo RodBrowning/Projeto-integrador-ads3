@@ -1,6 +1,6 @@
 ### FRONT-END
 
-#### Atividades pendentes
+#### Atividades
 
 1. Planejar classes ids e estrutura dos elementos. 
 2. Planejar estilo. 
