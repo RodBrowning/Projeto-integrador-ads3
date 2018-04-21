@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style-header.css">
 	<link rel="stylesheet" type="text/css" href="css/style-header-mobile.css">
 	<link rel="stylesheet" type="text/css" href="css/bodyStyle.css">
+	<link rel="stylesheet" type="text/css" href="css/pages-styles/config.css">
 
 </head>
 <body onload="ajaxRequestIndex('lancamento')">
@@ -20,6 +21,7 @@
 			<div class="container">
 				<div class="col-11 marginAuto">
 					<div id="main"  class="mainDiv" >
+						
 					</div>
 				</div>
 			</div>	
@@ -32,6 +34,8 @@
 		
 	<script type="text/javascript" src="js/script-header.js"></script>	
 	<script type="text/javascript" src="js/ajax-function-index.js"></script>
+	<script type="text/javascript" src="js/caixa/caixa.js"></script>
+
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -41,3 +45,5 @@
 
 </body>
 </html>
+
+

@@ -1,125 +1,174 @@
-@font-face {
-    font-family: Oswald;
-    src: url(fonts/Oswald-Medium.ttf);
-}
-body{    
-    font-family: sans-serif;
-    font-stretch: expanded;
-	letter-spacing: 3px;
-}
-.body{
-    min-height: 77vh;
-}
+@font-face 
+    {
+        font-family: Oswald;
+        src: url(fonts/Oswald-Medium.ttf);
+    }
+body
+    {    
+        font-family: sans-serif;
+        font-stretch: expanded;
+    	letter-spacing: 3px;
+    }
+.body
+    {
+        min-height: 77vh;
+    }
 
-.mainDiv{
-	margin-top: 40px;
-	background-color: #f3f0f0;
-	box-shadow: 4px 7px 4px 0px #d1d1d1;
-}
+.mainDiv
+    {
+    	margin-top: 40px;
+    	background-color: #f3f0f0;
+    	box-shadow: 4px 7px 4px 0px #d1d1d1;
+    }
 
 
 /*Estilo para o titulo de cada sessão dentro do main div*/
-.titleDiv{
-    text-align: center;
-    letter-spacing: 6px;    
-    font-weight: bold;
-    font-size: 17px;
-}
+.titleDiv
+    {
+        text-align: center;
+        letter-spacing: 6px;    
+        font-weight: bold;
+        font-size: 17px;
+    }
 
-.titleDiv > hr{
-	border-top: 1px solid rgba(0, 0, 0, 1);
-}	
+.titleDiv > hr , .linhaPreta
+    {
+    	border-top: 1px solid rgba(0, 0, 0, 1);
+    }	
 
 /*Espaços pre definidos para elementos*/
-.padding-2{	
-	padding: 20px 0;
-}
+.padding-2
+    {	
+    	padding: 20px 0;
+    }
 .margin-2{	
 	margin: 20px 0;
 }
-.marginAuto{
-	margin: auto;
-}
+.marginAuto
+    {
+    	margin: auto;
+    }
 
-.table-head{
-	background-color: #717171;
-}
+.table-head
+    {
+    	background-color: #717171;
+    }
 
-
+.table-foot-positivo
+    {
+        background-color: #35ef3b;
+    }
+.table-foot-negativo
+    {
+        background-color: #ef3535;
+    }
 /*Estilo das tabelas*/
-.table-body{
-	background-color: #c6c6c6;
-}
-.table td, .table th, .table thead th{
-    border: 1px solid black;
-}
+.table-body
+    {
+    	background-color: #c6c6c6;
+    }
+.table td, .table th, .table thead th
+    {
+        border: 1px solid black;
+    }
 
-tbody tr:hover{
-    background-color: #748275;
-    color: white;
-}
-tbody tr:active{
-    color: black;
-}
+tbody tr:hover
+    {
+        background-color: #748275;
+        color: white;
+    }
+tbody tr:active
+    {
+        color: black;
+    }
 
 /*Estilo dos botões*/
-.my-btn{    
-    border: 1px solid black;
-    box-shadow: inset 0 0 20px 0px #00000073;
-    padding: 3px 35px;
-    font-size: 12px;
-    letter-spacing: 3px;
-    font-weight: bold;
-}
-.my-btn-danger{
-    background-color: #ef3535;
-}
-.my-btn-danger:hover{
-    background-color: #ff2424;
-}
-.my-btn-danger:active{
-    background-color: #c12626;
-}
+.my-btn
+    {    
+        border: 1px solid black;
+        box-shadow: inset 0 0 20px 0px #00000073;
+        padding: 3px 35px;
+        font-size: 12px;
+        letter-spacing: 3px;
+        font-weight: bold;
+    }
+.my-btn-danger  
+    {
+        background-color: #ef3535;
+    }
+.my-btn-danger:hover
+    {
+        background-color: #ff2424;
+    }
+.my-btn-danger:active
+    {
+        background-color: #c12626;
+    }
 
-.my-btn-success{
-    background-color: #35ef3b;
-}
-.my-btn-success:hover{
+.my-btn-success
+    {
+        background-color: #35ef3b;
+    }
+.my-btn-success:hover
+    {
     background-color: #24ff2b;
-}
-.my-btn-success:active{
-    background-color: #25cc2a;
-}
+    }
+.my-btn-success:active
+    {
+        background-color: #25cc2a;
+    }
 
-.my-btn-serch{    
-    background-color: white;
-    border: 1px solid;
-    padding: 1px 70px;
-}
-.my-btn-serch:hover{    
-    background-color: whitesmoke;
-}
-.my-btn-serch:active{    
-    background-color: #b7b7b7;
-}
+.my-btn-primary
+    {
+        background-color: #196ec6;
+    }
+.my-btn-primary:hover
+    {
+        background-color: #2490ff;
+    }
+.my-btn-primary:active
+    {
+        background-color: #2532cc;
+    }
+
+.my-btn-serch
+    {    
+        background-color: white;
+        border: 1px solid;
+        padding: 1px 70px;
+    }
+.my-btn-serch:hover
+    {    
+        background-color: whitesmoke;
+    }
+.my-btn-serch:active
+    {    
+        background-color: #b7b7b7;
+    }
 
 /*Estilos dos inputs*/
-input[type=text],[type=date]{    
-    border: 1px solid;
-    text-align: center;
-}
+input[type=text],[type=date]
+    {    
+        border: 1px solid;
+        text-align: center;
+    }
 
 /*Para alinhamento responsivo dos inputs*/
-.display-block{
-    display: block;
-}
-.display-inline-block{
-    display: inline-block;
-}
+.display-block
+    {
+        display: block;
+    }
+.display-inline-block
+    {
+        display: inline-block;
+    }
 
 
-footer{
-    color: white;
-    margin-top: 30px;
-    min-height: 50px;
-}
+footer
+    {
+        color: white;
+        margin-top: 30px;
+        min-height: 50px;
+    }
+
+
