@@ -9,38 +9,38 @@
 			<fieldset>
 				<legend>Valores</legend>
 
-				<div class="col-lg-11 marginAuto">				
-					<p class="valores col-lg-5">Primeira Hora: R$<span>10,00</span></p>
-					<p class="valores col-lg-5">Demais Horas: R$<span>5,00</span></p>
+				<div class="info-valores col-lg-12 marginAuto">				
+					<p class="col-lg-5 col-md-12">Primeira Hora: R$<span>10,00</span></p>
+					<p class="col-lg-5 col-md-12">Demais Horas: R$<span>5,00</span></p>
 
-					<p class="valores col-lg-5">Valor Diário: R$<span>10,00</span></p>
-					<p class="valores col-lg-5">Valor Mensal: R$<span>5,00</span></p>
+					<p class="col-lg-5 col-md-12">Valor Diário: R$<span>10,00</span></p>
+					<p class="col-lg-5 col-md-12">Valor Mensal: R$<span>5,00</span></p>
 					<hr class="linhaPreta">					
 				</div>
 
 				<div class="up-date-values col-lg-11 marginAuto">
 					
-					<div class="div-update display-table mb-3">
-						<p class="valores ">Primeira Hora: <input type="number" step="any" id="primeira-hora"></p>
-						<p class="valores ">Demais Horas: <input type="number" id="demais-hora"></p>
-						<div class="valores col-2">
+					<div class="div-update display-block ">
+						<p class="display-inline-block ">Primeira Hora: <input type="number" step="any" id="primeira-hora"></p>
+						<p class="display-inline-block">Demais Horas: <input type="number" id="demais-hora"></p>
+						<div class="display-inline-block">
 							<button class="my-btn my-btn-success">Salvar</button>
 						</div>
 					</div>
 
-					<div>
-						<div class="div-update display-table mb-3">
-							<p class="valores-2 valores display-cell">Valor Diário:</p>	
-							<input class="display-cell" type="number" step="any" id="primeira-hora">
-							<div class="valores col-2">
+					<div class="div-valores-dia-mensal">
+						<div class="display-block">
+							<p class="display-inline-block ">Valor Diário:</p>	
+							<input class="display-inline-block" type="number" step="any">
+							<div class="display-inline-block">
 								<button class="my-btn my-btn-success">Salvar</button>
 							</div>
 						</div>				
 
-						<div  class="div-update display-table mb-3">
-							<p class="valores-2 valores display-cell">Valor Mensal:</p>
-							<input class="display-cell" type="number" step="any" id="primeira-hora">
-							<div class="valores col-2">
+						<div  class="display-block">
+							<p class="display-inline-block">Valor Mensal:</p>
+							<input class="display-inline-block" type="number" step="any">
+							<div class="display-inline-block">
 								<button class="my-btn my-btn-success">Salvar</button>
 							</div>
 						</div>

@@ -1,0 +1,81 @@
+@media only screen and (min-width: 200px) and (max-width: 768px) {
+
+	.info-valores.col-lg-12.marginAuto {
+	    text-align: center;
+	}
+	
+	.up-date-values {
+	    text-align: center;
+	}
+
+	.up-date-values > .div-update > p {
+ 		width: 100%;
+	}
+	
+	.div-valores-dia-mensal {
+	    text-align: center;
+	}
+
+	.div-valores-dia-mensal > .display-block > input {
+	    width: 45%;
+	}
+
+	.div-valores-dia-mensal {
+	    margin-top: 20px ;
+	}
+
+	.div-valores-dia-mensal > div {
+	    margin-top: 15px;
+	}
+	
+	.div-valores-dia-mensal > div > div > button {
+	    margin-top: 16px;
+	    margin-left: unset;
+	}
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1199px) {
+	.info-valores.col-lg-12.marginAuto {
+	    text-align: left;
+	}
+	
+	.up-date-values {
+	    text-align: left;
+	}
+
+	.up-date-values > .div-update > p {
+	    width: 45%;
+	    margin-right: 15px;
+	}
+	
+	.div-valores-dia-mensal {
+	    text-align: left;
+	}
+
+	.div-valores-dia-mensal > .display-block > input {
+	    width: 20%;
+	}
+	.div-valores-dia-mensal {
+	    margin-top: 20px ;
+	}
+
+	.div-valores-dia-mensal > div {
+	    margin-top: 15px;
+	}
+
+	.div-valores-dia-mensal > div > div > button {
+	    margin-top: 16px;
+	    margin-left: 10px;
+	}
+}
+
+@media only screen and (min-width: 200px) and (max-width: 1199px) {
+
+	.up-date-values.col-lg-11.marginAuto, input[type=number]{
+		margin-top: 5px;
+	}
+	.div-valores-dia-mensal > div > p {
+	    margin: 0;
+	}
+}

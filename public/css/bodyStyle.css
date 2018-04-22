@@ -147,7 +147,7 @@ tbody tr:active
     }
 
 /*Estilos dos inputs*/
-input[type=text],[type=date]
+input[type=text],[type=date],[type=number]
     {    
         border: 1px solid;
         text-align: center;

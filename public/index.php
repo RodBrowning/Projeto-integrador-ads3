@@ -9,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style-header-mobile.css">
 	<link rel="stylesheet" type="text/css" href="css/bodyStyle.css">
 	<link rel="stylesheet" type="text/css" href="css/pages-styles/config.css">
+	<link rel="stylesheet" type="text/css" href="css/pages-styles/config-mobile.css">
 
 </head>
 <body onload="ajaxRequestIndex('lancamento')">
