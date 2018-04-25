@@ -1,14 +1,15 @@
+/* Atualização de valores */
 @media only screen and (min-width: 200px) and (max-width: 768px) {
 
 	.info-valores.col-lg-12.marginAuto {
 	    text-align: center;
 	}
 	
-	.up-date-values {
+	.form-div {
 	    text-align: center;
 	}
 
-	.up-date-values > .div-update > p {
+	.form-div > .div-update > p {
  		width: 100%;
 	}
 	
@@ -35,16 +36,25 @@
 
 }
 
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+
+	.div-update > p > input {
+	    width: 80%;
+	}
+
+}
+
+
 @media only screen and (min-width: 769px) and (max-width: 1199px) {
 	.info-valores.col-lg-12.marginAuto {
-	    text-align: left;
+	    text-align: center;
 	}
 	
-	.up-date-values {
+	.form-div {
 	    text-align: left;
 	}
 
-	.up-date-values > .div-update > p {
+	.form-div > .div-update > p {
 	    width: 45%;
 	    margin-right: 15px;
 	}
@@ -60,10 +70,6 @@
 	    margin-top: 20px ;
 	}
 
-	.div-valores-dia-mensal > div {
-	    margin-top: 15px;
-	}
-
 	.div-valores-dia-mensal > div > div > button {
 	    margin-top: 16px;
 	    margin-left: 10px;
@@ -72,10 +78,126 @@
 
 @media only screen and (min-width: 200px) and (max-width: 1199px) {
 
-	.up-date-values.col-lg-11.marginAuto, input[type=number]{
+	.form-div.col-lg-11.marginAuto, input[type=number]{
 		margin-top: 5px;
 	}
 	.div-valores-dia-mensal > div > p {
 	    margin: 0;
+	}
+}
+
+
+/* Cadastro de funcionario */
+@media only screen and (min-width: 200px) and (max-width: 768px) {
+
+	.form-cad-func{
+	    font-size: 15px;
+	    margin: 28px auto;
+	    text-align:  center;
+	}
+
+	.input-name-func{
+	    width: 84%;
+	}
+
+	.width-label-1{
+	    width: 100px;
+	    text-align: unset;
+	}
+	.width-label-2{
+	    width: 133px;
+	    text-align: unset;
+	    margin-top:  28px;
+	}
+	.width-input-1{
+	    width: 84%;
+	    float: unset;
+	}
+	.width-input-2{
+	    width: 84%;
+	}
+	select.width-select {
+	    border: 1px solid;
+	    text-align: center;
+	    height: 25px;
+	    width: 84%;
+	    text-align-last: right;
+	    padding-right: 15%;
+	}
+	.button-cadastro-func{
+	    margin-left: 0;
+	}
+}
+
+@media only screen and (min-width: 375px) and (max-width: 425px) {
+
+	
+	select.width-select {
+	    
+	    padding-right: 25%;
+	}
+	
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+
+	
+	select.width-select {
+	    
+	    padding-right: 32%;
+	}
+
+
+	
+}
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+		
+	.input-name-func{
+	    width: 77%;
+	}
+
+	select.width-select {
+		width: 20%;
+	    padding-right: unset;
+	}
+
+	.width-input-1 {
+    	width: 19.5%;
+    	float: right;
+	}
+	.width-input-2 {
+	    width: 23%;
+	}
+	
+	.button-cadastro-func {
+	    margin-left: 23%;
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.button-ajuste-cobranca{
+		margin-left: 25%;
+	}
+	.input-name-func{
+	    width: 80%;
+	}
+	.width-label-2{
+	    width: 123px;
+	    text-align: right;
+	}
+	.width-input-1{
+	    width: 22.5%;    
+	     float: right;
+	}
+	.width-input-2{
+	    width: 31%;
+	}
+	select.width-select {
+	    width: 22.5%;
+    	padding-right: 4%;
+	}
+	.button-cadastro-func{
+	    margin-left: 20%;
 	}
 }

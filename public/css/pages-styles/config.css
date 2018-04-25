@@ -22,11 +22,11 @@ fieldset {
     border: 1px solid;
 }
 
-.up-date-values{
+.form-div{
     font-size: 15px;    
      margin: 28px auto;
 }
-.up-date-values > .div-update > p{
+.form-div > .div-update > p{
     width: 40%;
 }
 
@@ -40,4 +40,41 @@ fieldset {
 
 .div-valores-dia-mensal > div > div > button{
     margin-left: 10px;
+}
+
+
+.form-cad-func{
+    font-size: 15px;    
+     margin: 28px auto;
+}
+
+.input-name-func{
+    width: 84%;
+}
+
+.width-label-1{
+    width: 100px;
+    text-align: right;
+}
+.width-label-2{
+    width: 133px;
+    text-align: right;
+}
+.width-input-1{
+    width: 29.5%;    
+     float: right;
+}
+.width-input-2{
+    width: 31%;
+}
+select.width-select {
+    border: 1px solid;
+    text-align: center;
+    height: 25px;
+    width: 29%;
+    text-align-last: right;
+    padding-right: 9%;
+}
+.button-cadastro-func{
+    margin-left: 16%;
 }
