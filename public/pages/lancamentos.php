@@ -6,7 +6,7 @@
 	</div>
 
 	<div class="col-10 marginAuto">
-		<button class="my-btn my-btn-danger margin-2">NOVA ENTRADA</button>	
+		<button class="my-btn my-btn-danger margin-2" onclick="showPopUp('entrada')">NOVA ENTRADA</button>	
 	</div>
 	<div class="col-10 marginAuto">
 		<table class="table table-sm table-responsive-lg">
@@ -27,7 +27,7 @@
 		      		<td>Otavio</td>
 		      		<td>20/02/2019</td>
 		      		<td>Jair</td>
-		      		<td class="text-center"><button class="my-btn my-btn-primary">Sair</button></td>
+		      		<td class="text-center"><button class="my-btn my-btn-primary"  onclick="showPopUp('saida')">Sair</button></td>
 		    	</tr>
 		    	<tr>
 		      		<th scope="row">2</th>
@@ -35,7 +35,7 @@
 		      		<td>Bernardo Faria Neto</td>
 		      		<td>20/02/2019</td>
 		      		<td>Jair</td>
-		      		<td class="text-center"><button class="my-btn my-btn-primary">Sair</button></td>
+		      		<td class="text-center"><button class="my-btn my-btn-primary" onclick="showPopUp('saida')">Sair</button></td>
 		    	</tr>
 		    	<tr>
 		      		<th scope="row">3</th>
@@ -43,7 +43,7 @@
 		      		<td>Mauricio Guerra Silva</td>
 		      		<td>20/02/2019</td>
 		      		<td>Jair</td>
-		      		<td class="text-center"><button class="my-btn my-btn-primary">Sair</button></td>
+		      		<td class="text-center"><button class="my-btn my-btn-primary" onclick="showPopUp('saida')">Sair</button></td>
 		    	</tr>
 		  	</tbody>
 		</table>

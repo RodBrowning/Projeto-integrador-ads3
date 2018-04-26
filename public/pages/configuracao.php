@@ -24,7 +24,7 @@
 						<p class="display-inline-block ">Primeira Hora: <input type="number" step="any" id="primeira-hora"></p>
 						<p class="display-inline-block">Demais Horas: <input type="number" id="demais-hora"></p>
 						<div class="button-ajuste-cobranca display-inline-block">
-							<button class=" my-btn my-btn-success">Salvar</button>
+							<button class=" my-btn my-btn-success"  onclick="showPopUp('valor-horas')">Salvar</button>
 						</div>
 					</div>
 
@@ -33,7 +33,7 @@
 							<p class="display-inline-block ">Valor Diário:</p>	
 							<input class="display-inline-block" type="number" step="any">
 							<div class="display-inline-block">
-								<button class="my-btn my-btn-success">Salvar</button>
+								<button class="my-btn my-btn-success" onclick="showPopUp('valor-diario')">Salvar</button>
 							</div>
 						</div>				
 
@@ -41,7 +41,7 @@
 							<p class="display-inline-block">Valor Mensal:</p>
 							<input class="display-inline-block" type="number" step="any">
 							<div class="display-inline-block">
-								<button class="my-btn my-btn-success">Salvar</button>
+								<button class="my-btn my-btn-success" onclick="showPopUp('valor-mensal')">Salvar</button>
 							</div>
 						</div>
 					</div>
@@ -88,7 +88,7 @@
 					<div class="form-cad-func col-lg-10 marginAuto">					
 						<div class="display-block">
 							<div class="button-cadastro-func display-inline-block">
-								<button class="my-btn my-btn-success">Salvar</button>
+								<button class="my-btn my-btn-success" onclick="showPopUp('salvar')">Salvar</button>
 							</div>
 						</div>
 					</div>
@@ -122,7 +122,7 @@
 		      		<td>333.777.485-99</td>
 		      		<td>02/03/2018</td>
 		      		<td>blablabla@gmail.com</td>
-		      		<td class="text-center"><button class="my-btn my-btn-primary">Desativar</button></td>
+		      		<td class="text-center"><button class="my-btn my-btn-primary" onclick="showPopUp('desativar')">Desativar</button></td>
 		    	</tr>
 		    	<tr>
 		      		<th scope="row">2</th>
@@ -130,7 +130,7 @@
 		     		<td>333.777.485-99</td>
 		      		<td>02/03/2018</td>
 		      		<td>blablabla@gmail.com</td>
-		     		<td class="text-center"><button class="my-btn my-btn-primary">Desativar</button></td>
+		     		<td class="text-center"><button class="my-btn my-btn-primary" onclick="showPopUp('desativar')">Desativar</button></td>
 		    	</tr>
 		    	<tr>
 		      		<th scope="row">3</th>
@@ -138,7 +138,7 @@
 		      		<td>333.777.485-99</td>
 		      		<td>02/03/2018</td>
 		      		<td>blablabla@gmail.com</td>
-		      		<td class="text-center"><button class="my-btn my-btn-primary">Desativar</button></td>
+		      		<td class="text-center"><button class="my-btn my-btn-primary" onclick="showPopUp('desativar')">Desativar</button></td>
 		    	</tr>
 		  	</tbody>
 		</table>
@@ -169,7 +169,7 @@
 		      		<td>333.777.485-99</td>
 		      		<td>02/03/2018</td>
 		      		<td>blablabla@gmail.com</td>
-		      		<td class="text-center"><button class="my-btn my-btn-success">Ativar</button></td>
+		      		<td class="text-center"><button class="my-btn my-btn-success" onclick="showPopUp('ativar')">Ativar</button></td>
 		    	</tr>
 		    	<tr>
 		      		<th scope="row">2</th>
@@ -177,7 +177,7 @@
 		     		<td>333.777.485-99</td>
 		      		<td>02/03/2018</td>
 		      		<td>blablabla@gmail.com</td>
-		     		<td class="text-center"><button class="my-btn my-btn-success">Ativar</button></td>
+		     		<td class="text-center"><button class="my-btn my-btn-success" onclick="showPopUp('ativar')">Ativar</button></td>
 		    	</tr>
 		    	<tr>
 		      		<th scope="row">3</th>
@@ -185,7 +185,7 @@
 		      		<td>333.777.485-99</td>
 		      		<td>02/03/2018</td>
 		      		<td>blablabla@gmail.com</td>
-		      		<td class="text-center"><button class="my-btn my-btn-success">Ativar</button></td>
+		      		<td class="text-center"><button class="my-btn my-btn-success" onclick="showPopUp('ativar')">Ativar</button></td>
 		    	</tr>
 		  	</tbody>
 		</table>
