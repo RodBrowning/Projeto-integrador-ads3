@@ -15,7 +15,7 @@
 		<hr>		
 	</div>
 	<div class="col-10 marginAuto mt-4">
-		<table class="table table-sm table-responsive-lg">
+		<table class="table table-sm table-responsive-xl">
 		    <thead>
 		    	<tr class="table-head">
 		       		<th>#</th>

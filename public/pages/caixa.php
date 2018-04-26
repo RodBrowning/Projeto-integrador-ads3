@@ -5,7 +5,7 @@
 		<hr>		
 	</div>
 
-	<div class="col-10 marginAuto">
+	<div class="col-10 marginAuto btn-caixa">
 		<button class="my-btn my-btn-danger margin-2">DEBITO</button>	
 		<button class="my-btn my-btn-success margin-2">CREDITO</button>
 	</div>

@@ -4,12 +4,18 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Pagina de lançamentos</title>
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 	<link rel="stylesheet" type="text/css" href="css/style-header.css">
 	<link rel="stylesheet" type="text/css" href="css/style-header-mobile.css">
+
 	<link rel="stylesheet" type="text/css" href="css/bodyStyle.css">
-	<link rel="stylesheet" type="text/css" href="css/pages-styles/config.css">
-	<link rel="stylesheet" type="text/css" href="css/pages-styles/config-mobile.css">
+
+	<link rel="stylesheet" type="text/css" href="css/pages-styles/style-caixa-mobile.css">
+
+	<link rel="stylesheet" type="text/css" href="css/pages-styles/style-config.css">
+	<link rel="stylesheet" type="text/css" href="css/pages-styles/style-config-mobile.css">
 
 </head>
 <body onload="ajaxRequestIndex('lancamento')">

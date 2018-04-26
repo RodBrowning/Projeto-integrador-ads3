@@ -85,7 +85,7 @@ select.width-select {
 }
 
 
-
-.table td, th{
+/* Tabelas */
+.table td, .table thead th{
     vertical-align: middle;
 }
