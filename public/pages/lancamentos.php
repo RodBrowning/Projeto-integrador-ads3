@@ -27,7 +27,7 @@
 		      		<td>Otavio</td>
 		      		<td>20/02/2019</td>
 		      		<td>Jair</td>
-		      		<td><button class="my-btn my-btn-primary">Sair</button></td>
+		      		<td class="text-center"><button class="my-btn my-btn-primary">Sair</button></td>
 		    	</tr>
 		    	<tr>
 		      		<th scope="row">2</th>
@@ -35,7 +35,7 @@
 		      		<td>Bernardo Faria Neto</td>
 		      		<td>20/02/2019</td>
 		      		<td>Jair</td>
-		      		<td><button class="my-btn my-btn-primary">Sair</button></td>
+		      		<td class="text-center"><button class="my-btn my-btn-primary">Sair</button></td>
 		    	</tr>
 		    	<tr>
 		      		<th scope="row">3</th>
@@ -43,7 +43,7 @@
 		      		<td>Mauricio Guerra Silva</td>
 		      		<td>20/02/2019</td>
 		      		<td>Jair</td>
-		      		<td><button class="my-btn my-btn-primary">Sair</button></td>
+		      		<td class="text-center"><button class="my-btn my-btn-primary">Sair</button></td>
 		    	</tr>
 		  	</tbody>
 		</table>

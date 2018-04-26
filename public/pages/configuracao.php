@@ -1,6 +1,6 @@
 <?php echo $_REQUEST['page']?>
 <div class="row padding-2">
-	<div class="col-lg-8 col-md-9 titleDiv marginAuto">
+	<div class="col-lg-8 col-9 titleDiv marginAuto">
 		<p>Configurações</span></p>
 		<hr>
 	</div>
@@ -9,7 +9,7 @@
 			<fieldset>
 				<legend>Valores</legend>
 
-				<div class="info-valores col-lg-12 marginAuto">				
+				<div class="info-valores col-lg-12 marginAuto mt-2">				
 					<p class="col-lg-5 col-md-12">Primeira Hora: R$<span>10,00</span></p>
 					<p class="col-lg-5 col-md-12">Demais Horas: R$<span>5,00</span></p>
 
@@ -52,119 +52,140 @@
 		
 	</div>
 
-		<div class="col-lg-8 col-md-9 titleDiv marginAuto mt-4">
+		<div class="col-lg-8 col-9 titleDiv marginAuto mt-4">
 			<p>Cadastro de funcionários</span></p>
 			<hr>
 		</div>	
-		<div class="col-10 marginAuto mb-4">
+		<div class="col-10 marginAuto">
 			<fieldset class="col-md-12">
 				<legend ">Cadastrar</legend>
-				<div class="form-cad-func col-lg-10 text-center marginAuto">					
-					<div class="display-block">
-						<label class="width-label-1">Nome:</label><input class="input-name-func" type="text" id="primeira-hora">
+				<div class="form-div mt-0">
+					<div class="form-cad-func col-lg-10 text-center marginAuto">					
+						<div class="display-block">
+							<label class="width-label-1">Nome:</label><input class="input-name-func" type="text" id="primeira-hora">
+						</div>
 					</div>
-				</div>
-				<div class="form-cad-func col-lg-10 marginAuto">					
-					<div class="display-block">
-						<label class="display-inline-block width-label-1">CFP:</label><input class="width-input-2" type="text" id="primeira-hora">
-					
-						<label class="display-inline-block width-label-2">Tipo acesso:</label>
-							<select class="width-select">
-								<option value="" selected disabled hidden>Select</option>
-								<option value="volvo">Volvo</option>
-							  	<option value="saab">Saab</option>
-								<option value="mercedes">Mercedes</option>
-							  	<option value="audi">Audi</option>
-							</select>
+					<div class="form-cad-func col-lg-10 marginAuto">					
+						<div class="display-block">
+							<label class="display-inline-block width-label-1">CFP:</label><input class="width-input-2" type="text" id="primeira-hora">
+						
+							<label class="display-inline-block width-label-2">Tipo acesso:</label>
+								<select class="width-select">
+									<option value="" selected disabled hidden>Select</option>
+									<option value="volvo">Volvo</option>
+								  	<option value="saab">Saab</option>
+									<option value="mercedes">Mercedes</option>
+								  	<option value="audi">Audi</option>
+								</select>
+						</div>
 					</div>
-				</div>
-				<div class="form-cad-func col-lg-10 marginAuto">					
-					<div class="display-block">
-						<label class="width-label-1">E-Mail:</label><input class="width-input-2" type="text">
-						<label class="width-label-2">Senha:</label><input class="width-input-1" type="text">
+					<div class="form-cad-func col-lg-10 marginAuto">					
+						<div class="display-block">
+							<label class="width-label-1">E-Mail:</label><input class="width-input-2" type="text">
+							<label class="width-label-2">Senha:</label><input class="width-input-1" type="text">
+						</div>
 					</div>
-				</div>
-				<div class="form-cad-func col-lg-10 marginAuto">					
-					<div class="display-block">
-						<div class="button-cadastro-func display-inline-block">
-							<button class="my-btn my-btn-success">Salvar</button>
+					<div class="form-cad-func col-lg-10 marginAuto">					
+						<div class="display-block">
+							<div class="button-cadastro-func display-inline-block">
+								<button class="my-btn my-btn-success">Salvar</button>
+							</div>
 						</div>
 					</div>
 				</div>
 			</fieldset>
 		</div>
-		</div>
-	
-	<div class="col-lg-8 col-md-9 titleDiv marginAuto mt-4">
+	</div>	
+</div>
+
+<div class="row padding-2">
+	<div class="col-lg-8 col-9 titleDiv marginAuto">
 		<p>Funcionários ativos</span></p>
 		<hr>		
 	</div>
 	<div class="col-10 marginAuto">
-		<table class="table table-sm table-responsive-lg">
+		<table class="table table-sm table-responsive-xl">
 		    <thead>
 		    	<tr class="table-head">
 		       		<th>#</th>
 		     		<th>Nome</th>
-		     		<th>Sobrenome</th>
+		     		<th>CPF</th>
 		      		<th>Data Admissão</th>
+		      		<th>E-Mail</th>
+		      		<th></th>
 		    	</tr>
 		  	</thead>
 		  	<tbody class="table-body">
 		    	<tr>
 		      		<th scope="row">1</th>
 		      		<td>Mark</td>
-		      		<td>Otto</td>
-		      		<td>@smo</td>
+		      		<td>333.777.485-99</td>
+		      		<td>02/03/2018</td>
+		      		<td>blablabla@gmail.com</td>
+		      		<td class="text-center"><button class="my-btn my-btn-primary">Desativar</button></td>
 		    	</tr>
 		    	<tr>
 		      		<th scope="row">2</th>
 		     		<td>Jacob</td>
-		     		<td>Thornton</td>
-		     		<td>@fat</td>
+		     		<td>333.777.485-99</td>
+		      		<td>02/03/2018</td>
+		      		<td>blablabla@gmail.com</td>
+		     		<td class="text-center"><button class="my-btn my-btn-primary">Desativar</button></td>
 		    	</tr>
 		    	<tr>
 		      		<th scope="row">3</th>
 		      		<td>@fat</td>
-		      		<td>Larry the Bird</td>
-		      		<td>@twitter</td>
+		      		<td>333.777.485-99</td>
+		      		<td>02/03/2018</td>
+		      		<td>blablabla@gmail.com</td>
+		      		<td class="text-center"><button class="my-btn my-btn-primary">Desativar</button></td>
 		    	</tr>
 		  	</tbody>
 		</table>
 	</div>
 </div>
+
 <div class="row padding-2">
-	<div class="col-lg-8 col-md-9 titleDiv marginAuto">
+	<div class="col-lg-8 col-9 titleDiv marginAuto">
 		<p>Funcionários inativos</p>
 		<hr>		
 	</div>
 	<div class="col-10 marginAuto">
-		<table class="table table-sm table-responsive-sm">
+		<table class="table table-sm table-responsive-xl">
 		    <thead>
 		    	<tr class="table-head">
 		       		<th>#</th>
 		     		<th>Nome</th>
-		     		<th>Sobrenome</th>
-		      		<th>Data Demissão</th>
+		     		<th>CPF</th>
+		      		<th>Data Admissão</th>
+		      		<th>E-Mail</th>
+		      		<th></th>
 		    	</tr>
 		  	</thead>
 		  	<tbody class="table-body">
 		    	<tr>
 		      		<th scope="row">1</th>
 		      		<td>Mark</td>
-		      		<td>Otto</td>
-		      		<td>@mdo</td>
+		      		<td>333.777.485-99</td>
+		      		<td>02/03/2018</td>
+		      		<td>blablabla@gmail.com</td>
+		      		<td class="text-center"><button class="my-btn my-btn-success">Ativar</button></td>
 		    	</tr>
 		    	<tr>
 		      		<th scope="row">2</th>
 		     		<td>Jacob</td>
-		     		<td>Thornton</td>
-		     		<td>@fat</td>
+		     		<td>333.777.485-99</td>
+		      		<td>02/03/2018</td>
+		      		<td>blablabla@gmail.com</td>
+		     		<td class="text-center"><button class="my-btn my-btn-success">Ativar</button></td>
 		    	</tr>
 		    	<tr>
 		      		<th scope="row">3</th>
 		      		<td>@fat</td>
-		      		<td>Larry the Bird</td>
-		      		<td>@twitter</td>
+		      		<td>333.777.485-99</td>
+		      		<td>02/03/2018</td>
+		      		<td>blablabla@gmail.com</td>
+		      		<td class="text-center"><button class="my-btn my-btn-success">Ativar</button></td>
 		    	</tr>
 		  	</tbody>
 		</table>

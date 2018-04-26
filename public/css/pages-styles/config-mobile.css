@@ -46,6 +46,10 @@
 
 
 @media only screen and (min-width: 769px) and (max-width: 1199px) {
+	.info-valores{
+	    padding: 0 0;
+	}
+
 	.info-valores.col-lg-12.marginAuto {
 	    text-align: center;
 	}
@@ -131,24 +135,16 @@
 
 @media only screen and (min-width: 375px) and (max-width: 425px) {
 
-	
 	select.width-select {
-	    
 	    padding-right: 25%;
 	}
-	
 }
 
 @media only screen and (min-width: 426px) and (max-width: 768px) {
 
-	
 	select.width-select {
-	    
 	    padding-right: 32%;
 	}
-
-
-	
 }
 
 @media only screen and (min-width: 769px) and (max-width: 991px) {
@@ -188,7 +184,7 @@
 	}
 	.width-input-1{
 	    width: 22.5%;    
-	     float: right;
+	    float: right;
 	}
 	.width-input-2{
 	    width: 31%;

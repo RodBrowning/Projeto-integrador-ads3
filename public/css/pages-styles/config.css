@@ -1,4 +1,6 @@
 /*Cofig Page*/
+
+/* Atualização de valores */
 legend {
     width: auto;    
     margin-left: 20px;
@@ -12,6 +14,9 @@ fieldset {
     text-align: left; 
 }
 
+.info-valores{
+    padding: 0 4%;
+}
 
 .info-valores > p{
     display: inline-block;
@@ -42,10 +47,10 @@ fieldset {
     margin-left: 10px;
 }
 
-
+/* Cadastro de funcionarios */
 .form-cad-func{
     font-size: 15px;    
-     margin: 28px auto;
+     margin: 10px auto;
 }
 
 .input-name-func{
@@ -62,7 +67,7 @@ fieldset {
 }
 .width-input-1{
     width: 29.5%;    
-     float: right;
+    float: right;
 }
 .width-input-2{
     width: 31%;
@@ -77,4 +82,10 @@ select.width-select {
 }
 .button-cadastro-func{
     margin-left: 16%;
+}
+
+
+
+.table td, th{
+    vertical-align: middle;
 }
