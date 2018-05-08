@@ -62,33 +62,36 @@
 				<div class="form-div mt-0">
 					<div class="form-cad-func col-lg-10 text-center marginAuto">					
 						<div class="display-block">
-							<label class="width-label-1">Nome:</label><input class="input-name-func" type="text" id="primeira-hora">
+							<label class="width-label-1">Nome:</label><input class="input-name-func" type="text" id="nome-func">
 						</div>
 					</div>
 					<div class="form-cad-func col-lg-10 marginAuto">					
 						<div class="display-block">
-							<label class="display-inline-block width-label-1">CFP:</label><input class="width-input-2" type="text" id="primeira-hora">
+							<label class="display-inline-block width-label-1">CFP:</label><input class="width-input-2" type="text" pattern="\d*" maxlength="14" id="CPF" onkeypress="formatar('###.###.###-##',this)">
 						
 							<label class="display-inline-block width-label-2">Tipo acesso:</label>
-								<select class="width-select">
+								<select class="width-select" id="select">
 									<option value="" selected disabled hidden>Select</option>
-									<option value="volvo">Volvo</option>
-								  	<option value="saab">Saab</option>
-									<option value="mercedes">Mercedes</option>
-								  	<option value="audi">Audi</option>
+									<option value="Administrativo">Administrativo</option>
+								  	<option value="Operacional">Operacional</option>
 								</select>
 						</div>
 					</div>
 					<div class="form-cad-func col-lg-10 marginAuto">					
 						<div class="display-block">
-							<label class="width-label-1">E-Mail:</label><input class="width-input-2" type="text">
-							<label class="width-label-2">Senha:</label><input class="width-input-1" type="text">
+							<label class="width-label-1">E-Mail:</label><input class="width-input-2" type="email" id="email">
+							<label class="width-label-2">Senha:</label><input class="width-input-1" type="password" maxlength="20" id="senha">							
 						</div>
+						
 					</div>
+					<div class="form-cad-func col-lg-10 marginAuto">	
+							<label class="width-label-3">Confirmar Senha:</label><input class="width-input-1" type="password" maxlength="20" id="senhaConfirm">
+					</div>
+					
 					<div class="form-cad-func col-lg-10 marginAuto">					
 						<div class="display-block">
 							<div class="button-cadastro-func display-inline-block">
-								<button class="my-btn my-btn-success" onclick="showPopUp('salvar')">Salvar</button>
+								<button class="my-btn my-btn-success" onclick="validarNovoFuncionario()">Salvar</button>
 							</div>
 						</div>
 					</div>

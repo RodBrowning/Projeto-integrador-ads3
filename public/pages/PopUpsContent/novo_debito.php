@@ -3,14 +3,12 @@
 <div class="col-md-11 marginAuto mt-3 mb-4">
 	<fieldset>
 		<legend>Novo Débito</legend>
-			<form>
-				<div class="col-md-11 marginAuto divLancamento">
-					<div class="display-block">
-						<p class="display-inline-block">Valor do débito:</p>
-						<input class="display-inline-block" type="number" id="valorDebito">
-					</div>					
-				</div>
-			</form>
+			<div class="col-md-11 marginAuto divLancamento">
+				<div class="display-block">
+					<p class="display-inline-block">Valor do débito:</p>
+					<input class="display-inline-block" onkeyup="ngModelCaixa(id)" type="number" id="valorDebito">
+				</div>					
+			</div>				
 			<hr class="linhaPreta">
 			<div class="col-md-11 marginAuto divLancamento marginAuto">
 				<div>
@@ -19,7 +17,7 @@
 				</div>
 				<div>
 					<p class="display-inline-block">Valor do débito:</p>
-					<p class="display-inline-block">R$ 500,00</p>
+					<p class="display-inline-block">R$ <span id="showValue"></span></p>
 				</div>
 				<div>
 					<p class="display-inline-block">Data:</p>

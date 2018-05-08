@@ -64,6 +64,11 @@ fieldset {
     width: 133px;
     text-align: right;
 }
+.width-label-3{    
+    text-align: right;
+    width: 69.5%;
+}
+
 .width-input-1{
     width: 29.5%;    
     float: right;
@@ -71,6 +76,8 @@ fieldset {
 .width-input-2{
     width: 31%;
 }
+
+
 select.width-select {
     border: 1px solid;
     text-align: center;

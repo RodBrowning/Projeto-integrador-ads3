@@ -7,7 +7,7 @@
 				<div class="col-md-11 marginAuto divLancamento">
 					<div class="display-block">
 						<p class="display-inline-block">Valor do crédito:</p>
-						<input class="display-inline-block" type="number" id="valorCredito">
+						<input class="display-inline-block" onkeyup="ngModelCaixa(id)" type="number" id="valorCredito">
 					</div>					
 				</div>
 			</form>
@@ -19,7 +19,7 @@
 				</div>
 				<div>
 					<p class="display-inline-block">Valor do crédito:</p>
-					<p class="display-inline-block">R$ 500,00</p>
+					<p class="display-inline-block">R$ <span id="showValue"></span></p>
 				</div>
 				<div>
 					<p class="display-inline-block">Data:</p>
@@ -34,4 +34,5 @@
 				
 			</div>
 	</fieldset>
+	
 </div>

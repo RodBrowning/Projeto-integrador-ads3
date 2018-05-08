@@ -88,6 +88,7 @@
 	.div-valores-dia-mensal > div > p {
 	    margin: 0;
 	}
+
 }
 
 
@@ -112,6 +113,10 @@
 	    width: 133px;
 	    text-align: unset;
 	    margin-top:  28px;
+	}
+	.width-label-3 {
+		width: unset;
+		text-align: center;
 	}
 	.width-input-1{
 	    width: 84%;
@@ -157,6 +162,10 @@
 		width: 20%;
 	    padding-right: unset;
 	}
+	.width-label-3 {		
+      	text-align: right;
+	    width: 78%;
+	}
 
 	.width-input-1 {
     	width: 19.5%;
@@ -180,6 +189,10 @@
 	}
 	.width-label-2{
 	    width: 123px;
+	    text-align: right;
+	}
+	.width-label-3{
+      	width: 76%;;
 	    text-align: right;
 	}
 	.width-input-1{

@@ -19,6 +19,10 @@
 							$entrada = '../pages/PopUpsContent/novo_credito.php';
 							header("location:$entrada");							
 						break;
+					case 'novo-func':
+							$entrada = '../pages/PopUpsContent/novo_funcionario.php?args='.$_REQUEST['args'];
+							header("location:$entrada");							
+						break;
 				}
 			
 

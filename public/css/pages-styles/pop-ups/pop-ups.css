@@ -9,9 +9,9 @@
 .pop-up-box{
     background-color: white;
     width: 50%;
-    min-height: 300px;
+    min-height: 100px;
     left: 25%;
-    top: 20%;
+    top: 15%;
     position: fixed;
     z-index: 2;
     font-size: 13px;
@@ -27,6 +27,15 @@
 
 .divLancamento > div > #motorista{
     width: 45.5%;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 425px) {
+
+    .pop-up-box{
+        width: 85%;
+        position: absolute;
+        left: 8%;
+    }
 }
 
 

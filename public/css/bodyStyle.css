@@ -148,7 +148,7 @@ tbody tr:active
     }
 
 /*Estilos dos inputs*/
-input[type=text],[type=date],[type=number]
+input[type=text],[type=date],[type=number],[type=password],[type=email]
     {    
         border: 1px solid;
         text-align: center;

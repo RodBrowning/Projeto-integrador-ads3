@@ -7,11 +7,11 @@
 				<div class="col-md-11 marginAuto divLancamento">
 					<div class="display-block">
 						<p class="display-inline-block">Placa:</p>
-						<input class="display-inline-block" type="text" id="placa">
+						<input class="display-inline-block" onkeypress="ngModelEntradaPlaca(id)" type="text" maxlength="8" size="8"  id="placa">
 					</div>
 					<div class="display-block">
 						<p class="display-inline-block">Nome Motorista:</p>
-						<input class="display-inline-block" type="text" id="motorista">
+						<input class="display-inline-block" onkeypress="ngModelEntradaNomeMotorista(id)" type="text" maxlength="30" size="30" id="motorista">
 					</div>
 				</div>
 			</form>
@@ -19,11 +19,12 @@
 			<div class="col-md-11 marginAuto divLancamento marginAuto">
 				<div>
 					<p class="display-inline-block">Placa:</p>
-					<p class="display-inline-block">bhd-2839</p>	
+					<p class="display-inline-block" id="showPlaca"></p>	
 				</div>
 				<div>
-					<p class="display-inline-block">Nome Motorista:</p>
-					<p class="display-inline-block">Rodrigo da Silva Moura</p>
+					<p class="display-inline-block">Nome Motorista:</p> 					
+					<p class="display-inline-block" id="showMotorista"></p>
+					
 				</div>
 				<div>
 					<p class="display-inline-block">Horario da entrada:</p>
