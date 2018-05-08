@@ -11,7 +11,8 @@ body
     }
 .body
     {
-        min-height: 77vh;
+        min-height: 77vh;        
+        font-size: 13px;
     }
 
 .mainDiv
@@ -28,7 +29,7 @@ body
         text-align: center;
         letter-spacing: 6px;    
         font-weight: bold;
-        font-size: 17px;
+        font-size: 15px;
     }
 
 .titleDiv > hr , .linhaPreta

@@ -10,6 +10,6 @@ function ajaxRequestIndex(Page){
 			main.innerHTML = xmlHttp.responseText;
 		}
 	}
-	xmlHttp.open('get',`PhpRedirectCode/RedirectCode.php?page=${page}`,true);
+	xmlHttp.open('get',`PhpRedirectCode/RedirectToPage.php?page=${page}`,true);
 	xmlHttp.send();
 }

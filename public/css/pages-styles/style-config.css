@@ -5,7 +5,7 @@ legend {
     width: auto;    
     margin-left: 20px;
     padding-left: 5px;
-    font-size: 17px;
+    font-size: 1.2em;
 }
 
 fieldset {
@@ -27,8 +27,7 @@ fieldset {
     border: 1px solid;
 }
 
-.form-div{
-    font-size: 15px;    
+.form-div{   
      margin: 28px auto;
 }
 .form-div > .div-update > p{

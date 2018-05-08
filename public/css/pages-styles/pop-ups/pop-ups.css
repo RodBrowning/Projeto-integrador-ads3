@@ -14,5 +14,19 @@
     top: 20%;
     position: fixed;
     z-index: 2;
+    font-size: 13px;
 }
+
+.divLancamento {
+    text-align: center;
+}
+
+.divLancamento > div > #placa{
+    width: 26%;
+}
+
+.divLancamento > div > #motorista{
+    width: 45.5%;
+}
+
 
