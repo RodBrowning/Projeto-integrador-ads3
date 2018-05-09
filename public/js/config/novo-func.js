@@ -14,7 +14,8 @@ function validarNovoFuncionario(){
 			{
 				alert('As senhas não são iguais!');
 			}else{
-				showPopUp('confirm-func', nome, cpf, acesso, email);			
+				showPopUp('confirm-func', nome, cpf, acesso, email,senha,senhaConfirm);			
 			}
 	
 }
+

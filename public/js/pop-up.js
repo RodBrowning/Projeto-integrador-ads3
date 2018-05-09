@@ -2,7 +2,7 @@ function showPopUp(tipo_operacao,...args){
 
 	var popUpsDivBox = document.getElementById('pop-ups-div-box');
 
-	popUpsDivBox.innerHTML = `	
+	popUpsDivBox.innerHTML = `	<link rel="stylesheet" type="text/css" href="css/pages-styles/pop-ups/pop-ups.css">
 								<div class="black_background" onclick="closePopUp()">
 								</div>
 								
@@ -23,19 +23,20 @@ function showPopUp(tipo_operacao,...args){
 		switch(tipo_operacao)
 			{
 				case 'entrada':
-						xmlhttp.open('get', `./pages/PopUpsContent/nova_entrada.php`,true);
+						xmlhttp.open('get', `./pages/PopUpsContent/lancamento/nova_entrada.php`,true);
 					break;
 				case 'debito':
-						xmlhttp.open('get', `./pages/PopUpsContent/novo_debito.php`,true);
+						xmlhttp.open('get', `./pages/PopUpsContent/caixa/novo_debito.php`,true);
 					break;
 				case 'credito':
-						xmlhttp.open('get', `./pages/PopUpsContent/novo_credito.php`,true);													
+						xmlhttp.open('get', `./pages/PopUpsContent/caixa/novo_credito.php`,true);													
 					break;
 				case 'confirm-func':
-						xmlhttp.open('get', `./pages/PopUpsContent/novo_funcionario.php?nome=${args[0]}&cpf=${args[1]}&tipo_acesso=${args[2]}&email=${args[3]}`,true);				
+						xmlhttp.open('post', `./pages/PopUpsContent/config/novo_funcionario.php?nome=${args[0]}&cpf=${args[1]}&tipo_acesso=${args[2]}&email=${args[3]}&senha=${args[4]}&senhaConfirm=${args[5]}`,true);				
 					break;
 				default :
-						xmlhttp.open('get', `./PhpRedirectCode/RedirectToPopUps.php?operacao=${tipo_operacao}`,true);
+						xmlhttp.open();
+					break;
 			}
 	
 	xmlhttp.send();

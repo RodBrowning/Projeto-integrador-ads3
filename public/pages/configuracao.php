@@ -1,4 +1,8 @@
-<?php echo $_REQUEST['page']?>
+<?php 
+	require '../PhpClasses/Conection.php';
+	require '../PhpClasses/ConfigClass/Funcionarios.php';
+
+?>
 <div class="row padding-2">
 	<div class="col-lg-8 col-9 titleDiv marginAuto">
 		<p>Configurações</span></p>
@@ -119,30 +123,22 @@
 		    	</tr>
 		  	</thead>
 		  	<tbody class="table-body">
+		  		<?php 
+					$users = new Funcionario();
+					$data = $users->buscaFuncionariosAtivos($conn);
+					while($user = mysqli_fetch_array($data)){
+				?>
+
 		    	<tr>
 		      		<th scope="row">1</th>
-		      		<td>Mark</td>
-		      		<td>333.777.485-99</td>
-		      		<td>02/03/2018</td>
-		      		<td>blablabla@gmail.com</td>
+		      		<td><?php echo $user['nome_func']?></td>
+		      		<td><?php echo $user['cpf']?></td>
+		      		<td><?php echo $user['tipo_acesso']?></td>
+		      		<td><?php echo $user['email']?></td>
 		      		<td class="text-center"><button class="my-btn my-btn-primary" onclick="showPopUp('desativar')">Desativar</button></td>
 		    	</tr>
-		    	<tr>
-		      		<th scope="row">2</th>
-		     		<td>Jacob</td>
-		     		<td>333.777.485-99</td>
-		      		<td>02/03/2018</td>
-		      		<td>blablabla@gmail.com</td>
-		     		<td class="text-center"><button class="my-btn my-btn-primary" onclick="showPopUp('desativar')">Desativar</button></td>
-		    	</tr>
-		    	<tr>
-		      		<th scope="row">3</th>
-		      		<td>@fat</td>
-		      		<td>333.777.485-99</td>
-		      		<td>02/03/2018</td>
-		      		<td>blablabla@gmail.com</td>
-		      		<td class="text-center"><button class="my-btn my-btn-primary" onclick="showPopUp('desativar')">Desativar</button></td>
-		    	</tr>
+		    	<?php }?>
+		    	
 		  	</tbody>
 		</table>
 	</div>
@@ -166,30 +162,20 @@
 		    	</tr>
 		  	</thead>
 		  	<tbody class="table-body">
+		  		<?php 
+					$users = new Funcionario();
+					$data = $users->buscaFuncionariosInativos($conn);
+					while($user = mysqli_fetch_array($data)){
+				?>
 		    	<tr>
 		      		<th scope="row">1</th>
-		      		<td>Mark</td>
-		      		<td>333.777.485-99</td>
-		      		<td>02/03/2018</td>
-		      		<td>blablabla@gmail.com</td>
+		      		<td><?php echo $user['nome_func']?></td>
+		      		<td><?php echo $user['cpf']?></td>
+		      		<td><?php echo $user['tipo_acesso']?></td>
+		      		<td><?php echo $user['email']?></td>
 		      		<td class="text-center"><button class="my-btn my-btn-success" onclick="showPopUp('ativar')">Ativar</button></td>
 		    	</tr>
-		    	<tr>
-		      		<th scope="row">2</th>
-		     		<td>Jacob</td>
-		     		<td>333.777.485-99</td>
-		      		<td>02/03/2018</td>
-		      		<td>blablabla@gmail.com</td>
-		     		<td class="text-center"><button class="my-btn my-btn-success" onclick="showPopUp('ativar')">Ativar</button></td>
-		    	</tr>
-		    	<tr>
-		      		<th scope="row">3</th>
-		      		<td>@fat</td>
-		      		<td>333.777.485-99</td>
-		      		<td>02/03/2018</td>
-		      		<td>blablabla@gmail.com</td>
-		      		<td class="text-center"><button class="my-btn my-btn-success" onclick="showPopUp('ativar')">Ativar</button></td>
-		    	</tr>
+		    	<?php }?>
 		  	</tbody>
 		</table>
 	</div>
