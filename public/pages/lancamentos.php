@@ -1,4 +1,4 @@
-<?php echo $_REQUEST['page']?>
+
 <div class="row padding-2">
 	<div class="col-8 titleDiv marginAuto">
 		<p>Entrada e saida de veiculos</p>

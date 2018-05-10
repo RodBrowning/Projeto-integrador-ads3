@@ -6,16 +6,25 @@ function validarNovoFuncionario(){
 	var email = document.getElementById('email').value;
 	var senha = document.getElementById('senha').value;
 	var senhaConfirm = document.getElementById('senhaConfirm').value;
+	var validado = false;
+	// validação dos dados;
 
 	if(senha == '' || senhaConfirm == '')
 		{
 			alert('O campo senha precisa ser preenchido!');
-		}else if(senha != senhaConfirm)
+		}
+		else if(senha != senhaConfirm)
 			{
 				alert('As senhas não são iguais!');
-			}else{
-				showPopUp('confirm-func', nome, cpf, acesso, email,senha,senhaConfirm);			
 			}
+			else{
+				validado = true;
+			}
+	
+	if(validado)
+		{
+			showPopUp('confirm-func', nome, cpf, acesso, email,senha,senhaConfirm);		
+		}
 	
 }
 

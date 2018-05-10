@@ -1,10 +1,10 @@
-<?php date_default_timezone_set('America/Sao_Paulo'); setlocale(LC_TIME, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');?>
-
 <div class="col-md-11 marginAuto mt-3 mb-4">
-	<fieldset onloadeddata="fill()">
-		<legend>Novo Funcionario</legend>			
+	<fieldset >
+		<legend>Desativar Funcionario</legend>			
 			<div class="col-md-11 marginAuto divLancamento marginAuto">
 				<div>
+					<p class="display-inline-block">ID:</p>
+					<b><p class="display-inline-block" id="nome"><?php echo $_REQUEST['id_func']?></p></b>
 					<p class="display-inline-block">Nome:</p>
 					<b><p class="display-inline-block" id="nome"><?php echo $_REQUEST['nome_func']?></p></b>
 				</div>
@@ -21,9 +21,13 @@
 					<b><p class="display-inline-block" id="E-mail"><?php echo $_REQUEST['email']?></p></b>
 				</div>
 				<button onclick="closePopUp()" class="my-btn my-btn-danger mb-3">Cancelar</button>				
-				<button onclick="Crud('salvar-funcionario',<?php echo "'".$_REQUEST['nome_func']."'"?>,<?php echo "'".$_REQUEST['cpf']."'"?>,<?php echo "'".$_REQUEST['tipo_acesso']."'"?>,<?php echo "'".$_REQUEST['email']."'"?>,<?php echo "'".$_REQUEST['senha']."'"?>,<?php echo "'".$_REQUEST['senhaConfirm']."'"?>)" class="my-btn my-btn-success mb-3">Debitar</button>				
+				<button onclick="Crud('desativar-funcionario',
+		      			'<?php echo $_REQUEST['id_func']?>',
+		      			'<?php echo $_REQUEST['nome_func']?>',
+		      			'<?php echo $_REQUEST['cpf']?>',
+		      			'<?php echo $_REQUEST['tipo_acesso']?>',
+		      			'<?php echo $_REQUEST['email']?>')" class="my-btn my-btn-success mb-3">Desativar</button>				
 				
 			</div>
 	</fieldset>
 </div>
-

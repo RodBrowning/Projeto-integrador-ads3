@@ -1,4 +1,4 @@
-<?php echo $_REQUEST['page']?>
+
 <div class="row padding-2">
 	<div class="col-10 titleDiv marginAuto">
 		<div class=".display-block">

@@ -19,8 +19,6 @@
 	<link rel="stylesheet" type="text/css" href="css/pages-styles/style-config.css">
 	<link rel="stylesheet" type="text/css" href="css/pages-styles/style-config-mobile.css">
 
-	
-
 </head>
 
 	<div id="pop-ups-div-box"></div>

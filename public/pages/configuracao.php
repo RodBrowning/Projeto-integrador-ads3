@@ -1,5 +1,5 @@
 <?php 
-	require '../PhpClasses/Conection.php';
+	
 	require '../PhpClasses/ConfigClass/Funcionarios.php';
 
 ?>
@@ -125,17 +125,22 @@
 		  	<tbody class="table-body">
 		  		<?php 
 					$users = new Funcionario();
-					$data = $users->buscaFuncionariosAtivos($conn);
+					$data = $users->buscaFuncionariosAtivos();
 					while($user = mysqli_fetch_array($data)){
 				?>
 
 		    	<tr>
-		      		<th scope="row">1</th>
+		      		<th scope="row"><?php echo $user['id_func']?></th>
 		      		<td><?php echo $user['nome_func']?></td>
 		      		<td><?php echo $user['cpf']?></td>
 		      		<td><?php echo $user['tipo_acesso']?></td>
 		      		<td><?php echo $user['email']?></td>
-		      		<td class="text-center"><button class="my-btn my-btn-primary" onclick="showPopUp('desativar')">Desativar</button></td>
+		      		<td class="text-center"><button class="my-btn my-btn-primary" onclick="showPopUp('desativar',
+		      			'<?php echo $user['id_func']?>',
+		      			'<?php echo $user['nome_func']?>',
+		      			'<?php echo $user['cpf']?>',
+		      			'<?php echo $user['tipo_acesso']?>',
+		      			'<?php echo $user['email']?>')">Desativar</button></td>
 		    	</tr>
 		    	<?php }?>
 		    	
@@ -164,16 +169,21 @@
 		  	<tbody class="table-body">
 		  		<?php 
 					$users = new Funcionario();
-					$data = $users->buscaFuncionariosInativos($conn);
+					$data = $users->buscaFuncionariosInativos();
 					while($user = mysqli_fetch_array($data)){
 				?>
 		    	<tr>
-		      		<th scope="row">1</th>
+		      		<th scope="row"><?php echo $user['id_func']?></th>
 		      		<td><?php echo $user['nome_func']?></td>
 		      		<td><?php echo $user['cpf']?></td>
 		      		<td><?php echo $user['tipo_acesso']?></td>
 		      		<td><?php echo $user['email']?></td>
-		      		<td class="text-center"><button class="my-btn my-btn-success" onclick="showPopUp('ativar')">Ativar</button></td>
+		      		<td class="text-center"><button class="my-btn my-btn-success" onclick="showPopUp('ativar',
+		      			'<?php echo $user['id_func']?>',
+		      			'<?php echo $user['nome_func']?>',
+		      			'<?php echo $user['cpf']?>',
+		      			'<?php echo $user['tipo_acesso']?>',
+		      			'<?php echo $user['email']?>')">Ativar</button></td>
 		    	</tr>
 		    	<?php }?>
 		  	</tbody>
