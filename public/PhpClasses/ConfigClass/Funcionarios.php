@@ -14,15 +14,15 @@ class Funcionario{
 		$data = mysqli_query(conn(), $query);
 	}	
 
-	public function buscaFuncionariosAtivos(){
-		$query = "SELECT * FROM `funcionarios` WHERE ativo = 1";		
-		
+	public function buscaFuncionariosAtivos($column, $order){
+		$query = "SELECT * FROM `funcionarios` WHERE ativo = 1 ORDER BY $column $order";
+
 		$data = mysqli_query(conn(), $query);
 		return $data;
 	}
 
-	public function buscaFuncionariosInativos(){
-		$query = "SELECT * FROM `funcionarios` WHERE ativo = 0";
+	public function buscaFuncionariosInativos($column, $order){		
+		$query = "SELECT * FROM `funcionarios` WHERE ativo = 0 ORDER BY $column $order";
 		
 		$data = mysqli_query(conn(), $query);
 		return $data;

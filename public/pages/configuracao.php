@@ -1,6 +1,6 @@
 <?php 
 	
-	require '../PhpClasses/ConfigClass/Funcionarios.php';
+	require($_SERVER["DOCUMENT_ROOT"]."/pi/public/PhpClasses/ConfigClass/Funcionarios.php");
 
 ?>
 <div class="row padding-2">
@@ -110,22 +110,32 @@
 		<p>Funcionários ativos</span></p>
 		<hr>		
 	</div>
-	<div class="col-10 marginAuto">
+	<div class="col-10 marginAuto " id="tabela-ativos">
 		<table class="table table-sm table-responsive-xl">
-		    <thead>
-		    	<tr class="table-head">
-		       		<th>#</th>
-		     		<th>Nome</th>
-		     		<th>CPF</th>
-		      		<th>Data Admissão</th>
-		      		<th>E-Mail</th>
-		      		<th></th>
-		    	</tr>
-		  	</thead>
-		  	<tbody class="table-body">
+		    
 		  		<?php 
 					$users = new Funcionario();
-					$data = $users->buscaFuncionariosAtivos();
+					$data = $users->buscaFuncionariosAtivos('id_func','asc');
+						if(mysqli_num_rows($data) == 0)
+							{
+								?>
+								<h2 class="text-center">Nunhum funcionario ativo</h2>
+								<?php
+							}else{
+								?>
+								<thead>
+							    	<tr class="table-head">
+							       		<th id="id_func-ativos" onclick="orderParameter('ativos','id_func','desc')">#</th>
+							     		<th id="nome_func-ativos" onclick="orderParameter('ativos','nome_func','desc')">Nome</th>
+							     		<th id="cpf-ativos" onclick="orderParameter('ativos','cpf','desc')">CPF</th>
+							      		<th id="tipo_acesso-ativos" onclick="orderParameter('ativos','tipo_acesso','desc')">Data Admissão</th>
+							      		<th id="email-ativos" onclick="orderParameter('ativos','email','desc')">E-Mail</th>
+							      		<th></th>
+							    	</tr>
+							  	</thead>
+							  	<tbody class="table-body">
+								<?php
+							
 					while($user = mysqli_fetch_array($data)){
 				?>
 
@@ -142,7 +152,8 @@
 		      			'<?php echo $user['tipo_acesso']?>',
 		      			'<?php echo $user['email']?>')">Desativar</button></td>
 		    	</tr>
-		    	<?php }?>
+		    	<?php }
+		    			}?>
 		    	
 		  	</tbody>
 		</table>
@@ -154,22 +165,32 @@
 		<p>Funcionários inativos</p>
 		<hr>		
 	</div>
-	<div class="col-10 marginAuto">
+	<div class="col-10 marginAuto" id="tabela-inativos">
 		<table class="table table-sm table-responsive-xl">
-		    <thead>
-		    	<tr class="table-head">
-		       		<th>#</th>
-		     		<th>Nome</th>
-		     		<th>CPF</th>
-		      		<th>Data Admissão</th>
-		      		<th>E-Mail</th>
-		      		<th></th>
-		    	</tr>
-		  	</thead>
-		  	<tbody class="table-body">
+		
 		  		<?php 
 					$users = new Funcionario();
-					$data = $users->buscaFuncionariosInativos();
+					$data = $users->buscaFuncionariosInativos('id_func','asc');
+						if(mysqli_num_rows($data) == 0)
+								{
+									?>
+									<h2 class="text-center">Nunhum funcionario inativo</h2>
+									<?php
+								}else{
+									?>
+									<thead>
+								    	<tr class="table-head">
+								       		<th id="id_func-inativos" onclick="orderParameter('inativos','id_func','desc')">#</th>
+								     		<th id="nome_func-inativos" onclick="orderParameter('inativos','nome_func','desc')">Nome</th>
+								     		<th id="cpf-inativos" onclick="orderParameter('inativos','cpf','desc')">CPF</th>
+								      		<th id="tipo_acesso-inativos" onclick="orderParameter('inativos','tipo_acesso','desc')">Data Admissão</th>
+								      		<th id="email-inativos" onclick="orderParameter('inativos','email','desc')">E-Mail</th>
+								      		<th></th>
+								    	</tr>
+								  	</thead>
+								  	<tbody class="table-body">
+									<?php
+								
 					while($user = mysqli_fetch_array($data)){
 				?>
 		    	<tr>
@@ -185,7 +206,7 @@
 		      			'<?php echo $user['tipo_acesso']?>',
 		      			'<?php echo $user['email']?>')">Ativar</button></td>
 		    	</tr>
-		    	<?php }?>
+		    	<?php }}?>
 		  	</tbody>
 		</table>
 	</div>

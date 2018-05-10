@@ -10,7 +10,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/pi/public/PhpClasses/ConfigClass/Funcionario
 ?> 
 	<link rel="stylesheet" type="text/css" href="css/pages-styles/pop-ups/pop-ups.css">
 	
-	<div class="black_background" onclick="closePopUp()">
+	<div class="black_background" onclick="ajaxRequestIndex('configuracao'),closePopUp()">
 	</div>	
 	<div id="pop-up-box" class="pop-up-box">
 		<div class="successMessage">
