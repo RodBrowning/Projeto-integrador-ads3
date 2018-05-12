@@ -1,7 +1,7 @@
 <?php 
 	$popPage = "Ativar";
 
-	if($_REQUEST['permissao']== 0)
+	if($_REQUEST['permission']== 0)
 		{
 			$popPage = "Desativar";
 		}
@@ -30,13 +30,13 @@
 				</div>
 				<div>
 					<p class="display-inline-block">Permission:</p>
-					<b><p class="display-inline-block" id="E-mail"><?php echo $_REQUEST['permissao']?></p></b>
+					<b><p class="display-inline-block" id="E-mail"><?php echo $_REQUEST['permission']?></p></b>
 				</div>
 				<button onclick="closePopUp()" class="my-btn my-btn-danger mb-3">Cancelar</button>				
-				<button onclick="Crud('permissao-funcionario',
+				<button onclick="Crud('permission-funcionario',
 		      			'<?php echo $_REQUEST['id_func']?>',
 		      			'<?php echo $_REQUEST['nome_func']?>',		      			
-		      			'<?php echo $_REQUEST['permissao']?>',)" class="my-btn my-btn-success mb-3"><?php echo $popPage?></button>				
+		      			'<?php echo $_REQUEST['permission']?>',)" class="my-btn my-btn-success mb-3"><?php echo $popPage?></button>				
 				
 			</div>
 	</fieldset>

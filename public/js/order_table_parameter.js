@@ -1,4 +1,4 @@
-function orderParameter(table,column,permissao,order)
+function orderParameter(table,column,permission,order)
 {	
 	var xmlhttp = new XMLHttpRequest();
 	xmlhttp.onreadystatechange = ()=>
@@ -10,24 +10,24 @@ function orderParameter(table,column,permissao,order)
 					divTable.innerHTML = xmlhttp.responseText;
 
 					//Define up or down arrow
-					arrowUpOrDown(table,column,permissao,order);
+					arrowUpOrDown(table,column,permission,order);
 				}
 		}
 
 	switch(table)
 		{
 			case (table == 'inativos' ? 'inativos' : 'ativos') :
-					xmlhttp.open('post', `./pages/PopUpsContent/config/operacoes/ordenar_tabelas_funcionarios.php?table=${table}&column=${column}&permissao=${permissao}&order=${order}`,true);	
+					xmlhttp.open('post', `./pages/PopUpsContent/config/operacoes/ordenar_tabelas_funcionarios.php?table=${table}&column=${column}&permission=${permission}&order=${order}`,true);	
 				break;
 		}	
 	xmlhttp.send();
 }
 
-function arrowUpOrDown(table,column,permissao,order){
+function arrowUpOrDown(table,column,permission,order){
 	let columnName = column+"-"+table;
 	let colunaAtiva = document.getElementById(`${columnName}`);
 	console.log(colunaAtiva);
-	colunaAtiva.attributes[1].nodeValue = `orderParameter("${table}","${column}","${permissao}","${order == 'asc' ? 'desc' : 'asc' }")`;
+	colunaAtiva.attributes[1].nodeValue = `orderParameter("${table}","${column}","${permission}","${order == 'asc' ? 'desc' : 'asc' }")`;
 		if(order == "asc")
 			{
 				var tableHeadArrowIcon = `${colunaAtiva.innerHTML} \\/`;

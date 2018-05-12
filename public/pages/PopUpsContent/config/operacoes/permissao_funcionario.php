@@ -5,15 +5,14 @@
 	
 	$popPage = "ativado";
 
-	if($_REQUEST['permissao']== 0)
+	if($_REQUEST['permission']== 0)
 		{
 			$popPage = "desativado";
 		}
 
-	/// Validação dos dados
 
 	$Funcionario = new Funcionario();
-	$Funcionario->permissaoFuncionario($_REQUEST['id_func'],$_REQUEST['permissao']);
+	$Funcionario->permissaoFuncionario($_REQUEST['id_func'],$_REQUEST['permission']);
 ?> 
 	<link rel="stylesheet" type="text/css" href="css/pages-styles/pop-ups/pop-ups.css">
 	

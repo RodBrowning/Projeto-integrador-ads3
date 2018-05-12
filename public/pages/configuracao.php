@@ -145,7 +145,7 @@
 		      		<td><?php echo $user['cpf']?></td>
 		      		<td><?php echo $user['tipo_acesso']?></td>
 		      		<td><?php echo $user['email']?></td>
-		      		<td class="text-center"><button class="my-btn my-btn-primary" onclick="showPopUp('permissao',
+		      		<td class="text-center"><button class="my-btn my-btn-primary" onclick="showPopUp('permission',
 		      			'<?php echo $user['id_func']?>',
 		      			'<?php echo $user['nome_func']?>',
 		      			'<?php echo $user['cpf']?>',
@@ -184,7 +184,7 @@
 								       		<th id="id_func-inativos" onclick="orderParameter('inativos','id_func','0','desc')">#</th>
 								     		<th id="nome_func-inativos" onclick="orderParameter('inativos','nome_func','0','desc')">Nome</th>
 								     		<th id="cpf-inativos" onclick="orderParameter('inativos','cpf','0','desc')">CPF</th>
-								      		<th id="tipo_acesso-inativos" onclick="orderParameter('inativos','tipo_acesso','desc')">Data Admissão</th>
+								      		<th id="tipo_acesso-inativos" onclick="orderParameter('inativos','tipo_acesso','0','desc')">Data Admissão</th>
 								      		<th id="email-inativos" onclick="orderParameter('inativos','email','0','desc')">E-Mail</th>
 								      		<th></th>
 								    	</tr>
@@ -200,7 +200,7 @@
 		      		<td><?php echo $user['cpf']?></td>
 		      		<td><?php echo $user['tipo_acesso']?></td>
 		      		<td><?php echo $user['email']?></td>
-		      		<td class="text-center"><button class="my-btn my-btn-success" onclick="showPopUp('permissao',
+		      		<td class="text-center"><button class="my-btn my-btn-success" onclick="showPopUp('permission',
 		      			'<?php echo $user['id_func']?>',
 		      			'<?php echo $user['nome_func']?>',
 		      			'<?php echo $user['cpf']?>',
