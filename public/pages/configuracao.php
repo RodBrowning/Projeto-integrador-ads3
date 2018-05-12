@@ -115,7 +115,7 @@
 		    
 		  		<?php 
 					$users = new Funcionario();
-					$data = $users->buscaFuncionariosAtivos('id_func','asc');
+					$data = $users->buscaFuncionarios('id_func','1','asc');
 						if(mysqli_num_rows($data) == 0)
 							{
 								?>
@@ -125,11 +125,11 @@
 								?>
 								<thead>
 							    	<tr class="table-head">
-							       		<th id="id_func-ativos" onclick="orderParameter('ativos','id_func','desc')">#</th>
-							     		<th id="nome_func-ativos" onclick="orderParameter('ativos','nome_func','desc')">Nome</th>
-							     		<th id="cpf-ativos" onclick="orderParameter('ativos','cpf','desc')">CPF</th>
-							      		<th id="tipo_acesso-ativos" onclick="orderParameter('ativos','tipo_acesso','desc')">Data Admissão</th>
-							      		<th id="email-ativos" onclick="orderParameter('ativos','email','desc')">E-Mail</th>
+							       		<th id="id_func-ativos" onclick="orderParameter('ativos','id_func','1','desc')">#</th>
+							     		<th id="nome_func-ativos" onclick="orderParameter('ativos','nome_func','1','desc')">Nome</th>
+							     		<th id="cpf-ativos" onclick="orderParameter('ativos','cpf','1','desc')">CPF</th>
+							      		<th id="tipo_acesso-ativos" onclick="orderParameter('ativos','tipo_acesso','1','desc')">Data Admissão</th>
+							      		<th id="email-ativos" onclick="orderParameter('ativos','email','1','desc')">E-Mail</th>
 							      		<th></th>
 							    	</tr>
 							  	</thead>
@@ -145,12 +145,13 @@
 		      		<td><?php echo $user['cpf']?></td>
 		      		<td><?php echo $user['tipo_acesso']?></td>
 		      		<td><?php echo $user['email']?></td>
-		      		<td class="text-center"><button class="my-btn my-btn-primary" onclick="showPopUp('desativar',
+		      		<td class="text-center"><button class="my-btn my-btn-primary" onclick="showPopUp('permissao',
 		      			'<?php echo $user['id_func']?>',
 		      			'<?php echo $user['nome_func']?>',
 		      			'<?php echo $user['cpf']?>',
 		      			'<?php echo $user['tipo_acesso']?>',
-		      			'<?php echo $user['email']?>')">Desativar</button></td>
+		      			'<?php echo $user['email']?>',
+		      			'0')">Desativar</button></td>
 		    	</tr>
 		    	<?php }
 		    			}?>
@@ -170,7 +171,7 @@
 		
 		  		<?php 
 					$users = new Funcionario();
-					$data = $users->buscaFuncionariosInativos('id_func','asc');
+					$data = $users->buscaFuncionarios('id_func','0','asc');
 						if(mysqli_num_rows($data) == 0)
 								{
 									?>
@@ -180,11 +181,11 @@
 									?>
 									<thead>
 								    	<tr class="table-head">
-								       		<th id="id_func-inativos" onclick="orderParameter('inativos','id_func','desc')">#</th>
-								     		<th id="nome_func-inativos" onclick="orderParameter('inativos','nome_func','desc')">Nome</th>
-								     		<th id="cpf-inativos" onclick="orderParameter('inativos','cpf','desc')">CPF</th>
+								       		<th id="id_func-inativos" onclick="orderParameter('inativos','id_func','0','desc')">#</th>
+								     		<th id="nome_func-inativos" onclick="orderParameter('inativos','nome_func','0','desc')">Nome</th>
+								     		<th id="cpf-inativos" onclick="orderParameter('inativos','cpf','0','desc')">CPF</th>
 								      		<th id="tipo_acesso-inativos" onclick="orderParameter('inativos','tipo_acesso','desc')">Data Admissão</th>
-								      		<th id="email-inativos" onclick="orderParameter('inativos','email','desc')">E-Mail</th>
+								      		<th id="email-inativos" onclick="orderParameter('inativos','email','0','desc')">E-Mail</th>
 								      		<th></th>
 								    	</tr>
 								  	</thead>
@@ -199,12 +200,13 @@
 		      		<td><?php echo $user['cpf']?></td>
 		      		<td><?php echo $user['tipo_acesso']?></td>
 		      		<td><?php echo $user['email']?></td>
-		      		<td class="text-center"><button class="my-btn my-btn-success" onclick="showPopUp('ativar',
+		      		<td class="text-center"><button class="my-btn my-btn-success" onclick="showPopUp('permissao',
 		      			'<?php echo $user['id_func']?>',
 		      			'<?php echo $user['nome_func']?>',
 		      			'<?php echo $user['cpf']?>',
 		      			'<?php echo $user['tipo_acesso']?>',
-		      			'<?php echo $user['email']?>')">Ativar</button></td>
+		      			'<?php echo $user['email']?>',
+		      			'1')">Ativar</button></td>
 		    	</tr>
 		    	<?php }}?>
 		  	</tbody>

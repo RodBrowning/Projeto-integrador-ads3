@@ -14,31 +14,19 @@ class Funcionario{
 		$data = mysqli_query(conn(), $query);
 	}	
 
-	public function buscaFuncionariosAtivos($column, $order){
-		$query = "SELECT * FROM `funcionarios` WHERE ativo = 1 ORDER BY $column $order";
+	public function buscaFuncionarios($column, $permissao ,$order){
+		$query = "SELECT * FROM `funcionarios` WHERE ativo = $permissao ORDER BY $column $order";
 
 		$data = mysqli_query(conn(), $query);
 		return $data;
 	}
 
-	public function buscaFuncionariosInativos($column, $order){		
-		$query = "SELECT * FROM `funcionarios` WHERE ativo = 0 ORDER BY $column $order";
-		
-		$data = mysqli_query(conn(), $query);
-		return $data;
-	}
-
-	public function desativarFuncionario($id_func){
-		$query = "UPDATE `funcionarios` SET `ativo`= 0 WHERE id_func = $id_func";
+	public function permissaoFuncionario($id_func,$permissao){
+		$query = "UPDATE `funcionarios` SET `ativo`= $permissao WHERE id_func = $id_func";
 		
 		$data = mysqli_query(conn(), $query);
 	}
 
-	public function ativarFuncionario($id_func){
-		$query = "UPDATE `funcionarios` SET `ativo`= 1	 WHERE id_func = $id_func";
-		
-		$data = mysqli_query(conn(), $query);
-	}
 }
 
 ?>

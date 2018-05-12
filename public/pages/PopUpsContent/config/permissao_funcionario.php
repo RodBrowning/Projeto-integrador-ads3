@@ -1,6 +1,14 @@
+<?php 
+	$popPage = "Ativar";
+
+	if($_REQUEST['permissao']== 0)
+		{
+			$popPage = "Desativar";
+		}
+?>
 <div class="col-md-11 marginAuto mt-3 mb-4">
 	<fieldset >
-		<legend>Ativar Funcionario</legend>			
+		<legend><?php echo $popPage?> Funcionario</legend>			
 			<div class="col-md-11 marginAuto divLancamento marginAuto">
 				<div>
 					<p class="display-inline-block">ID:</p>
@@ -20,13 +28,15 @@
 					<p class="display-inline-block">E-mail:</p>
 					<b><p class="display-inline-block" id="E-mail"><?php echo $_REQUEST['email']?></p></b>
 				</div>
+				<div>
+					<p class="display-inline-block">Permission:</p>
+					<b><p class="display-inline-block" id="E-mail"><?php echo $_REQUEST['permissao']?></p></b>
+				</div>
 				<button onclick="closePopUp()" class="my-btn my-btn-danger mb-3">Cancelar</button>				
-				<button onclick="Crud('ativar-funcionario',
+				<button onclick="Crud('permissao-funcionario',
 		      			'<?php echo $_REQUEST['id_func']?>',
-		      			'<?php echo $_REQUEST['nome_func']?>',
-		      			'<?php echo $_REQUEST['cpf']?>',
-		      			'<?php echo $_REQUEST['tipo_acesso']?>',
-		      			'<?php echo $_REQUEST['email']?>')" class="my-btn my-btn-success mb-3">Ativar</button>				
+		      			'<?php echo $_REQUEST['nome_func']?>',		      			
+		      			'<?php echo $_REQUEST['permissao']?>',)" class="my-btn my-btn-success mb-3"><?php echo $popPage?></button>				
 				
 			</div>
 	</fieldset>

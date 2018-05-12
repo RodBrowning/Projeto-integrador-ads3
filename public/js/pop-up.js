@@ -34,11 +34,8 @@ function showPopUp(tipo_operacao,...args){
 				case 'confirm-func':
 						xmlhttp.open('post', `./pages/PopUpsContent/config/novo_funcionario.php?nome_func=${args[0]}&cpf=${args[1]}&tipo_acesso=${args[2]}&email=${args[3]}&senha=${args[4]}&senhaConfirm=${args[5]}`,true);				
 					break;
-				case 'ativar':
-						xmlhttp.open('get', `./pages/PopUpsContent/config/ativar_funcionario.php?id_func=${args[0]}&nome_func=${args[1]}&cpf=${args[2]}&tipo_acesso=${args[3]}&email=${args[4]}`,true);													
-					break;
-				case 'desativar':
-						xmlhttp.open('get', `./pages/PopUpsContent/config/desativar_funcionario.php?id_func=${args[0]}&nome_func=${args[1]}&cpf=${args[2]}&tipo_acesso=${args[3]}&email=${args[4]}`,true);													
+				case 'permissao':
+						xmlhttp.open('get', `./pages/PopUpsContent/config/permissao_funcionario.php?id_func=${args[0]}&nome_func=${args[1]}&cpf=${args[2]}&tipo_acesso=${args[3]}&email=${args[4]}&permissao=${args[5]}`,true);													
 					break;
 				default :
 						xmlhttp.open();
