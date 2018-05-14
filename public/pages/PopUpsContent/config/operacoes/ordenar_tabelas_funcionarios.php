@@ -15,6 +15,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/pi/public/PhpClasses/ConfigClass/Funcionario
 					$btnText = "Ativar";
 					$data = $users->buscaFuncionarios($_REQUEST['column'],$_REQUEST['permission'], $_REQUEST['order']);	
 				}
+				$_REQUEST['order'] = 'asc';
 				?>
 				<thead>
 			    	<tr class="table-head">

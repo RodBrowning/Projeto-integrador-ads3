@@ -126,10 +126,10 @@
 								<thead>
 							    	<tr class="table-head">
 							       		<th id="id_func-ativos" onclick="orderParameter('ativos','id_func','1','desc')">#</th>
-							     		<th id="nome_func-ativos" onclick="orderParameter('ativos','nome_func','1','desc')">Nome</th>
-							     		<th id="cpf-ativos" onclick="orderParameter('ativos','cpf','1','desc')">CPF</th>
-							      		<th id="tipo_acesso-ativos" onclick="orderParameter('ativos','tipo_acesso','1','desc')">Data Admissão</th>
-							      		<th id="email-ativos" onclick="orderParameter('ativos','email','1','desc')">E-Mail</th>
+							     		<th id="nome_func-ativos" onclick="orderParameter('ativos','nome_func','1','asc')">Nome</th>
+							     		<th id="cpf-ativos" onclick="orderParameter('ativos','cpf','1','asc')">CPF</th>
+							      		<th id="tipo_acesso-ativos" onclick="orderParameter('ativos','tipo_acesso','1','asc')">Data Admissão</th>
+							      		<th id="email-ativos" onclick="orderParameter('ativos','email','1','asc')">E-Mail</th>
 							      		<th></th>
 							    	</tr>
 							  	</thead>
@@ -182,10 +182,10 @@
 									<thead>
 								    	<tr class="table-head">
 								       		<th id="id_func-inativos" onclick="orderParameter('inativos','id_func','0','desc')">#</th>
-								     		<th id="nome_func-inativos" onclick="orderParameter('inativos','nome_func','0','desc')">Nome</th>
-								     		<th id="cpf-inativos" onclick="orderParameter('inativos','cpf','0','desc')">CPF</th>
-								      		<th id="tipo_acesso-inativos" onclick="orderParameter('inativos','tipo_acesso','0','desc')">Data Admissão</th>
-								      		<th id="email-inativos" onclick="orderParameter('inativos','email','0','desc')">E-Mail</th>
+								     		<th id="nome_func-inativos" onclick="orderParameter('inativos','nome_func','0','asc')">Nome</th>
+								     		<th id="cpf-inativos" onclick="orderParameter('inativos','cpf','0','asc')">CPF</th>
+								      		<th id="tipo_acesso-inativos" onclick="orderParameter('inativos','tipo_acesso','0','asc')">Data Admissão</th>
+								      		<th id="email-inativos" onclick="orderParameter('inativos','email','0','asc')">E-Mail</th>
 								      		<th></th>
 								    	</tr>
 								  	</thead>
