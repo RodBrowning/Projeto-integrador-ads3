@@ -1,12 +1,13 @@
 
-<?php 
-require($_SERVER["DOCUMENT_ROOT"]."/pi/public/PhpClasses/ConfigClass/Funcionarios.php");
+<?php
+	require($_SERVER["DOCUMENT_ROOT"]."/pi/public/PhpClasses/Connection.php"); 
+	require($_SERVER["DOCUMENT_ROOT"]."/pi/public/PhpClasses/ConfigClass/Valores.php");
 
 
 	/// Validação dos dados
 
-	$Funcionario = new Funcionario();
-	$Funcionario->inserirNovoFuncionario($_REQUEST['nome_func'], $_REQUEST['cpf'], $_REQUEST['tipo_acesso'], $_REQUEST['email'], $_REQUEST['senha']);
+	$valores = new Valores();
+	$valores->updateValoresMensal($_REQUEST['valorMensal']);
 ?> 
 	<link rel="stylesheet" type="text/css" href="css/pages-styles/pop-ups/pop-ups.css">
 	
@@ -14,10 +15,8 @@ require($_SERVER["DOCUMENT_ROOT"]."/pi/public/PhpClasses/ConfigClass/Funcionario
 	</div>	
 	<div id="pop-up-box" class="pop-up-box">
 		<div class="successMessage">
-			<h4>Novo funcionario <b><?php echo $_REQUEST['nome_func'] ?></b> salvo com sucesso!</h4>
+			<h4>O Valor da mensalidade foi alterado para <b>R$<?php echo $_REQUEST['valorMensal'] ?></b> com sucesso!</h4>
 			<button class="my-btn my-btn-success marginAuto" onclick="ajaxRequestIndex('configuracao'),closePopUp()">OK</button>
 		</div>
 	</div>
 	
-	
-

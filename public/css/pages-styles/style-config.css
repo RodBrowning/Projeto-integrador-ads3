@@ -95,3 +95,8 @@ select.width-select {
 .table td, .table thead th{
     vertical-align: middle;
 }
+
+.arrow{
+    width: 14px;
+    height: 10px;
+}

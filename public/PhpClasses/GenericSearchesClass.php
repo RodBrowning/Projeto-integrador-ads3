@@ -9,8 +9,9 @@ class Generic
 	public function selectAllFrom($tableArg){
 		$table = $tableArg;
 		$query = "SELECT * FROM `$table`";
-		$data = mysqli_query(conn(), $query);
-		return $data;
+		
+		return mysqli_query(conn(), $query);
+		mysqli_close(conn());
 
 	}
 }

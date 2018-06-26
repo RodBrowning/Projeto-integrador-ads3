@@ -1,6 +1,8 @@
 <?php 
 	
+
 	require($_SERVER["DOCUMENT_ROOT"]."/pi/public/PhpClasses/ConfigClass/Funcionarios.php");
+	require($_SERVER["DOCUMENT_ROOT"]."/pi/public/PhpClasses/GenericSearchesClass.php");
 
 ?>
 <div class="row padding-2">
@@ -12,40 +14,45 @@
 
 			<fieldset>
 				<legend>Valores</legend>
-
+				<?php 
+					$valores = new Generic;
+					$valoresArray = $valores->selectAllFrom('valores');
+					while ($row = mysqli_fetch_array($valoresArray)) {
+						
+					?>
 				<div class="info-valores col-lg-12 marginAuto mt-2">				
-					<p class="col-lg-5 col-md-12">Primeira Hora: R$<span>10,00</span></p>
-					<p class="col-lg-5 col-md-12">Demais Horas: R$<span>5,00</span></p>
+					<p class="col-lg-5 col-md-12">Primeira Hora: R$<span><?php echo $row['primeira_hora']?></span></p>
+					<p class="col-lg-5 col-md-12">Demais Horas: R$<span><?php echo $row['demais_horas']?></span></p>
 
-					<p class="col-lg-5 col-md-12">Valor Diário: R$<span>10,00</span></p>
-					<p class="col-lg-5 col-md-12">Valor Mensal: R$<span>5,00</span></p>
+					<p class="col-lg-5 col-md-12">Valor Diário: R$<span><?php echo $row['diaria']?></span></p>
+					<p class="col-lg-5 col-md-12">Valor Mensal: R$<span><?php echo $row['mensal']?></span></p>
 					<hr class="linhaPreta">					
 				</div>
-
+					<?php }	?>
 				<div class="form-div col-lg-11 col-md-10 marginAuto">
 					
 					<div class="div-update display-block ">
 						<p class="display-inline-block ">Primeira Hora: <input type="number" step="any" id="primeira-hora"></p>
-						<p class="display-inline-block">Demais Horas: <input type="number" id="demais-hora"></p>
+						<p class="display-inline-block">Demais Horas: <input type="number" id="demais-horas"></p>
 						<div class="button-ajuste-cobranca display-inline-block">
-							<button class=" my-btn my-btn-success"  onclick="showPopUp('valor-horas')">Salvar</button>
+							<button class=" my-btn my-btn-success"  onclick="validarValores('update-valores-horas')">Salvar</button>
 						</div>
 					</div>
 
 					<div class="div-valores-dia-mensal">
 						<div class="display-block">
 							<p class="display-inline-block ">Valor Diário:</p>	
-							<input class="display-inline-block" type="number" step="any">
+							<input class="display-inline-block" type="number" step="any" id="valor-diario">
 							<div class="display-inline-block">
-								<button class="my-btn my-btn-success" onclick="showPopUp('valor-diario')">Salvar</button>
+								<button class="my-btn my-btn-success" onclick="validarValores('update-valores-diario')">Salvar</button>
 							</div>
 						</div>				
 
 						<div  class="display-block">
 							<p class="display-inline-block">Valor Mensal:</p>
-							<input class="display-inline-block" type="number" step="any">
+							<input class="display-inline-block" type="number" step="any" id="valor-mensal">
 							<div class="display-inline-block">
-								<button class="my-btn my-btn-success" onclick="showPopUp('valor-mensal')">Salvar</button>
+								<button class="my-btn my-btn-success" onclick="validarValores('update-valores-mensal')">Salvar</button>
 							</div>
 						</div>
 					</div>
@@ -114,7 +121,7 @@
 		<table class="table table-sm table-responsive-xl">
 		    
 		  		<?php 
-					$users = new Funcionario();
+					$users = new Funcionario;
 					$data = $users->buscaFuncionarios('id_func','1','asc');
 						if(mysqli_num_rows($data) == 0)
 							{
@@ -125,11 +132,11 @@
 								?>
 								<thead>
 							    	<tr class="table-head">
-							       		<th id="id_func-ativos" onclick="orderParameter('ativos','id_func','1','desc')">#</th>
-							     		<th id="nome_func-ativos" onclick="orderParameter('ativos','nome_func','1','asc')">Nome</th>
-							     		<th id="cpf-ativos" onclick="orderParameter('ativos','cpf','1','asc')">CPF</th>
-							      		<th id="tipo_acesso-ativos" onclick="orderParameter('ativos','tipo_acesso','1','asc')">Data Admissão</th>
-							      		<th id="email-ativos" onclick="orderParameter('ativos','email','1','asc')">E-Mail</th>
+							       		<th id="id_func-ativos" onclick="orderParameter('ativos','id_func','desc','1')">#</th>
+							     		<th id="nome_func-ativos" onclick="orderParameter('ativos','nome_func','asc','1')">Nome</th>
+							     		<th id="cpf-ativos" onclick="orderParameter('ativos','cpf','asc','1')">CPF</th>
+							      		<th id="tipo_acesso-ativos" onclick="orderParameter('ativos','tipo_acesso','asc','1')">Data Admissão</th>
+							      		<th id="email-ativos" onclick="orderParameter('ativos','email','asc','1')">E-Mail</th>
 							      		<th></th>
 							    	</tr>
 							  	</thead>
@@ -170,7 +177,7 @@
 		<table class="table table-sm table-responsive-xl">
 		
 		  		<?php 
-					$users = new Funcionario();
+					$users = new Funcionario;
 					$data = $users->buscaFuncionarios('id_func','0','asc');
 						if(mysqli_num_rows($data) == 0)
 								{
@@ -181,11 +188,11 @@
 									?>
 									<thead>
 								    	<tr class="table-head">
-								       		<th id="id_func-inativos" onclick="orderParameter('inativos','id_func','0','desc')">#</th>
-								     		<th id="nome_func-inativos" onclick="orderParameter('inativos','nome_func','0','asc')">Nome</th>
-								     		<th id="cpf-inativos" onclick="orderParameter('inativos','cpf','0','asc')">CPF</th>
-								      		<th id="tipo_acesso-inativos" onclick="orderParameter('inativos','tipo_acesso','0','asc')">Data Admissão</th>
-								      		<th id="email-inativos" onclick="orderParameter('inativos','email','0','asc')">E-Mail</th>
+								       		<th id="id_func-inativos" onclick="orderParameter('inativos','id_func','desc','0')">#</th>
+								     		<th id="nome_func-inativos" onclick="orderParameter('inativos','nome_func','asc','0')">Nome</th>
+								     		<th id="cpf-inativos" onclick="orderParameter('inativos','cpf','asc','0')">CPF</th>
+								      		<th id="tipo_acesso-inativos" onclick="orderParameter('inativos','tipo_acesso','asc','0')">Data Admissão</th>
+								      		<th id="email-inativos" onclick="orderParameter('inativos','email','asc','0')">E-Mail</th>
 								      		<th></th>
 								    	</tr>
 								  	</thead>

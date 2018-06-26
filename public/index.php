@@ -1,5 +1,5 @@
 <!DOCTYPE html >
-<html lang="pt-br" ng-app>
+<html lang="pt-br">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -49,7 +49,8 @@
 	
 	<script type="text/javascript" src="js/caixa/caixa.js"></script>
 
-	<script type="text/javascript" src="js/config/funcionarios/novo-func.js"></script>
+	<script type="text/javascript" src="js/config/valores/valores.js"></script>
+	<script type="text/javascript" src="js/config/funcionarios/novo-func.js"></script>	
 	
 	<script type="text/javascript" src="js/order_table_parameter.js"></script>
 	<script type="text/javascript" src="js/pop-up.js"></script>

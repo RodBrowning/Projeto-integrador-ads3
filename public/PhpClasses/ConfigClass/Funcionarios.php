@@ -1,10 +1,6 @@
 <?php
 
-
-require($_SERVER["DOCUMENT_ROOT"]."/pi/public/PhpClasses/Connection.php");
 USE function CRUD\connect as conn;
-
-
 
 class Funcionario{
 	
@@ -26,7 +22,7 @@ class Funcionario{
 	public function permissaoFuncionario($id_func,$permission){
 		$query = "UPDATE `funcionarios` SET `ativo`= $permission WHERE id_func = $id_func";
 		
-		mysqli_query(conn(), $query);
+		mysqli_query(conn(), $query);		
 	}
 
 }

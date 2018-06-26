@@ -1,5 +1,7 @@
 <?php 
-require($_SERVER["DOCUMENT_ROOT"]."/pi/public/PhpClasses/ConfigClass/Funcionarios.php");
+
+	require($_SERVER["DOCUMENT_ROOT"]."/pi/public/PhpClasses/Connection.php");
+	require($_SERVER["DOCUMENT_ROOT"]."/pi/public/PhpClasses/ConfigClass/Funcionarios.php");
 ?>
 
 <table class="table table-sm table-responsive-xl">		
@@ -22,32 +24,37 @@ require($_SERVER["DOCUMENT_ROOT"]."/pi/public/PhpClasses/ConfigClass/Funcionario
 			       		<th id="id_func-<?php echo $_REQUEST['table']?>" onclick="orderParameter(
 				       		'<?php echo $_REQUEST['table']?>',
 				       		'id_func',
-				     		'<?php echo $_REQUEST['permission']?>',
-				       		'<?php echo $_REQUEST['order']?>'
+				       		'<?php echo $_REQUEST['order']?>',
+				     		'<?php echo $_REQUEST['permission']?>'
+				       		
 			       		)">#</th>
 			     		<th id="nome_func-<?php echo $_REQUEST['table']?>" onclick="orderParameter(
 				     		'<?php echo $_REQUEST['table']?>',
 				     		'nome_func',
-				     		'<?php echo $_REQUEST['permission']?>',
-				     		'<?php echo $_REQUEST['order']?>'
+				     		'<?php echo $_REQUEST['order']?>',
+				     		'<?php echo $_REQUEST['permission']?>'
+				     		
 			     		)">Nome</th>
 			     		<th id="cpf-<?php echo $_REQUEST['table']?>" onclick="orderParameter(
 				     		'<?php echo $_REQUEST['table']?>',
 				     		'cpf',
-				     		'<?php echo $_REQUEST['permission']?>',
-				     		'<?php echo $_REQUEST['order']?>'
+				     		'<?php echo $_REQUEST['order']?>',
+				     		'<?php echo $_REQUEST['permission']?>'
+				     		
 			     		)">CPF</th>
 			      		<th id="tipo_acesso-<?php echo $_REQUEST['table']?>" onclick="orderParameter(
 				      		'<?php echo $_REQUEST['table']?>',
 				      		'tipo_acesso',
-				     		'<?php echo $_REQUEST['permission']?>',
-				      		'<?php echo $_REQUEST['order']?>'
+				      		'<?php echo $_REQUEST['order']?>',
+				     		'<?php echo $_REQUEST['permission']?>'
+				      		
 			      		)">Tipo de Acesso</th>
 			      		<th id="email-<?php echo $_REQUEST['table']?>" onclick="orderParameter(
 				      		'<?php echo $_REQUEST['table']?>',
 				      		'email',
-				     		'<?php echo $_REQUEST['permission']?>',
-				      		'<?php echo $_REQUEST['order']?>'
+				      		'<?php echo $_REQUEST['order']?>',
+				     		'<?php echo $_REQUEST['permission']?>'
+				      		
 			      		)">E-Mail</th>
 			      		<th ></th>
 			    	</tr>

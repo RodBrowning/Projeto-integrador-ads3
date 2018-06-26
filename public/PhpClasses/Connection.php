@@ -1,4 +1,5 @@
 <?php
+
 namespace CRUD;
 
 	function connect()
@@ -8,7 +9,8 @@ namespace CRUD;
 			$password = "";
 			$database = "estacionamento";
 
-			return mysqli_connect($dbhost,$userName,$password,$database);		
+			$conn = mysqli_connect($dbhost,$userName,$password,$database);
+			return $conn;
 		}
 	
 
