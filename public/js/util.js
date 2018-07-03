@@ -22,3 +22,31 @@ function upperCaseFirst(str) {
    // Directly return the joined string
    return splitStr.join(' '); 
 }
+
+
+function cpfFormatValidation(input)
+{
+  
+  
+      if(input.value.length == 14)
+      {
+        var re = /\d{3}\.\d{3}\.\d{3}[-]\d{2}/;
+        if (!input.value.match(re))
+        {
+            input.value = "";
+            alert("Only number are valid. Type again");
+        }else
+          {
+            alert("Next page.");
+          }
+      }else if(input.value.length < 14)
+        {
+          alert("Number of characters invalid. Type again");
+          input.value = "";
+        }else
+          {
+            alert("Unknown error. Type again");
+            input.value = "";
+          }
+
+}

@@ -118,6 +118,12 @@
 		width: unset;
 		text-align: center;
 	}
+	.width-label-4{    
+    	text-align: unset;
+	    margin-top: 28px;
+	    width: 75.5%;
+	}
+
 	.width-input-1{
 	    width: 84%;
 	    float: unset;
@@ -125,6 +131,11 @@
 	.width-input-2{
 	    width: 84%;
 	}
+	.width-input-3{
+    	width: 84%;
+	}
+
+
 	select.width-select {
 	    border: 1px solid;
 	    text-align: center;
@@ -159,21 +170,39 @@
 	}
 
 	select.width-select {
-		width: 20%;
+		width: 68%;
+	    margin-top: 11px;
 	    padding-right: unset;
+	}
+	.width-label-2 {
+	    width: 131px;
+	    text-align: right;
 	}
 	.width-label-3 {		
       	text-align: right;
 	    width: 78%;
 	}
+	.width-label-4{    
+	    text-align: right;
+	    width: 50%;
+	}
+
 
 	.width-input-1 {
     	width: 19.5%;
     	float: right;
 	}
 	.width-input-2 {
-	    width: 23%;
+	    width: 77%;
 	}
+	.width-input-3{
+   		width: 40%;
+	}
+
+	.senhas-991{
+		text-align: right;
+	}
+
 	
 	.button-cadastro-func {
 	    margin-left: 23%;
@@ -195,6 +224,11 @@
       	width: 76%;;
 	    text-align: right;
 	}
+	.width-label-4{    
+	    text-align: right;
+	   	width: 36%;
+	}
+
 	.width-input-1{
 	    width: 22.5%;    
 	    float: right;
@@ -202,6 +236,12 @@
 	.width-input-2{
 	    width: 31%;
 	}
+	.width-input-3{
+    	width: 21.5%;
+	}
+
+
+
 	select.width-select {
 	    width: 22.5%;
     	padding-right: 4%;

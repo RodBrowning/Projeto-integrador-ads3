@@ -68,6 +68,15 @@
 			<hr>
 		</div>	
 		<div class="col-10 marginAuto">
+			<fieldset class="col-md-12">				
+					<legend ">Cadastrar</legend>
+					<div class="form-cad-func col-lg-10 text-center">	
+							<label class="width-label-3">CPF:</label><input class="width-input-1" type="text" pattern="\d{3}\.\d{3}\.\d{3}[-]\d{2}" maxlength="14" name="CPF" id="CPF" onkeypress="formatar('###.###.###-##',this)">
+							<div class="display-inline-block ml-2">
+								<button type="submit" onclick="cpfFormatValidation(CPF)" class="my-btn my-btn-success">Novo Funcionario</button>
+							</div>
+					</div>
+			</fieldset>
 			<fieldset class="col-md-12">
 				<legend ">Cadastrar</legend>
 				<div class="form-div mt-0">
@@ -78,7 +87,7 @@
 					</div>
 					<div class="form-cad-func col-lg-10 marginAuto">					
 						<div class="display-block">
-							<label class="display-inline-block width-label-1">CFP:</label><input class="width-input-2" type="text" pattern="\d*" maxlength="14" id="CPF" onkeypress="formatar('###.###.###-##',this)">
+							<label class="display-inline-block width-label-1">E-Mail:</label><input class="width-input-2" type="email" id="email">
 						
 							<label class="display-inline-block width-label-2">Tipo acesso:</label>
 								<select class="width-select" id="select">
@@ -89,14 +98,15 @@
 						</div>
 					</div>
 					<div class="form-cad-func col-lg-10 marginAuto">					
-						<div class="display-block">
-							<label class="width-label-1">E-Mail:</label><input class="width-input-2" type="email" id="email">
-							<label class="width-label-2">Senha:</label><input class="width-input-1" type="password" maxlength="20" id="senha">							
+						<div class="display-block senhas-991">
+							
+							<label class="width-label-1">Senha:</label><input class="width-input-3" type="password" maxlength="20" id="senha">							
+							<label class="width-label-4">Confirmar Senha:</label><input class="width-input-3" type="password" maxlength="20" id="senhaConfirm">
 						</div>
 						
 					</div>
-					<div class="form-cad-func col-lg-10 marginAuto">	
-							<label class="width-label-3">Confirmar Senha:</label><input class="width-input-1" type="password" maxlength="20" id="senhaConfirm">
+					<div class="form-cad-func col-lg-10 text-right">	
+							<label class="width-label-3">CPF:</label><span>8478374837</span>
 					</div>
 					
 					<div class="form-cad-func col-lg-10 marginAuto">					

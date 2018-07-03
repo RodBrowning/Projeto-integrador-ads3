@@ -1,4 +1,4 @@
-/*Cofig Page*/
+    /*Cofig Page*/
 
 /* Atualização de valores */
 legend {
@@ -64,19 +64,31 @@ fieldset {
     width: 133px;
     text-align: right;
 }
+/*
 .width-label-3{    
     text-align: right;
     width: 69.5%;
 }
+*/
+.width-label-3{    
+    text-align: right;
+    width: 8%;
+}
+.width-label-4{    
+    text-align: right;
+    width: 26.5%;
+}
 
 .width-input-1{
     width: 29.5%;    
-    float: right;
+    float: none;
 }
 .width-input-2{
     width: 31%;
 }
-
+.width-input-3{
+    width: 28%;
+}
 
 select.width-select {
     border: 1px solid;
