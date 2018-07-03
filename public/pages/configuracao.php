@@ -11,7 +11,7 @@
 		<hr>
 	</div>
 	<div class="col-10 marginAuto mb-4">	
-
+			<!-- Caixa para definição de valores -->
 			<fieldset>
 				<legend>Valores</legend>
 				<?php 
@@ -68,15 +68,17 @@
 			<hr>
 		</div>	
 		<div class="col-10 marginAuto">
+			<!-- Exibe caixa para entrada do CPF -->
 			<fieldset class="col-md-12">				
 					<legend ">Cadastrar</legend>
 					<div class="form-cad-func col-lg-10 text-center">	
-							<label class="width-label-3">CPF:</label><input class="width-input-1" type="text" pattern="\d{3}\.\d{3}\.\d{3}[-]\d{2}" maxlength="14" name="CPF" id="CPF" onkeypress="formatar('###.###.###-##',this)">
+							<label class="width-label-3">CPF:</label><input class="width-input-1" type="text" maxlength="14" name="CPF" id="CPF" onkeypress="formatar('###.###.###-##',this)">
 							<div class="display-inline-block ml-2">
 								<button type="submit" onclick="cpfFormatValidation(CPF)" class="my-btn my-btn-success">Novo Funcionario</button>
 							</div>
 					</div>
 			</fieldset>
+			<!-- Caixa será exibida caso o CPF nao seja encontrado no banco -->
 			<fieldset class="col-md-12">
 				<legend ">Cadastrar</legend>
 				<div class="form-div mt-0">
@@ -106,6 +108,7 @@
 						
 					</div>
 					<div class="form-cad-func col-lg-10 text-right">	
+							<!-- Placeholder para o CPF inserido -->
 							<label class="width-label-3">CPF:</label><span>8478374837</span>
 					</div>
 					
@@ -124,6 +127,7 @@
 
 <div class="row padding-2">
 	<div class="col-lg-8 col-9 titleDiv marginAuto">
+		<!-- Exibe todos os funcionarios ativos no sistema -->
 		<p>Funcionários ativos</span></p>
 		<hr>		
 	</div>
@@ -180,6 +184,7 @@
 
 <div class="row padding-2">
 	<div class="col-lg-8 col-9 titleDiv marginAuto">
+		<!-- Exibe todos os funcionarios inativos no sistema -->
 		<p>Funcionários inativos</p>
 		<hr>		
 	</div>

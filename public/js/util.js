@@ -1,4 +1,4 @@
-
+// Exibe o valor no input em determinado formato
 function formatar(mascara, documento){
   var i = documento.value.length;
   var saida = mascara.substring(0,1);
@@ -27,23 +27,26 @@ function upperCaseFirst(str) {
 function cpfFormatValidation(input)
 {
   
-  
+      // Verifica se o tamanho e adequado
       if(input.value.length == 14)
       {
         var re = /\d{3}\.\d{3}\.\d{3}[-]\d{2}/;
+        // Verifica se esta dentro da regra do REGEX
         if (!input.value.match(re))
         {
             input.value = "";
             alert("Only number are valid. Type again");
         }else
           {
+            // Placeholder para futura formula AJAX
             alert("Next page.");
           }
+      // Exibe uma msg de erro caso o tamanho seja menor que o especificado
       }else if(input.value.length < 14)
         {
           alert("Number of characters invalid. Type again");
           input.value = "";
-        }else
+        }else // Exibe mensagem de erro generica para qualquer outra situação
           {
             alert("Unknown error. Type again");
             input.value = "";
