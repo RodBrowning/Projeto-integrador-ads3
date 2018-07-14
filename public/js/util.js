@@ -39,12 +39,12 @@ function cpfFormatValidation(input)
         }else
           {
             // Placeholder para futura formula AJAX
-            alert("Next page.");
+            validarCPF(input.value);
           }
       // Exibe uma msg de erro caso o tamanho seja menor que o especificado
       }else if(input.value.length < 14)
         {
-          alert("Number of characters invalid. Type again");
+          alert("Formato invalido. Verifique se as pontuações estão no formato XXX.XXX.XXX-XX. Tente novamente.");
           input.value = "";
         }else // Exibe mensagem de erro generica para qualquer outra situação
           {

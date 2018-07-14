@@ -70,11 +70,11 @@
 		<div class="col-10 marginAuto">
 			<!-- Exibe caixa para entrada do CPF -->
 			<fieldset class="col-md-12">				
-					<legend ">Cadastrar</legend>
+					<legend ">Cadastrar Funcionario</legend>
 					<div class="form-cad-func col-lg-10 text-center">	
-							<label class="width-label-3">CPF:</label><input class="width-input-1" type="text" maxlength="14" name="CPF" id="CPF" onkeypress="formatar('###.###.###-##',this)">
+							<label class="width-label-3">CPF:</label><input class="width-input-1" type="text" placeholder="xxx.xxx.xxx-xx" maxlength="14" name="CPF" id="CPF" onkeypress="formatar('###.###.###-##',this)">
 							<div class="display-inline-block ml-2">
-								<button type="submit" onclick="cpfFormatValidation(CPF)" class="my-btn my-btn-success">Novo Funcionario</button>
+								<button type="submit" onclick="cpfFormatValidation(CPF)" class="my-btn my-btn-success">Validar CPF</button>
 							</div>
 					</div>
 			</fieldset>
@@ -115,6 +115,7 @@
 					<div class="form-cad-func col-lg-10 marginAuto">					
 						<div class="display-block">
 							<div class="button-cadastro-func display-inline-block">
+								<button class="my-btn my-btn-danger">Cancelar</button>
 								<button class="my-btn my-btn-success" onclick="validarNovoFuncionario()">Salvar</button>
 							</div>
 						</div>
