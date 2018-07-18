@@ -1,8 +1,39 @@
+/// Change name to revomePontuation()
 function validarCPF(CPF)
 	{
 		var cpfNoPontiation = CPF.substr(0,3)+CPF.substr(4,3)+CPF.substr(8,3)+CPF.substr(12,2);
 		console.log(cpfNoPontiation);
 	}
+
+function cpfFormatValidation(input)
+{
+  
+      // Verifica se o tamanho e adequado
+      if(input.value.length == 14)
+      {
+        var re = /\d{3}\.\d{3}\.\d{3}[-]\d{2}/;
+        // Verifica se esta dentro da regra do REGEX
+        if (!input.value.match(re))
+        {
+            input.value = "";
+            alert("Only number are valid. Type again");
+        }else
+          {
+            // Placeholder para futura formula AJAX
+            validarCPF(input.value);
+          }
+      // Exibe uma msg de erro caso o tamanho seja menor que o especificado
+      }else if(input.value.length < 14)
+        {
+          alert("Formato invalido. Verifique se as pontuações estão no formato XXX.XXX.XXX-XX. Tente novamente.");
+          input.value = "";
+        }else // Exibe mensagem de erro generica para qualquer outra situação
+          {
+            alert("Unknown error. Type again");
+            input.value = "";
+          }
+
+}
 
 function validarNovoFuncionario()
 	{
