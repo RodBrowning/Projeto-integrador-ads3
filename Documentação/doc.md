@@ -47,34 +47,3 @@ Programador com domínio pleno em HTML, CSS, JavaScript e AJAX.
 
 Programador com domínio pleno em PHP, AJAX E JavaScript.
 
-#### Banco de Dados
-
-Programador com domínio pleno em PhpMyAdmin, MySQL, SQL e PHP.
-
-#### Apoio e suporte
-
-Programador Junior com dominio em PhpMyAdmin, MySQL, SQL, PHP, AJAX, JavaScript, HTML e CSS. 
-
-
-## Tempo Estimado em (46 dias)
-
-
-### Atividades
-
-1. [Gerenciamento do projeto](https://github.com/RodBrowning/Projeto-integrador-ads3/blob/master/Documenta%C3%A7%C3%A3o/gerenciamento_do_projeto.md)
-1. [Criar banco de dados. (4 dias)](https://github.com/RodBrowning/Projeto-integrador-ads3/tree/master/Documenta%C3%A7%C3%A3o/banco_dados)
-2. [Desenvolver Páginas (front-end). (2 semanas)](https://github.com/RodBrowning/Projeto-integrador-ads3/tree/master/Documenta%C3%A7%C3%A3o/front_end)
-3. [Desenvolvimento das Classes (back-end). (2 semana)](https://github.com/RodBrowning/Projeto-integrador-ads3/tree/master/Documenta%C3%A7%C3%A3o/back_end)
-4. [Criando integração. (2 Semanas)](https://github.com/RodBrowning/Projeto-integrador-ads3/tree/master/Documenta%C3%A7%C3%A3o/integracao)
-
-
-### Testes
-
-Testes deverão ser efetuados ao final do desenvolvimento de cada modulo.
-Em caso de falhas, o desenvolvimento do próximo módulo não deverá ser iniciado antes que o anterior esteja funcionado corretamente.
-Deverão ser seguidas as orientações de teste propostas em cada modulo.
-
-### Recomendações Gerais 
-
-Os códigos devem ser bem comentados e sua disposição deve ser de fácil assimilação e interpretação.
-São escritos para serem reutilizáveis. As estruturas contidas nas documentações devem ser seguidas a risca.

@@ -1,5 +1,5 @@
 
-<div class="col-md-11 marginAuto mt-3 mb-4">
+<div>
 	<fieldset >
 		<legend>Salvar Novos Valores</legend>			
 			<div class="col-md-11 marginAuto divLancamento marginAuto">
