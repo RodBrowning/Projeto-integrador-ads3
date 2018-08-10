@@ -8,7 +8,7 @@
 				</div>
 				
 				<button onclick="closePopUp()" class="my-btn my-btn-danger mb-3">Cancelar</button>				
-				<button onclick="Crud('update-valores-mensal',
+				<button onclick="CrudConfig('update-valores-mensal',
 		      			'<?php echo $_REQUEST['valorMensal']?>')" class="my-btn my-btn-success mb-3">Salvar</button>				
 				
 			</div>

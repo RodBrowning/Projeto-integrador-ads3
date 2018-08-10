@@ -21,7 +21,9 @@
 	<div id="pop-up-box" class="pop-up-box">
 		<div class="successMessage">
 			<h4>Funcionario <b><?php echo $_REQUEST['nome_func'] ?></b> <?php echo $popPage ?> com sucesso!</h4>
-			<button class="my-btn my-btn-success marginAuto" onclick="ajaxRequestIndex('configuracao'),closePopUp()">OK</button>
+			<div class="text-center">
+				<button class="my-btn my-btn-success" onclick="ajaxRequestIndex('configuracao'),closePopUp()">OK</button>
+			</div>
 		</div>
 	</div>
 	

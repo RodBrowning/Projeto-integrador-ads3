@@ -5,7 +5,7 @@ USE function CRUD\connect as conn;
 class Funcionario{
 	
 	/// Selects here
-	public function buscaFuncionarios($column, $permission ,$order){
+	public function buscaFuncionarios($column, $order, $permission){
 		$query = "SELECT * FROM `funcionarios` WHERE ativo = $permission ORDER BY $column $order";
 		
 		return mysqli_query(conn(), $query);
@@ -23,6 +23,18 @@ class Funcionario{
 		$query = "UPDATE `funcionarios` SET `ativo`= $permission WHERE id_func = $id_func";
 		
 		mysqli_query(conn(), $query);		
+	}
+
+	/// Verificar se existe
+	public function CPFExiste($cpf){
+		$query = "SELECT * from funcionarios WHERE cpf = $cpf";
+		$row = mysqli_query(conn(),$query);
+
+		if(mysqli_num_rows($row) > 0){
+			return true;
+		}else{
+			return false;
+		}
 	}
 
 }

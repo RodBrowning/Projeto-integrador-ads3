@@ -11,7 +11,7 @@
 				</div>
 				
 				<button onclick="closePopUp()" class="my-btn my-btn-danger mb-3">Cancelar</button>				
-				<button onclick="Crud('update-valores-horas',
+				<button onclick="CrudConfig('update-valores-horas',
 		      			'<?php echo $_REQUEST['primeiraHora']?>',
 		      			'<?php echo $_REQUEST['demaisHoras']?>')" class="my-btn my-btn-success mb-3">Salvar</button>				
 				

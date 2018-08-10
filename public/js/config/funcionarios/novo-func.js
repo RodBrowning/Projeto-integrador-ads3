@@ -1,40 +1,82 @@
-/// Change name to revomePontuation()
-function validarCPF(CPF)
-	{
-		var cpfNoPontiation = CPF.substr(0,3)+CPF.substr(4,3)+CPF.substr(8,3)+CPF.substr(12,2);
-		console.log(cpfNoPontiation);
+
+/// Função para retirar pontuações e verificar validade do CPF matematicamente
+function formatCPF(CPF){
+	/// REGEX para computador que formata o CPF automaticamente
+	var re = /\d{3}\.\d{3}\.\d{3}[-/]\d{2}/;
+	/// REGEX para computador que não formata o CPF automaticamente
+	var reCEL = /\d{11}/;
+
+	/// Se não estiverem dentro de umas das expressões retorna false
+	if(CPF.value.match(re)){
+
+		var cpf = CPF.value.substr(0,3)+CPF.value.substr(4,3)+CPF.value.substr(8,3)+CPF.value.substr(12,2);
+
+	}else if(CPF.value.match(reCEL)){
+
+		var cpf = CPF.value;
+
+	}else{
+
+		alert("CPF invalido");
+		return false;
 	}
 
-function cpfFormatValidation(input)
-{
-  
-      // Verifica se o tamanho e adequado
-      if(input.value.length == 14)
-      {
-        var re = /\d{3}\.\d{3}\.\d{3}[-]\d{2}/;
-        // Verifica se esta dentro da regra do REGEX
-        if (!input.value.match(re))
-        {
-            input.value = "";
-            alert("Only number are valid. Type again");
-        }else
-          {
-            // Placeholder para futura formula AJAX
-            validarCPF(input.value);
-          }
-      // Exibe uma msg de erro caso o tamanho seja menor que o especificado
-      }else if(input.value.length < 14)
-        {
-          alert("Formato invalido. Verifique se as pontuações estão no formato XXX.XXX.XXX-XX. Tente novamente.");
-          input.value = "";
-        }else // Exibe mensagem de erro generica para qualquer outra situação
-          {
-            alert("Unknown error. Type again");
-            input.value = "";
-          }
-
+	// Se estiver dentro de um numero valido matematicamente verifica se já existe no banco
+	if(isCPF(cpf) == true)
+		{
+			CPFExiste(cpf);
+		}else{
+			alert('CPF invalido');
+		}	
 }
 
+/// Testa o CPF matematicamente
+function isCPF(strCPF){
+	    var Soma;
+	    var Resto;
+	    Soma = 0;
+	 	if (strCPF == "00000000000") return false;
+	     
+	  	for (i=1; i<=9; i++) 
+	  	Soma = Soma + parseInt(strCPF.substring(i-1, i)) * (11 - i);
+	  	Resto = (Soma * 10) % 11;
+	   
+	    if ((Resto == 10) || (Resto == 11))  Resto = 0;
+	    if (Resto != parseInt(strCPF.substring(9, 10)) ) return false;
+	   
+	  	Soma = 0;
+	    for (i = 1; i <= 10; i++) Soma = Soma + parseInt(strCPF.substring(i-1, i)) * (12 - i);
+	    Resto = (Soma * 10) % 11;
+	   
+	    if ((Resto == 10) || (Resto == 11))  Resto = 0;
+	    if (Resto != parseInt(strCPF.substring(10, 11) ) ) return false;
+	    return true;
+	}
+
+
+/// Verifica existencia do CPF no banco de dados
+function CPFExiste(cpf){
+	var xmlhttp = new XMLHttpRequest();
+		xmlhttp.onreadystatechange = ()=>
+			{
+				if(xmlhttp.readyState == 4 && xmlhttp.status == 200)
+					{						
+						if(xmlhttp.responseText == true){
+							alert("Erro: CPF ja existe na base de dados!");
+						}else{
+
+							showPopUpConfig("Confirm-CPF",cpf);
+							
+						}
+						
+					}
+			}
+			
+	xmlhttp.open('post', `./pages/PopUpsContent/config/funcionarios/CRUDFuncionarios/verificarCPFExiste.php?CPF=${cpf}`,true);													
+		
+	xmlhttp.send();
+}
+// Função em construção
 function validarNovoFuncionario()
 	{
 		
@@ -61,8 +103,7 @@ function validarNovoFuncionario()
 		
 		if(validado)
 			{
-				showPopUp('confirm-func', nome, cpf, acesso, email,senha,senhaConfirm);		
+				showPopUpConfig('confirm-func', nome, cpf, acesso, email,senha,senhaConfirm);		
 			}
 		
 	}
-

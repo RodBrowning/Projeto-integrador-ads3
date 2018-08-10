@@ -1,14 +1,15 @@
 <?php 
-	$popPage = "Ativar";
+	$operacao = "Ativar";
 
 	if($_REQUEST['permission']== 0)
 		{
-			$popPage = "Desativar";
+			$operacao = "Desativar";
 		}
 ?>
-<div class="col-md-11 marginAuto mt-3 mb-4">
+<!-- Caixa de confirmação de ativação ou desativação de funcionario -->
+<div>
 	<fieldset >
-		<legend><?php echo $popPage?> Funcionario</legend>			
+		<legend><?php echo $operacao?> Funcionario</legend>			
 			<div class="col-md-11 marginAuto divLancamento marginAuto">
 				<div>
 					<p class="display-inline-block">ID:</p>
@@ -32,11 +33,12 @@
 					<p class="display-inline-block">Permission:</p>
 					<b><p class="display-inline-block" id="E-mail"><?php echo $_REQUEST['permission']?></p></b>
 				</div>
-				<button onclick="closePopUp()" class="my-btn my-btn-danger mb-3">Cancelar</button>				
-				<button onclick="Crud('permission-funcionario',
+				<button onclick="closePopUp()" class="my-btn my-btn-danger mb-3">Cancelar</button>	
+				<!-- Chama função JavaScript que redirecionará para a pagina php fazer a alteração no banco -->			
+				<button onclick="CrudConfig('permission-funcionario',
 		      			'<?php echo $_REQUEST['id_func']?>',
 		      			'<?php echo $_REQUEST['nome_func']?>',		      			
-		      			'<?php echo $_REQUEST['permission']?>',)" class="my-btn my-btn-success mb-3"><?php echo $popPage?></button>				
+		      			'<?php echo $_REQUEST['permission']?>',)" class="my-btn my-btn-success mb-3"><?php echo $operacao?></button>				
 				
 			</div>
 	</fieldset>

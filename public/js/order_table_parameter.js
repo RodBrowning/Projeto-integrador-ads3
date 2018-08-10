@@ -1,3 +1,4 @@
+// Função responsavel por ordenar os valores das tabelas com click na coluna
 function orderParameter(...arg)
 {	
 	var xmlhttp = new XMLHttpRequest();
@@ -5,8 +6,11 @@ function orderParameter(...arg)
 		{
 			if(xmlhttp.readyState == 4 && xmlhttp.status == 200)
 				{	
+					// Variavel forma o nome da tabela para tabela-ativa ou tabela-inativa
 					let tbl = "tabela-" + arg[0];
+					// Seleciona o div com o nome da tabela
 					let divTable = document.getElementById(`${tbl}`);
+					// Insere a nova tabela com a ordem desejada no div selecionado
 					divTable.innerHTML = xmlhttp.responseText;
 
 					//Define up or down arrow
@@ -16,17 +20,22 @@ function orderParameter(...arg)
 
 	switch(arg[0])
 		{
+			// 
 			case (arg[0] == 'inativos' ? 'inativos' : 'ativos') :
-					xmlhttp.open('post', `./pages/PopUpsContent/config/funcionarios/operacoes/ordenar_tabelas_funcionarios.php?table=${arg[0]}&column=${arg[1]}&order=${arg[2]}&permission=${arg[3]}`,true);	
+					// Arquivo php que retornará a nova tabela 
+					xmlhttp.open('post', `./pages/PopUpsContent/config/funcionarios/CRUDFuncionarios/ordenar_tabelas_funcionarios.php?table=${arg[0]}&column=${arg[1]}&order=${arg[2]}&permission=${arg[3]}`,true);	
 				break;
 		}	
 	xmlhttp.send();
 }
 
+// Define a direção da seta ao clicar na coluna
+// Semelhante ao sistema de ordenação dos sistemas operacionas
+
 function arrowUpOrDown(...arg){
 	let columnName = arg[1]+"-"+arg[0];
 	let colunaAtiva = document.getElementById(`${columnName}`);
-	console.log(colunaAtiva);
+	
 	switch(arg[0])
 		{
 			case (arg[0] == 'inativos' ? 'inativos' : 'ativos'):

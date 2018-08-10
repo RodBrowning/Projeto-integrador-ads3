@@ -15,6 +15,10 @@
 			<fieldset>
 				<legend>Valores</legend>
 				<?php 
+
+					// Cria uma instancia da classe que retornara os valores armazenados no banco 		
+					// Esta classe esta localizada na pasta "public/pages/PhpClasses/GenericSearchesClass.php"
+
 					$valores = new Generic;
 					$valoresArray = $valores->selectAllFrom('valores');
 					while ($row = mysqli_fetch_array($valoresArray)) {
@@ -35,6 +39,7 @@
 						<p class="display-inline-block ">Primeira Hora: <input type="number" step="any" id="primeira-hora"></p>
 						<p class="display-inline-block">Demais Horas: <input type="number" id="demais-horas"></p>
 						<div class="button-ajuste-cobranca display-inline-block">
+							<!-- A função "validarValores()" esta localizada no arquivo "public/js/config/valores/valores.js" -->
 							<button class=" my-btn my-btn-success"  onclick="validarValores('update-valores-horas')">Salvar</button>
 						</div>
 					</div>
@@ -74,7 +79,7 @@
 					<div class="form-cad-func col-lg-10 text-center">	
 							<label class="width-label-3">CPF:</label><input class="width-input-1" type="text" placeholder="xxx.xxx.xxx-xx" maxlength="14" name="CPF" id="CPF" onkeypress="formatar('###.###.###-##',this)">
 							<div class="display-inline-block ml-2">
-								<button type="submit" onclick="cpfFormatValidation(CPF)" class="my-btn my-btn-success">Validar CPF</button>
+								<button type="submit" onclick="formatCPF(CPF)" class="my-btn my-btn-success">Validar CPF</button>
 							</div>
 					</div>
 			</fieldset>
@@ -132,12 +137,22 @@
 		<p>Funcionários ativos</span></p>
 		<hr>		
 	</div>
+
+	<!-- Este div recebe tabelas geradas pela mudança de permição ou pelo reordenamento das colunas -->
+
 	<div class="col-10 marginAuto " id="tabela-ativos">
 		<table class="table table-sm table-responsive-xl">
 		    
 		  		<?php 
+
+		  			// Instancia da classe funcionarios
+
 					$users = new Funcionario;
-					$data = $users->buscaFuncionarios('id_func','1','asc');
+
+					// Os valores da função são o padrão para o primeiro acesso a pagina de configuração
+					// Eles garantem que nesta tabela haverá dados apenas de funcionarios ativados do sistema
+
+					$data = $users->buscaFuncionarios('id_func','asc','1');
 						if(mysqli_num_rows($data) == 0)
 							{
 								?>
@@ -146,6 +161,11 @@
 							}else{
 								?>
 								<thead>
+
+									<!-- As colunas das tabelas são reordenadas com um clique na coluna que se deseja reordenar -->
+									<!-- Os valores da função "orderParameter()" são os padrões para primera vez que a pagina é acessada  -->
+									<!-- O ultimo parametro e 1 para que seja retornada uma tabela com funcionarios ativos -->
+
 							    	<tr class="table-head">
 							       		<th id="id_func-ativos" onclick="orderParameter('ativos','id_func','desc','1')">#</th>
 							     		<th id="nome_func-ativos" onclick="orderParameter('ativos','nome_func','asc','1')">Nome</th>
@@ -162,12 +182,17 @@
 				?>
 
 		    	<tr>
+
+		    		<!-- A função "showPopUpConfig()" abre uma caixa de confirmação se positivo efetua a alteração no banco de dados e retorna a pagina de configuração atualizando as tabelas automaticamente -->
+		    		<!-- Esta função sera chamada nas duas tabelas diferenciando apenas o ultimo valor -->
+		    		<!-- Nesta tabela ela envia os dados do funcionario para ser desativado no banco de dados -->
+
 		      		<th scope="row"><?php echo $user['id_func']?></th>
 		      		<td><?php echo $user['nome_func']?></td>
 		      		<td><?php echo $user['cpf']?></td>
 		      		<td><?php echo $user['tipo_acesso']?></td>
 		      		<td><?php echo $user['email']?></td>
-		      		<td class="text-center"><button class="my-btn my-btn-primary" onclick="showPopUp('permission',
+		      		<td class="text-center"><button class="my-btn my-btn-primary" onclick="showPopUpConfig('permission',
 		      			'<?php echo $user['id_func']?>',
 		      			'<?php echo $user['nome_func']?>',
 		      			'<?php echo $user['cpf']?>',
@@ -194,7 +219,11 @@
 		
 		  		<?php 
 					$users = new Funcionario;
-					$data = $users->buscaFuncionarios('id_func','0','asc');
+
+					// Os valores da função são o padrão para o primeiro acesso a pagina de configuração
+					// Eles garantem que nesta tabela haverá dados apenas de funcionarios desativados do sistema
+
+					$data = $users->buscaFuncionarios('id_func', 'asc', '0');
 						if(mysqli_num_rows($data) == 0)
 								{
 									?>
@@ -203,6 +232,11 @@
 								}else{
 									?>
 									<thead>
+											
+										<!-- As colunas das tabelas são reordenadas com um clique na coluna que se deseja reordenar -->
+										<!-- Os valores da função "orderParameter()" são os padrões para primera vez que a pagina é acessada  -->
+										<!-- O ultimo parametro e 0 para que seja retornada uma tabela com funcionarios inativos -->
+			
 								    	<tr class="table-head">
 								       		<th id="id_func-inativos" onclick="orderParameter('inativos','id_func','desc','0')">#</th>
 								     		<th id="nome_func-inativos" onclick="orderParameter('inativos','nome_func','asc','0')">Nome</th>
@@ -217,13 +251,16 @@
 								
 					while($user = mysqli_fetch_array($data)){
 				?>
-		    	<tr>
+		    	<tr>		    		
+
+		    		<!-- Nesta tabela ela envia os dados do funcionario para ser ativado no banco de dados -->
+
 		      		<th scope="row"><?php echo $user['id_func']?></th>
 		      		<td><?php echo $user['nome_func']?></td>
 		      		<td><?php echo $user['cpf']?></td>
 		      		<td><?php echo $user['tipo_acesso']?></td>
 		      		<td><?php echo $user['email']?></td>
-		      		<td class="text-center"><button class="my-btn my-btn-success" onclick="showPopUp('permission',
+		      		<td class="text-center"><button class="my-btn my-btn-success" onclick="showPopUpConfig('permission',
 		      			'<?php echo $user['id_func']?>',
 		      			'<?php echo $user['nome_func']?>',
 		      			'<?php echo $user['cpf']?>',

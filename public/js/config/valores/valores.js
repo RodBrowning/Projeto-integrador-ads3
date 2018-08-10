@@ -1,3 +1,5 @@
+// Função direciona para a caixa de pop-up conforme o tipo de operação a se realizar
+// Funciona como o sistema utilizado em Factoy Method Pattern
 function validarValores(tipo_de_operacao){
 	
 	
@@ -11,21 +13,21 @@ function validarValores(tipo_de_operacao){
 
 					if(!validado)
 						{
-							showPopUp(tipo_de_operacao, primeiraHora, demaisHoras);	
+							showPopUpConfig(tipo_de_operacao, primeiraHora, demaisHoras);	
 						}
 				break;
 			case 'update-valores-diario':		
 					var valorDiario = document.getElementById('valor-diario').value;			
 					if(!validado)
 						{
-							showPopUp(tipo_de_operacao,valorDiario);
+							showPopUpConfig(tipo_de_operacao,valorDiario);
 						}
 				break;
 			case 'update-valores-mensal':		
 					var valorMensal = document.getElementById('valor-mensal').value;			
 					if(!validado)
 						{
-							showPopUp(tipo_de_operacao,valorMensal);
+							showPopUpConfig(tipo_de_operacao,valorMensal);
 						}
 				break;
 		}

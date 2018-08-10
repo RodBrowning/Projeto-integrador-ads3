@@ -107,7 +107,7 @@ CPF inserido</panel_attributes>
       <x>90</x>
       <y>600</y>
       <w>310</w>
-      <h>70</h>
+      <h>90</h>
     </coordinates>
     <panel_attributes>opt</panel_attributes>
     <additional_attributes/>
@@ -445,10 +445,12 @@ Informações de cadastro</panel_attributes>
       <x>150</x>
       <y>630</y>
       <w>230</w>
-      <h>40</h>
+      <h>60</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-&lt;&lt;mensagem de erro&gt;&gt;</panel_attributes>
+&lt;&lt;mensagem de erro&gt;&gt;
+
+Reexibir formulario</panel_attributes>
     <additional_attributes>10.0;20.0;210.0;20.0</additional_attributes>
   </element>
   <element>

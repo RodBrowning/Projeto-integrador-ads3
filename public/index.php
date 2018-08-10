@@ -54,8 +54,9 @@
 	
 	<script type="text/javascript" src="js/order_table_parameter.js"></script>
 	<script type="text/javascript" src="js/pop-up.js"></script>
+	<script type="text/javascript" src="js/config/config-pop-up.js"></script>
+	<script type="text/javascript" src="js/config/CRUDRedirectConfig.js"></script>
 	<script type="text/javascript" src="js/util.js"></script>
-	<script type="text/javascript" src="js/CRUDRedirect.js"></script>
 	
 
 

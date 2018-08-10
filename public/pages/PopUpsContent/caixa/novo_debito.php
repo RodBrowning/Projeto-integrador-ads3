@@ -1,6 +1,6 @@
 <?php date_default_timezone_set('America/Sao_Paulo'); setlocale(LC_TIME, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');?>
 
-<div class="col-md-11 marginAuto mt-3 mb-4">
+<div>
 	<fieldset>
 		<legend>Novo Débito</legend>
 			<div class="col-md-11 marginAuto divLancamento">
