@@ -23,7 +23,7 @@ function ajaxRequestIndex(Page){
 			break;
 		case 'configuracao':
 			// pagina de configuração
-			xmlHttp.open('get',`./pages/configuracao.php?page=${Page}`,true);			
+			xmlHttp.open('get',`./pages/configuracao/configuracao.php?page=${Page}`,true);			
 			break;
 	}
 	xmlHttp.send();

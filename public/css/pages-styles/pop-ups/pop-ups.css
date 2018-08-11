@@ -30,6 +30,14 @@
     width: 45.5%;
 }
 
+@media only screen and (max-width: 768px) {
+    .pop-up-box{
+        width: 85%;
+        position: absolute;
+        left: 8%;
+    }
+}
+
 @media only screen and (min-width: 200px) and (max-width: 425px) {
 
     .pop-up-box{

@@ -170,17 +170,17 @@
 	}
 
 	select.width-select {
-		width: 68%;
-	    margin-top: 11px;
+		width: 62%;
 	    padding-right: unset;
 	}
 	.width-label-2 {
 	    width: 131px;
+	    margin-top: 10px;
 	    text-align: right;
 	}
 	.width-label-3 {		
       	text-align: right;
-	    width: 78%;
+	    width: unset;
 	}
 	.width-label-4{    
 	    text-align: right;
@@ -189,8 +189,8 @@
 
 
 	.width-input-1 {
-    	width: 19.5%;
-    	float: right;
+    	width: 70%;
+    	/*float: right;*/
 	}
 	.width-input-2 {
 	    width: 77%;
@@ -214,30 +214,30 @@
 		margin-left: 25%;
 	}
 	.input-name-func{
-	    width: 80%;
+	    width: 75%;
 	}
 	.width-label-2{
 	    width: 123px;
 	    text-align: right;
 	}
 	.width-label-3{
-      	width: 76%;;
+      	width: unset;;
 	    text-align: right;
 	}
 	.width-label-4{    
 	    text-align: right;
-	   	width: 36%;
+	   	width: 40%;
 	}
 
 	.width-input-1{
-	    width: 22.5%;    
-	    float: right;
+	    width: 75%;    
+	    /*float: right;*/
 	}
 	.width-input-2{
-	    width: 31%;
+	    width: 60%;
 	}
 	.width-input-3{
-    	width: 21.5%;
+    	width: 50%;
 	}
 
 
@@ -250,3 +250,6 @@
 	    margin-left: 20%;
 	}
 }
+
+
+

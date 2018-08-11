@@ -2,6 +2,12 @@
 // Funciona como o sistema utilizado em Factoy Method Pattern
 function showPopUpConfig(tipo_operacao,...args){
 
+	// Vai para o topo em dispositivos pequenos
+	if(window.innerWidth <= 783){
+		window.scrollTo(0, 0);	
+	}
+	
+
 	var popUpsDivBox = document.getElementById('pop-ups-div-box');
 	// Caixa de pop-up padrão
 	popUpsDivBox.innerHTML = `	<link rel="stylesheet" type="text/css" href="css/pages-styles/pop-ups/pop-ups.css">

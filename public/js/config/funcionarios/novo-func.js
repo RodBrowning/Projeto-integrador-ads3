@@ -131,7 +131,7 @@ function EmailExiste(email, nome, cpf, acesso, email,senha,senhaConfirm){
 						if(xmlhttp.responseText == true){
 							alert("Erro: E-mail ja existe na base de dados!");	
 						}else{
-							// Direciona para pop-up de confirmação pelo usuario de todos os dados
+							// Direciona para pop-up de confirmação de todos os dados pelo usuario
 							showPopUpConfig('confirm-func', nome, cpf, acesso, email,senha,senhaConfirm);		
 						}
 						

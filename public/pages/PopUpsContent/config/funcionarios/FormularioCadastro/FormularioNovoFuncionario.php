@@ -13,7 +13,7 @@
 				</div>
 			</div>
 			<div class="form-cad-func col-lg-12 marginAuto">					
-				<div class="display-block">
+				<div class="display-block text-center">
 					<label class="display-inline-block width-label-1">E-Mail:</label><input class="width-input-2" type="email" id="email">
 				
 					<label class="display-inline-block width-label-2">Tipo acesso:</label>
@@ -25,7 +25,7 @@
 				</div>
 			</div>
 			<div class="form-cad-func col-lg-12 marginAuto">					
-				<div class="display-block senhas-991">
+				<div class="display-block senhas-991 text-center">
 					
 					<label class="width-label-1">Senha:</label><input class="width-input-3" type="password" maxlength="20" id="senha">							
 					<label class="width-label-4">Confirmar Senha:</label><input class="width-input-3" type="password" maxlength="20" id="senhaConfirm">

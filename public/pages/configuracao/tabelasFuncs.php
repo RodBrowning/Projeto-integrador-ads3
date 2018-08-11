@@ -1,91 +1,4 @@
-<?php 
-	
-
-	require($_SERVER["DOCUMENT_ROOT"]."/pi/public/PhpClasses/ConfigClass/Funcionarios.php");
-	require($_SERVER["DOCUMENT_ROOT"]."/pi/public/PhpClasses/GenericSearchesClass.php");
-
-?>
-<div class="row padding-2">
-	<div class="col-lg-8 col-9 titleDiv marginAuto">
-		<p>Configurações</span></p>
-		<hr>
-	</div>
-	<div class="col-10 marginAuto mb-4">	
-			<!-- Caixa para definição de valores -->
-			<fieldset>
-				<legend>Valores</legend>
-				<?php 
-
-					// Cria uma instancia da classe que retornara os valores armazenados no banco 		
-					// Esta classe esta localizada na pasta "public/pages/PhpClasses/GenericSearchesClass.php"
-
-					$valores = new Generic;
-					$valoresArray = $valores->selectAllFrom('valores');
-					while ($row = mysqli_fetch_array($valoresArray)) {
-						
-					?>
-				<div class="info-valores col-lg-12 marginAuto mt-2">				
-					<p class="col-lg-5 col-md-12">Primeira Hora: R$<span><?php echo $row['primeira_hora']?></span></p>
-					<p class="col-lg-5 col-md-12">Demais Horas: R$<span><?php echo $row['demais_horas']?></span></p>
-
-					<p class="col-lg-5 col-md-12">Valor Diário: R$<span><?php echo $row['diaria']?></span></p>
-					<p class="col-lg-5 col-md-12">Valor Mensal: R$<span><?php echo $row['mensal']?></span></p>
-					<hr class="linhaPreta">					
-				</div>
-					<?php }	?>
-				<div class="form-div col-lg-11 col-md-10 marginAuto">
-					
-					<div class="div-update display-block ">
-						<p class="display-inline-block ">Primeira Hora: <input type="number" step="any" id="primeira-hora"></p>
-						<p class="display-inline-block">Demais Horas: <input type="number" id="demais-horas"></p>
-						<div class="button-ajuste-cobranca display-inline-block">
-							<!-- A função "validarValores()" esta localizada no arquivo "public/js/config/valores/valores.js" -->
-							<button class=" my-btn my-btn-success"  onclick="validarValores('update-valores-horas')">Salvar</button>
-						</div>
-					</div>
-
-					<div class="div-valores-dia-mensal">
-						<div class="display-block">
-							<p class="display-inline-block ">Valor Diário:</p>	
-							<input class="display-inline-block" type="number" step="any" id="valor-diario">
-							<div class="display-inline-block">
-								<button class="my-btn my-btn-success" onclick="validarValores('update-valores-diario')">Salvar</button>
-							</div>
-						</div>				
-
-						<div  class="display-block">
-							<p class="display-inline-block">Valor Mensal:</p>
-							<input class="display-inline-block" type="number" step="any" id="valor-mensal">
-							<div class="display-inline-block">
-								<button class="my-btn my-btn-success" onclick="validarValores('update-valores-mensal')">Salvar</button>
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</fieldset>		
-					
-		
-	</div>
-
-		<div class="col-lg-8 col-9 titleDiv marginAuto mt-4">
-			<p>Cadastro de funcionários</span></p>
-			<hr>
-		</div>	
-		<div class="col-10 marginAuto">
-			<!-- Exibe caixa para entrada do CPF -->
-			<fieldset class="col-md-12">				
-					<legend ">Cadastrar Funcionario</legend>
-					<div class="form-cad-func col-lg-10 text-center">	
-							<label class="width-label-3">CPF:</label><input class="width-input-1" type="text" placeholder="xxx.xxx.xxx-xx" maxlength="14" name="CPF" id="CPF" onkeypress="formatar('###.###.###-##',this)">
-							<div class="display-inline-block ml-2">
-								<button type="submit" onclick="formatCPF(CPF)" class="my-btn my-btn-success">Validar CPF</button>
-							</div>
-					</div>
-			</fieldset>			
-		</div>
-	</div>	
-</div>
+<!-- Modulo tabelas de funcionarios ativos e inativos -->
 
 <div class="row padding-2">
 	<div class="col-lg-8 col-9 titleDiv marginAuto">
@@ -119,8 +32,8 @@
 								<thead>
 
 									<!-- As colunas das tabelas são reordenadas com um clique na coluna que se deseja reordenar -->
-									<!-- Os valores da função "orderParameter()" são os padrões para primera vez que a pagina é acessada  -->
-									<!-- O ultimo parametro e 1 para que seja retornada uma tabela com funcionarios ativos -->
+									<!-- Os valores da função "orderParameter()" são os padrão para o primeiro acesso  -->
+									<!-- O ultimo parametro é 1 para que seja retornada uma tabela com funcionarios ativos -->
 
 							    	<tr class="table-head">
 							       		<th id="id_func-ativos" onclick="orderParameter('ativos','id_func','desc','1')">#</th>
@@ -190,7 +103,7 @@
 									<thead>
 											
 										<!-- As colunas das tabelas são reordenadas com um clique na coluna que se deseja reordenar -->
-										<!-- Os valores da função "orderParameter()" são os padrões para primera vez que a pagina é acessada  -->
+										<!-- Os valores da função "orderParameter()" são os padrão para para o primeiro acesso  -->
 										<!-- O ultimo parametro e 0 para que seja retornada uma tabela com funcionarios inativos -->
 			
 								    	<tr class="table-head">
@@ -209,7 +122,7 @@
 				?>
 		    	<tr>		    		
 
-		    		<!-- Nesta tabela ela envia os dados do funcionario para ser ativado no banco de dados -->
+		    		<!-- Esta tabela envia os dados do funcionario para ser ativado no banco de dados -->
 
 		      		<th scope="row"><?php echo $user['id_func']?></th>
 		      		<td><?php echo $user['nome_func']?></td>
