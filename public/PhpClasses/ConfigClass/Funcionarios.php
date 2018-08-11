@@ -25,11 +25,21 @@ class Funcionario{
 		mysqli_query(conn(), $query);		
 	}
 
-	/// Verificar se existe
+	/// Verificar se CPF existe
 	public function CPFExiste($cpf){
 		$query = "SELECT * from funcionarios WHERE cpf = $cpf";
 		$row = mysqli_query(conn(),$query);
 
+		if(mysqli_num_rows($row) > 0){
+			return true;
+		}else{
+			return false;
+		}
+	}
+	/// Verificar se Email existe
+	public function emailExiste($email){
+		$query = "SELECT * FROM `funcionarios` WHERE email = $email";
+		$row = mysqli_query(conn(),$query);
 		if(mysqli_num_rows($row) > 0){
 			return true;
 		}else{

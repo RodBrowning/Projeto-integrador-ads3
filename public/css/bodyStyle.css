@@ -96,6 +96,7 @@ tbody tr:active
         font-size: 12px;
         letter-spacing: 3px;
         font-weight: bold;
+        margin: 5px;
     }
 .my-btn-danger  
     {

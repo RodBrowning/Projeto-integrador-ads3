@@ -62,7 +62,7 @@ function CPFExiste(cpf){
 				if(xmlhttp.readyState == 4 && xmlhttp.status == 200)
 					{						
 						if(xmlhttp.responseText == true){
-							alert("Erro: CPF ja existe na base de dados!");
+							alert("Erro: CPF ja existe na base de dados!");							
 						}else{
 
 							showPopUpConfig("Confirm-CPF",cpf);
@@ -76,34 +76,69 @@ function CPFExiste(cpf){
 		
 	xmlhttp.send();
 }
-// Função em construção
+
+// Função de validação de dados
 function validarNovoFuncionario()
 	{
-		
+		// dados inseridos
+
 		var nome = document.getElementById('nome-func').value;
-		var cpf	= document.getElementById('CPF').value;
-		var acesso = document.getElementById('select').value;
 		var email = document.getElementById('email').value;
+		var cpf	= document.getElementById('CPF').getAttribute('value');
+		var acesso = document.getElementById('select').value;		
 		var senha = document.getElementById('senha').value;
 		var senhaConfirm = document.getElementById('senhaConfirm').value;
-		var validado = false;
-		// validação dos dados;
-
-		if(senha == '' || senhaConfirm == '')
-			{
-				alert('O campo senha precisa ser preenchido!');
-			}
-			else if(senha != senhaConfirm)
-				{
-					alert('As senhas não são iguais!');
-				}
-				else{
-					validado = true;
-				}
 		
-		if(validado)
-			{
-				showPopUpConfig('confirm-func', nome, cpf, acesso, email,senha,senhaConfirm);		
-			}
+		var validado;
+
+		// Expressões REGEX para validar dados
+		var reNome = /^([a-zA-Z ]+)$/;
+		var reEmail = /^[a-z0-9._]+@[a-z0-9]+(\.[a-z]+)(\.[a-z]+)?$/;
+		var reSenha = /^[a-zA-Z0-9_!%*$&]+$/;
+
+
+		// validação dos dados com comparação REGEX;
+
+		if(!nome.match(reNome)){
+			alert('Nome invalido');
+		}else if(!email.match(reEmail)){
+			alert('Email invalido');
+		}else if(!senha.match(reSenha)){
+			alert('Senha invalida. Não utilize caracteres especiais.');
+		}else if(senha != senhaConfirm){
+			alert('Senha invalida. As senhas devem ser iquais');
+		}else{
+			// Verificação de email existente
+			EmailExiste(email, nome, cpf, acesso, email,senha,senhaConfirm);
+		}
+
+		
+		
+		// Retorna pop-up de confirmação
+		
+		
+		
 		
 	}
+
+// Verifica existencia do email no banco de dados e faz redirecionamento
+function EmailExiste(email, nome, cpf, acesso, email,senha,senhaConfirm){
+	var xmlhttp = new XMLHttpRequest();
+		xmlhttp.onreadystatechange = ()=>
+			{
+				if(xmlhttp.readyState == 4 && xmlhttp.status == 200)
+					{	
+						if(xmlhttp.responseText == true){
+							alert("Erro: E-mail ja existe na base de dados!");	
+						}else{
+							// Direciona para pop-up de confirmação pelo usuario de todos os dados
+							showPopUpConfig('confirm-func', nome, cpf, acesso, email,senha,senhaConfirm);		
+						}
+						
+					}
+			}
+			
+	xmlhttp.open('post', `./pages/PopUpsContent/config/funcionarios/CRUDFuncionarios/verificarEmailExiste.php?email="${email}"`,true);													
+		
+	xmlhttp.send();
+}

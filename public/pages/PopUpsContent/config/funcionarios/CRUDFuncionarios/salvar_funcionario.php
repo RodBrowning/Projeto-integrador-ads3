@@ -15,8 +15,10 @@
 	</div>	
 	<div id="pop-up-box" class="pop-up-box">
 		<div class="successMessage">
-			<h4>Novo funcionario <b><?php echo $_REQUEST['nome_func'] ?></b> salvo com sucesso!</h4>
-			<button class="my-btn my-btn-success marginAuto" onclick="ajaxRequestIndex('configuracao'),closePopUp()">OK</button>
+			<h4 class="text-center">Novo funcionario<br/><b><?php echo $_REQUEST['nome_func'] ?><br/></b>salvo com sucesso!</h4>
+			<div class="text-center">
+				<button class="my-btn my-btn-success marginAuto" onclick="ajaxRequestIndex('configuracao'),closePopUp()">OK</button>
+			</div>
 		</div>
 	</div>
 	

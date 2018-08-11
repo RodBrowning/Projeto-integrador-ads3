@@ -1,4 +1,7 @@
-<?php date_default_timezone_set('America/Sao_Paulo'); setlocale(LC_TIME, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');?>
+<?php date_default_timezone_set('America/Sao_Paulo'); setlocale(LC_TIME, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');
+	// Importa função "mask()"
+	require($_SERVER["DOCUMENT_ROOT"]."/pi/public/PhpClasses/UtilFunctionsPhp.php"); 
+?>
 
 <div>
 	<fieldset>
@@ -10,7 +13,7 @@
 				</div>
 				<div>
 					<p class="display-inline-block">CPF:</p>
-					<b><p class="display-inline-block" id="cpf"><?php echo $_REQUEST['cpf']?></p></b>
+					<b><p class="display-inline-block" id="cpf"><?php echo mask($_REQUEST['cpf'],'###.###.###-##')?></p></b>
 				</div>
 				<div>
 					<p class="display-inline-block">Tipo acesso:</p>
