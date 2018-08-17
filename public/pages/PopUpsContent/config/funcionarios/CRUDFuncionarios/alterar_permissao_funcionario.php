@@ -10,7 +10,6 @@
 			$popPage = "desativado";
 		}
 
-
 	$Funcionario = new Funcionario();
 	$Funcionario->permissaoFuncionario($_REQUEST['id_func'],$_REQUEST['permission']);
 ?> 

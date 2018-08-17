@@ -37,32 +37,6 @@ body
     	border-top: 1px solid rgba(0, 0, 0, 1);
     }	
 
-/*Espaços pre definidos para elementos*/
-.padding-2
-    {	
-    	padding: 20px 0;
-    }
-.margin-2{	
-	margin: 20px 0;
-}
-.marginAuto
-    {
-    	margin: auto;
-    }
-
-.table-head
-    {
-    	background-color: #717171;
-    }
-
-.table-foot-positivo
-    {
-        background-color: #35ef3b;
-    }
-.table-foot-negativo
-    {
-        background-color: #ef3535;
-    }
 /*Estilo das tabelas*/
 .table-body
     {
@@ -150,6 +124,33 @@ tbody tr:active
 .my-btn-serch:active
     {    
         background-color: #b7b7b7;
+    }
+
+/*Espaços pre definidos para elementos*/
+.padding-2
+    {   
+        padding: 20px 0;
+    }
+.margin-2{  
+    margin: 20px 0;
+}
+.marginAuto
+    {
+        margin: auto;
+    }
+
+.table-head
+    {
+        background-color: #717171;
+    }
+
+.table-foot-positivo
+    {
+        background-color: #35ef3b;
+    }
+.table-foot-negativo
+    {
+        background-color: #ef3535;
     }
 
 /*Estilos dos inputs*/

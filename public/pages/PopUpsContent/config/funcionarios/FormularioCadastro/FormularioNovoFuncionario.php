@@ -41,8 +41,8 @@
 			<div class="form-cad-func col-lg-10 marginAuto">					
 				<div class="display-block text-center">
 					<div class="display-inline-block">
-						<button class="my-btn my-btn-success marginAuto" onclick="validarNovoFuncionario()" autofocus>Salvar</button>
-						<button class="my-btn my-btn-danger marginAuto" onclick="closePopUp()">Cancelar</button>
+						<button class="my-btn my-btn-success" onclick="validarNovoFuncionario()" autofocus>Salvar</button>
+						<button class="my-btn my-btn-danger" onclick="closePopUp()">Cancelar</button>
 					</div>
 				</div>
 			</div>

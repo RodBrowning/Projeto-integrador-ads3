@@ -109,7 +109,7 @@ function validarNovoFuncionario()
 			alert('Senha invalida. As senhas devem ser iquais');
 		}else{
 			// Verificação de email existente
-			EmailExiste(email, nome, cpf, acesso, email,senha,senhaConfirm);
+			emailExiste(email, nome, cpf, acesso, email,senha,senhaConfirm);
 		}
 
 		
@@ -122,7 +122,7 @@ function validarNovoFuncionario()
 	}
 
 // Verifica existencia do email no banco de dados e faz redirecionamento
-function EmailExiste(email, nome, cpf, acesso, email,senha,senhaConfirm){
+function emailExiste(email, nome, cpf, acesso, email,senha,senhaConfirm){
 	var xmlhttp = new XMLHttpRequest();
 		xmlhttp.onreadystatechange = ()=>
 			{

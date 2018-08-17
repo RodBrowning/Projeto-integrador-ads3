@@ -26,7 +26,7 @@ function showPopUp(tipo_operacao,...args){
 		switch(tipo_operacao)
 			{
 				case 'entrada':
-						xmlhttp.open('get', `./pages/PopUpsContent/lancamento/nova_entrada.php`,true);
+						xmlhttp.open('get', `./pages/PopUpsContent/veiculo/FormularioEntrada/formularioEntradaVeiculo.php`,true);
 					break;
 				case 'debito':
 						xmlhttp.open('get', `./pages/PopUpsContent/caixa/novo_debito.php`,true);
