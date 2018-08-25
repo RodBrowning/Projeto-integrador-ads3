@@ -3,13 +3,15 @@
 function formatCPF(CPF){
 	/// REGEX para computador que formata o CPF automaticamente
 	var re = /\d{3}\.\d{3}\.\d{3}[-/]\d{2}/;
-	/// REGEX para computador que não formata o CPF automaticamente
+	/// REGEX para celular que não formata o CPF automaticamente
 	var reCEL = /\d{11}/;
 
 	/// Se não estiverem dentro de umas das expressões retorna false
 	if(CPF.value.match(re)){
 
-		var cpf = CPF.value.substr(0,3)+CPF.value.substr(4,3)+CPF.value.substr(8,3)+CPF.value.substr(12,2);
+		// Substitui todos os não caracteres
+		var toReplace = /[\W_]/g;
+		var cpf = CPF.value.replace(toReplace,"");
 
 	}else if(CPF.value.match(reCEL)){
 

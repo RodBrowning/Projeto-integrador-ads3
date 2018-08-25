@@ -6,7 +6,7 @@
 	</div>
 
 	<div class="col-10 marginAuto">
-		<button class="my-btn my-btn-danger margin-2" onclick="showPopUp('entrada')">NOVA ENTRADA</button>	
+		<button class="my-btn my-btn-danger margin-2" onclick="showPopUpVeiculo('entrada')">NOVA ENTRADA</button>	
 	</div>
 	<div class="col-10 marginAuto">
 		<table class="table table-sm table-responsive-lg">

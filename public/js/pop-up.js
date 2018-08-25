@@ -25,9 +25,6 @@ function showPopUp(tipo_operacao,...args){
 		/// Funciona como o sistema utilizado em Factoy Method Pattern
 		switch(tipo_operacao)
 			{
-				case 'entrada':
-						xmlhttp.open('get', `./pages/PopUpsContent/veiculo/FormularioEntrada/formularioEntradaVeiculo.php`,true);
-					break;
 				case 'debito':
 						xmlhttp.open('get', `./pages/PopUpsContent/caixa/novo_debito.php`,true);
 					break;

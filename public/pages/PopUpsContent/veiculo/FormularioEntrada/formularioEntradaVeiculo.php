@@ -11,7 +11,7 @@
 					</div>
 					<div class="display-block">
 						<p class="display-inline-block">Nome Motorista:</p>
-						<input class="display-inline-block" onkeypress="ngModelEntradaNomeMotorista(id)" type="text" maxlength="30" size="30" id="motorista">
+						<input class="display-inline-block" onkeypress="ngModelEntradaNomeMotorista(id)" type="text" maxlength="30" size="30" id="nomeMotorista">
 					</div>
 				</div>
 			</form>
@@ -35,7 +35,7 @@
 					<p class="display-inline-block">Renilson</p>
 				</div>
 				<button onclick="closePopUp()" class="my-btn my-btn-danger mb-3">Cancelar</button>				
-				<button class="my-btn my-btn-success mb-3">Resistrar</button>				
+				<button onclick="validarDadosEntradaVeiculo()" class="my-btn my-btn-success mb-3">Resistrar</button>				
 				
 			</div>
 	</fieldset>
