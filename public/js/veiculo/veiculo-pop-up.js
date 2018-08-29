@@ -31,9 +31,6 @@ function showPopUpVeiculo(tipo_operacao,...args){
 				case 'confirmar-dados-entrada':
 						xmlhttp.open('get', `./pages/PopUpsContent/veiculo/FormularioEntrada/exibirDadosParaConfirmacao.php`,true);
 					break;
-				case 'credito':
-						xmlhttp.open('get', `./pages/PopUpsContent/caixa/novo_credito.php`,true);													
-					break;
 				default :
 						xmlhttp.open();
 					break;

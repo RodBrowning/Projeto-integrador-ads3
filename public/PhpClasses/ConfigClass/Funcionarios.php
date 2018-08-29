@@ -13,7 +13,7 @@ class Funcionario{
 
 	/// Inserts here
 	public function inserirNovoFuncionario($nome_func, $cpf, $tipo_acesso, $email, $senha){	
-		$query = "INSERT INTO `funcionarios` (`id_func`, `nome_func`, `cpf`, `tipo_acesso`, `email`, `senha`, `ativo`, `logado`) VALUES (NULL, '$nome_func', '$cpf', '$tipo_acesso', '$email', '$senha', '0', '0');";
+		$query = "INSERT INTO `funcionarios` (`id_func`, `nome_func`, `cpf`, `tipo_acesso`, `email`, `senha`, `ativo`, `logado`) VALUES (NULL, '$nome_func', '$cpf', '$tipo_acesso', '$email', '$senha', '0', '0')";
 		
 		mysqli_query(conn(), $query);
 	}	
