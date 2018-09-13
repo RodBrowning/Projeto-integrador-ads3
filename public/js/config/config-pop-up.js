@@ -1,5 +1,5 @@
 // Função responsavel por exibir pop-up para cada operação na pagina de configuração
-// Funciona como o sistema utilizado em Factoy Method Pattern
+
 function showPopUpConfig(tipo_operacao,...args){
 
 	// Vai para o topo em dispositivos pequenos

@@ -7,8 +7,11 @@ class Funcionario{
 	/// Selects here
 	public function buscaFuncionarios($column, $order, $permission){
 		$query = "SELECT * FROM `funcionarios` WHERE ativo = $permission ORDER BY $column $order";
-		
-		return mysqli_query(conn(), $query);
+		$con = conn();
+		$resultado = mysqli_query($con, $query);
+		mysqli_close($con);
+		return $resultado;
+
 	}
 
 	/// Inserts here
@@ -20,15 +23,18 @@ class Funcionario{
 
 	/// Updates here
 	public function permissaoFuncionario($id_func,$permission){
-		$query = "UPDATE `funcionarios` SET `ativo`= $permission WHERE id_func = $id_func";
-		
-		mysqli_query(conn(), $query);		
+		$query = "UPDATE `funcionarios` SET `ativo`= $permission WHERE id_func = $id_func";		
+		$con = conn();
+		$resultado = mysqli_query($con, $query);
+		mysqli_close($con);	
 	}
 
 	/// Verificar se CPF existe
 	public function CPFExiste($cpf){
 		$query = "SELECT * from funcionarios WHERE cpf = $cpf";
-		$row = mysqli_query(conn(),$query);
+		$con = conn();
+		$row = mysqli_query($con,$query);
+		mysqli_close($con);
 
 		if(mysqli_num_rows($row) > 0){
 			return true;
@@ -39,7 +45,10 @@ class Funcionario{
 	/// Verificar se Email existe
 	public function emailExiste($email){
 		$query = "SELECT * FROM `funcionarios` WHERE email = $email";
-		$row = mysqli_query(conn(),$query);
+		$con = conn();
+		$row = mysqli_query($con,$query);		
+		mysqli_close($con);
+		
 		if(mysqli_num_rows($row) > 0){
 			return true;
 		}else{

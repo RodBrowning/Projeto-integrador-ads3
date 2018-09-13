@@ -101,7 +101,7 @@
 	    text-align:  center;
 	}
 
-	.input-name-func{
+	.large-input{
 	    width: 84%;
 	}
 
@@ -165,7 +165,7 @@
 
 @media only screen and (min-width: 769px) and (max-width: 991px) {
 		
-	.input-name-func{
+	.large-input{
 	    width: 77%;
 	}
 
@@ -213,7 +213,7 @@
 	.button-ajuste-cobranca{
 		margin-left: 25%;
 	}
-	.input-name-func{
+	.large-input{
 	    width: 75%;
 	}
 	.width-label-2{

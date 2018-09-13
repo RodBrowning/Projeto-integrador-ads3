@@ -24,3 +24,11 @@ function upperCaseFirst(str) {
 }
 
 
+// Multiplica valor para ser cobrado
+function multiplicaValor(multiplicador, coeficiente){
+        var resultado = multiplicador * coeficiente;
+        return resultado;
+}
+
+
+

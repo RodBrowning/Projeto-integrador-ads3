@@ -1,3 +1,5 @@
+// Função responsavel por exibir pop-up para cada operação na pagina de lançamento
+
 function showPopUpVeiculo(tipo_operacao,...args){
 
 	var popUpsDivBox = document.getElementById('pop-ups-div-box');
@@ -17,20 +19,27 @@ function showPopUpVeiculo(tipo_operacao,...args){
 			if(xmlhttp.readyState == 4 && xmlhttp.status == 200)
 				{
 					var result = document.getElementById("pop-up-box");
+					
 					result.innerHTML = xmlhttp.responseText;
+
 				}
 		}
 
 		/// Transfere a operação para o arquivo php correspondente
-		/// Funciona como o sistema utilizado em Factoy Method Pattern
 		switch(tipo_operacao)
 			{
 				case 'entrada':
 						xmlhttp.open('post', `./pages/PopUpsContent/veiculo/FormularioEntrada/formularioEntradaVeiculo.php`,true);
 					break;
 				case 'confirmar-dados-entrada':
-						xmlhttp.open('get', `./pages/PopUpsContent/veiculo/FormularioEntrada/exibirDadosParaConfirmacao.php`,true);
+						xmlhttp.open('post', `./pages/PopUpsContent/veiculo/FormularioEntrada/exibirDadosParaConfirmacao.php?placa=${args[0]}&nomeMotorista=${args[1]}`,true);
 					break;
+				case 'selecionar-plano':
+						xmlhttp.open('post', `./pages/PopUpsContent/veiculo/FormularioEntrada/formularioCobrancaEntrada.php?placa=${args[0]}&nomeMotorista=${args[1]}`,true);
+					break;
+				case 'confirm-plano':
+						xmlhttp.open('post', `./pages/PopUpsContent/veiculo/FormularioEntrada/confirmarPlano.php?placa=${args[0]}&nomeMotorista=${args[1]}&valorPlano=${args[2]}&quantidade=${args[3]}&plano=${args[4]}`,true);
+					break;										
 				default :
 						xmlhttp.open();
 					break;

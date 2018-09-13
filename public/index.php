@@ -49,6 +49,8 @@
 
 	<script type="text/javascript" src="js/veiculo/operacoes/entradaVeiculo.js"></script>	
 	<script type="text/javascript" src="js/veiculo/veiculo-pop-up.js"></script>	
+	<script type="text/javascript" src="js/veiculo/CRUDRedirectVeiculos.js"></script>	
+	
 	
 	<script type="text/javascript" src="js/caixa/caixa.js"></script>
 

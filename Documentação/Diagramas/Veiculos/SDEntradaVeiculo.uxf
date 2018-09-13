@@ -834,13 +834,13 @@ bg=#93dbb3</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>1584</x>
-      <y>1536</y>
+      <y>1080</y>
       <w>24</w>
-      <h>424</h>
+      <h>880</h>
     </coordinates>
     <panel_attributes>lt=.
 bg=orange</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;510.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;1080.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
@@ -2437,39 +2437,16 @@ Retorna html com msg de sucesso - Ajax</panel_attributes>
     <additional_attributes>10.0;20.0;290.0;20.0</additional_attributes>
   </element>
   <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>1584</x>
-      <y>1496</y>
-      <w>16</w>
-      <h>48</h>
-    </coordinates>
-    <panel_attributes>
-bg=orange</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>1584</x>
-      <y>1080</y>
-      <w>24</w>
-      <h>432</h>
-    </coordinates>
-    <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;520.0</additional_attributes>
-  </element>
-  <element>
     <id>Relation</id>
     <coordinates>
       <x>1296</x>
       <y>1480</y>
-      <w>304</w>
+      <w>208</w>
       <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 buscaValores()</panel_attributes>
-    <additional_attributes>360.0;20.0;10.0;20.0</additional_attributes>
+    <additional_attributes>240.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
@@ -2498,38 +2475,38 @@ bg=light_gray</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1592</x>
+      <x>1496</x>
       <y>1488</y>
-      <w>232</w>
+      <w>328</w>
       <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 consulta valores</panel_attributes>
-    <additional_attributes>270.0;20.0;10.0;20.0</additional_attributes>
+    <additional_attributes>390.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1592</x>
+      <x>1496</x>
       <y>1512</y>
-      <w>232</w>
+      <w>328</w>
       <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 retorna valores</panel_attributes>
-    <additional_attributes>10.0;20.0;270.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;390.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>1296</x>
       <y>1528</y>
-      <w>304</w>
+      <w>208</w>
       <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 retorna valores</panel_attributes>
-    <additional_attributes>10.0;20.0;360.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;240.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
@@ -2553,5 +2530,63 @@ bg=blue</panel_attributes>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;500.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1456</x>
+      <y>1440</y>
+      <w>80</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>Valores.php
+
+bg=#56c6a1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1488</x>
+      <y>1456</y>
+      <w>24</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1488</x>
+      <y>1496</y>
+      <w>16</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>
+bg=#56c6a1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1488</x>
+      <y>1536</y>
+      <w>24</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>1488</x>
+      <y>1576</y>
+      <w>16</w>
+      <h>16</h>
+    </coordinates>
+    <panel_attributes>type=termination</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>

@@ -9,7 +9,7 @@
 		<div class="form-div mt-0">
 			<div class="form-cad-func col-lg-12 text-center marginAuto">					
 				<div class="display-block">
-					<label class="width-label-1">Nome:</label><input class="input-name-func" type="text" id="nome-func">
+					<label class="width-label-1">Nome:</label><input class="large-input" type="text" id="nome-func">
 				</div>
 			</div>
 			<div class="form-cad-func col-lg-12 marginAuto">					

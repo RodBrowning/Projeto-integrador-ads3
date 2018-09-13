@@ -1,4 +1,4 @@
-
+<!-- Conteudo da pagina de caixa -->
 <div class="row padding-2">
 	<div class="col-8 titleDiv marginAuto">
 		<p>Valor em caixa: <span>R$1.500,00</span></p>

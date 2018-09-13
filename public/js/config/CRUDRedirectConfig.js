@@ -1,6 +1,6 @@
 // Redireciona para as paginas php responsveis pela resposta das operações na pagina de congigurações e manupulação do banco de dados 
 // Funciona como o sistema utilizado em Factoy Method Pattern
-function CrudConfig(operacao,...args){
+function CrudConfig(tipo_operacao,...args){
 
 	// Vai para o topo em dispositivos pequenos
 	if(window.innerWidth <= 783){
@@ -17,7 +17,7 @@ function CrudConfig(operacao,...args){
 					popUpsDivBox.innerHTML = xmlhttp.responseText;
 				}
 		}
-		switch(operacao)
+		switch(tipo_operacao)
 			{
 				case 'salvar-funcionario':
 						xmlhttp.open('post', `./pages/PopUpsContent/config/funcionarios/CRUDFuncionarios/salvar_funcionario.php?nome_func=${args[0]}&cpf=${args[1]}&tipo_acesso=${args[2]}&email=${args[3]}&senha=${args[4]}`,true);
